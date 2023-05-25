@@ -3,7 +3,7 @@ export default function Navbar() {
 
     return (
 
-        <header className="w-full mx-auto px-5 bg-white fixed shadow-lg top-0 z-50  ">
+        <header className="w-full mx-auto px-5 bg-transparent fixed shadow-lg top-0 z-50  ">
             <div className="justify-between md:items-center md:flex">
                 <div>
                     <div className="md:py-5 md:block">
