@@ -3,13 +3,14 @@ import homepic from "../public/homepic.jpg";
 
 export default function Home() {
   return (
-    <main className=" p-4 ">
+    <main className="">
       <div>
         < Image 
         src={homepic} 
         alt="Becca" 
         priority = {true}
-        className="bg-contain"/>
+        className="bg-homepic bg-cover bg-center"
+        />
       </div>
     </main>
   )
