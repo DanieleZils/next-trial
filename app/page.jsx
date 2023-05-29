@@ -1,5 +1,5 @@
 import Image from "next/image";
-import homepic from "../public/homepic.jpg";
+import homepic from "../public/homepic-2.jpg";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
         src={homepic} 
         alt="Becca" 
         priority = {true}
-        className="bg-homepic bg-cover bg-center"
+        className="bg-cover bg-center"
         />
       </div>
     </main>
