@@ -9,7 +9,7 @@ export default function Home() {
         src={homepic} 
         alt="Becca" 
         priority = {true}
-        className="bg-cover bg-center"
+        className="bg-cover bg-center h-screen w-screen"
         />
       </div>
     </main>
