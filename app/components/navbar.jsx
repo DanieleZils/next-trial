@@ -2,7 +2,7 @@
 export default function Navbar() {
 
     return (
-        <nav className="w-full mx-auto ps-20 bg-transparent fixed shadow-lg top-0 z-50  ">
+        <nav className="w-full mx-auto ps-20 bg-transparent fixed shadow-lg top-0 z-50 color:white  ">
             <div className="md:items-center md:flex md:space-between">
                 <div>
                     <div className="md:py-5 md:block">

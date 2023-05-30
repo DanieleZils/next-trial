@@ -21,13 +21,13 @@ export default function Videos() {
     ]
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen py-24">
-            <h1 className="text-4xl font-bold mb-8">Videos</h1>
-            <div className='flex flex-col items-center'>
+        <div className="flex flex-col items-start justify-center min-h-screen py-24 ps-20">
+            <h1 className="text-2xl font-bold mb-8">Media</h1>
+            <div className='flex flex-col items-start'>
                 {videos.map((video, index) => (
                     <div key={index} className='flex flex-col mb-4'>
-                        <h3 className='text-xl font-semibold py-5 mb-2'>{video.title}</h3>
-                        <Youtube videoId={video.id} opts={videoOptions} className="max-w-xl mx-auto" />
+                        <h3 className='text-xl pb-2'>{video.title}</h3>
+                        <Youtube videoId={video.id} opts={videoOptions} className='pb-12'/>
                     </div>
                 ))} 
             </div>
