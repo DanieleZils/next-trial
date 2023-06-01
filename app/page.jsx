@@ -3,13 +3,13 @@ import homepic from "../public/homepic-2.jpg";
 
 export default function Home() {
   return (
-    <main>
-      <div className="elative aspect-content aspect-w-16 aspect-h-9 w-full max-h-screen">
+    <main className="relative w-full h-screen flex items-center justify-center">
+      <div className="absolute inset-0 flex items-center justify-center">
         < Image 
         src={homepic} 
         alt="Becca" 
         priority = {true}
-        className="absolute inset-0 object-cover w-full h-full"
+        className="w-full h-full object-cover" 
         />
       </div>
     </main>
