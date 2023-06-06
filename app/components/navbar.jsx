@@ -6,7 +6,7 @@ export default function Navbar() {
             <div className="md:items-center md:flex md:space-between">
                 <div>
                     <div className="md:py-5 md:block">
-                        <h1 className="text-xl font-semibold ">Becca</h1>
+                        <a className="text-2xl font-bold" href="/">Becca</a>
                     </div>
                 </div>
                 <ul className="md:flex md:space-x-6 md:justify-around md:w-full ">
@@ -17,7 +17,7 @@ export default function Navbar() {
                     <a href="/about">About</a>
                 </li>
                 <li className="text-lg">
-                    <a href="/videos">Videos</a>
+                    <a href="/videos">Media</a>
                 </li>
              </ul>
             </div>
