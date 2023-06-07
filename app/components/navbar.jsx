@@ -10,14 +10,26 @@ export default function Navbar() {
                     </div>
                 </div>
                 <ul className="md:flex md:space-x-6 md:justify-around md:w-full ">
-                  <li className="text-lg">
-                    <a href="/">Home</a> 
-                  </li>
                 <li className="text-lg">
                     <a href="/about">About</a>
                 </li>
                 <li className="text-lg">
+                    <a href="/violinsOfHope"> Violins of Hope </a>
+                </li>
+                <li className="text-lg">
                     <a href="/videos">Media</a>
+                </li>
+                <li className="text-lg">
+                    <a href="/community">Community Engagement</a>
+                </li>
+                <li className="text-lg">
+                    <a href="/teaching">Teaching</a>
+                </li>
+                <li className="text-lg">
+                    <a href="/upcoming">Upcoming Events</a>
+                </li>
+                <li className="text-lg">
+                    <a href="/contact">Contact</a>
                 </li>
              </ul>
             </div>
