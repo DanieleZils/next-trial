@@ -5,9 +5,13 @@
 export default function ViolinsOfHope() {
 
     return (
-        <div className="flex min-h-screen flex-col items-center justify-between p-24">
-            <h1 className="text-4xl font-bold">Violins of Hope</h1>
-        </div>
+        <div className="">
+        <iframe 
+            src="https://heyzine.com/flip-book/9b76a89d4b.html" 
+            title="Violins of Hope"
+            className="w-full h-screen"
+        />
+    </div>
     )
 }
 
