@@ -1,11 +1,18 @@
-
-
+import Image from 'next/image';
+import back from "public/back.jpg";
 
 export default function Upcoming() {
 
     return (
-        <div className="flex min-h-screen flex-col items-center justify-between p-24">
-            <h1 className="text-4xl font-bold">Upcoming Events</h1>
-        </div>
+        <div className="relative w-full h-screen flex items-center justify-center">
+          <div className="absolute inset-0 flex items-center justify-center">
+            < Image 
+            src={back} 
+            alt="Becca" 
+            priority = {true}
+            className="w-full h-full object-cover" 
+            />
+         </div>
+       </div>
     )
 }

@@ -34,7 +34,7 @@ export default function Navbar() {
                     <a href="/teaching">Teaching</a>
                 </li>
                 <li className="p-8">
-                    <a href="/upcoming">Upcoming Events</a>
+                    <a href="/upcoming">Events</a>
                 </li>
                 <li className="p-8">
                     <a href="/contact">Contact</a>
@@ -64,7 +64,7 @@ export default function Navbar() {
                         <a href="/teaching">Teaching</a>
                     </li>
                     <li className="p-4 border-b border-r-gray-300">
-                        <a href="/upcoming">Upcoming Events</a>
+                        <a href="/upcoming"> Events</a>
                     </li>
                     <li className="p-4 border-b border-r-gray-300">
                         <a href="/contact">Contact</a>
