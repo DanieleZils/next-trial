@@ -1,6 +1,6 @@
 'use client';
 
-import Youtube from 'react-youtube';
+import YouTube from 'react-youtube';
 import { FaYoutube } from 'react-icons/fa';
 
 
@@ -9,8 +9,8 @@ export default function Videos() {
     
 
     const videoOptions = {
-        height: '390',
-        width: '640',
+        height: '300',
+        width: '380',
         playerVars: {
             autoplay: 0,
         },
@@ -23,20 +23,20 @@ export default function Videos() {
     ]
 
     return (
-        <div className="flex flex-col items-start justify-center min-h-screen py-24 ps-20">
-               <div className='flex flex-col items-center'>
+        <div className="flex flex-col items-center h-screen">
+               <div className='flex flex-col'>
                 <h1 className="text-2xl font-semibold mt-12 text-red-900 mx-auto">Media</h1>
-                  <div className='flex justify-cente'>
+                  <div className='flex justify-center'>
                        <a href='https://www.youtube.com/@beccakasdan1564'>
                        <FaYoutube size="2em" color="red" className='mx-auto' />
                        </a>
                   </div>
                    {videos.map((video, index) => (
                      <div key={index} 
-                        className='flex flex-col mb-7 rounded-3xl shadow-xl pt-4 pb-10 border bg-gray-300 border-gray-300'>
-                        <h3 className='text-xl pb-1 text-center '>{video.title}</h3>
-                        <div className='relative overflow-hidden shadow-md"'>
-                        <Youtube videoId={video.id}  opts={videoOptions} className=''/>
+                        className='flex flex-col mb-4 pt-4 '>
+                        <h3 className='text-md pb-4 text-center '>{video.title}</h3>
+                        <div className='overflow-hidden shadow-md"'>
+                        <YouTube videoId={video.id}  opts={videoOptions} className='rounded-3xl'/>
                         </div>
                     </div>
                 ))} 
