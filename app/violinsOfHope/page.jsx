@@ -16,14 +16,16 @@ export default function ViolinsOfHope() {
 
     return (
         <div className="h-screen flex flex-col md:flex-row items-center justify-evenly">
-            <div className="  md:w-1/2">
-                <YouTube videoId={videoId}  opts={videoOptions} className='w-full h-80 2xl:h-[900px] 2xl:w-[900px] 2xl:mx-auto 2xl:px-10'/>
+            <div className="flex flex-col items-center md:w-2/3">
+                <h1 className="text-2xl font-semibold text-red-900 mx-auto text-center p-4">Violins of Hope</h1>
+                <YouTube videoId={videoId}  opts={videoOptions} className='w-full h-80 2xl:h-[720px] 2xl:w-[650px] 2xl:mx-auto 2xl:px-8'/>
             </div>
-        <div className=" md:w-1/2 py-4">
+        <div className=" md:w-2/3 py-4">
+         <h1 className="text-2xl font-semibold text-red-900 mx-auto text-center p-4">Doctoral Recital Booklet</h1>
             <iframe 
                 src="https://heyzine.com/flip-book/9b76a89d4b.html" 
                 title="Violins of Hope"
-                className="w-full h-80 2xl:h-[900px] 2xl:w-[900px] 2xl:mx-auto 2xl:px-10"
+                className="w-full h-80 2xl:h-[750px] 2xl:w-[750px] 2xl:mx-auto 2xl:px-8"
             />
         </div>
     </div>
