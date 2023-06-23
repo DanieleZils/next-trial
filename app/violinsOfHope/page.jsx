@@ -17,7 +17,7 @@ export default function ViolinsOfHope() {
     return (
         <div className="h-screen flex flex-col md:flex-row items-center justify-evenly">
             <div className="flex flex-col items-center md:w-2/3">
-                <h1 className="text-2xl font-semibold text-red-900 mx-auto text-center p-4">Violins of Hope</h1>
+                <h1 className="text-2xl font-semibold text-maroon mx-auto text-center p-4">Violins of Hope</h1>
                 <YouTube videoId={videoId}  opts={videoOptions} className='w-full h-80 2xl:h-[720px] 2xl:w-[650px] 2xl:mx-auto 2xl:px-8'/>
             </div>
         <div className=" md:w-2/3 py-4">

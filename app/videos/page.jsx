@@ -25,7 +25,7 @@ export default function Videos() {
     return (
         <div className="flex flex-col items-center h-screen">
                <div className='flex flex-col'>
-                <h1 className="text-2xl font-semibold mt-12 text-red-900 mx-auto">Media</h1>
+                <h1 className="text-2xl font-semibold mt-32 text-red-900 mx-auto">Media</h1>
                   <div className='flex justify-center'>
                        <a href='https://www.youtube.com/@beccakasdan1564'>
                        <FaYoutube size="2em" color="red" className='mx-auto' />

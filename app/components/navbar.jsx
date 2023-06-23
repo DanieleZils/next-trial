@@ -1,43 +1,73 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
 
 
 export default function Navbar() {
 
     const [ nav, setNav ] = useState(false)
+    // const [navbarBackground, setNavbarBackground] = useState(false)
 
     function handleClick() {
         setNav(!nav)
     }
 
+    // useEffect(() => {
+    //     const onScroll = () => {
+    //         if (window.scrollY >= 80) {
+    //             setNavbarBackground(true); // Now true means white background
+    //         } else {
+    //             setNavbarBackground(false); // And false means transparent
+    //         }
+    //     }
+    //     window.addEventListener("scroll", onScroll);
+    //     return () => {
+    //         window.removeEventListener("scroll", onScroll);
+    //     }
+    // }, []);
+
+
     return (
-        <div className="flex justify-between items-center h-24 max-w-[1240px] mx-auto px-4 ">
+        <div className='navbar fixed z-50 w-full flex justify-between items-center h-24 px-4 md:px-12'>
                     <div className="">
                         <a className="text-2xl font-bold w-full" href="/">Becca</a>
                     </div>
-            <ul className="hidden md:flex text-md ">
-                <li className="p-8">
-                    <a href="/about">About</a>
+            <ul className="hidden md:flex xl:text-lg xl:font-semibold sm:text-sm sm:font-semibold sm:text-center">
+                <li className="p-8 group">
+                    <a href="/about" className="relative overflow-hidden inline-block">About
+                    <span className="absolute inset-x-0 bottom-0 h-0.5 bg-maroon transform scale-x-0 group-hover:scale-x-100 transition duration-300 ease-in-out"></span>
+                    </a>
                 </li>
-                <li className="p-8">
-                    <a href="/violinsOfHope"> Violins of Hope </a>
+                <li className="p-8 group">
+                    <a href="/violinsOfHope" className="relative overflow-hidden inline-block"> Violins of Hope 
+                    <span className="absolute inset-x-0 bottom-0 h-0.5 bg-maroon transform scale-x-0 group-hover:scale-x-100 transition duration-300 ease-in-out"></span>
+                    </a>
                 </li>
-                <li className="p-8">
-                    <a href="/videos">Media</a>
+                <li className="p-8 group">
+                    <a href="/videos" className="relative overflow-hidden inline-block">Media
+                    <span className="absolute inset-x-0 bottom-0 h-0.5 bg-maroon transform scale-x-0 group-hover:scale-x-100 transition duration-300 ease-in-out"></span>
+                    </a>
                 </li>
-                <li className="p-8">
-                    <a href="/community">Community Engagement</a>
+                <li className="p-8 group">
+                    <a href="/community" className="relative overflow-hidden inline-block">Community Engagement
+                    <span className="absolute inset-x-0 bottom-0 h-0.5 bg-maroon transform scale-x-0 group-hover:scale-x-100 transition duration-300 ease-in-out"></span>
+                    </a>
                 </li>
-                <li className="p-8">
-                    <a href="/teaching">Teaching</a>
+                <li className="p-8 group">
+                    <a href="/teaching" className="relative overflow-hidden inline-block">Teaching
+                    <span className="absolute inset-x-0 bottom-0 h-0.5 bg-maroon transform scale-x-0 group-hover:scale-x-100 transition duration-300 ease-in-out"></span>
+                    </a>
                 </li>
-                <li className="p-8">
-                    <a href="/upcoming">Events</a>
+                <li className="p-8 group">
+                    <a href="/upcoming" className="relative overflow-hidden inline-block">Events
+                    <span className="absolute inset-x-0 bottom-0 h-0.5 bg-maroon transform scale-x-0 group-hover:scale-x-100 transition duration-300 ease-in-out"></span>
+                    </a>
                 </li>
-                <li className="p-8">
-                    <a href="/contact">Contact</a>
+                <li className="p-8 group">
+                    <a href="/contact" className="relative overflow-hidden inline-block">Contact
+                    <span className="absolute inset-x-0 bottom-0 h-0.5 bg-maroon transform scale-x-0 group-hover:scale-x-100 transition duration-300 ease-in-out"></span>
+                    </a>
                 </li>
             </ul>
                 <div onClick={handleClick} className='block md:hidden'>
