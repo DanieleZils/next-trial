@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="relative w-full h-screen">
       <div className="absolute inset-0 md:h-screen">
-        <div className="absolute top-20 w-full h-96 md:h-full">
+        <div className="absolute top-24 w-full h-96 md:h-full">
           < Image 
           src={homepic} 
           alt="Becca" 

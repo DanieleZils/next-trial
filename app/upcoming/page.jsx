@@ -20,35 +20,35 @@ export default function Upcoming() {
                 <div className='md:text-white md:text-left space-y-4'>
                     {/* Replace these divs with your own event data */}
                     <div className="bg-white md:bg-transparent md:shadow-none rounded-lg shadow-md p-6 md:p-0">
-                        <h3 className="font-bold">Orchestra on the Hill: Inspirations- Music, Art, Poetry</h3>
-                        <p>June 10, 7:30 PM (EST)
+                        <h3 className="font-bold pb-2">Orchestra on the Hill: Inspirations- Music, Art, Poetry</h3>
+                        <p className=' font-extralight text-sm pb-2'>June 10, 7:30 PM (EST)
                             June 11, 2:30 PM (EST) <br />
                             Gordon-Conwell Theological Seminary
                             130 Essex St., South Hamilton, MA</p>
-                            <a href="https://www.theorchestraonthehill.org/upcoming" className='font-extrabold'>Learn More</a>
+                            <a href="https://www.theorchestraonthehill.org/upcoming" className='font-bold'>Learn More</a>
                     </div>
                     <div className="bg-white md:bg-transparent rounded-lg shadow-md md:shadow-none p-6 md:p-0">
-                        <h3 className="font-bold">Tonebase Violin</h3>
-                        <p>June 20, 3 PM (EST), virtual <br />
+                        <h3 className="font-bold pb-2">Tonebase Violin</h3>
+                        <p className=' font-extralight text-sm pb-2'>June 20, 3 PM (EST), virtual <br />
                            Sight Reading Skills and Tips.</p>
-                           <a href="https://www.tonebase.co/violin" className='font-extrabold'>Learn More</a>
+                           <a href="https://www.tonebase.co/violin" className='font-bold'>Learn More</a>
                     </div>
                     <div className="bg-white md:bg-transparent  rounded-lg shadow-md md:shadow-none p-6 md:p-0">
-                        <h3 className="font-bold">Easton Chamber Music Festival Faculty Concerts</h3>
-                        <p>June 23, 7:30 PM (EST)
+                        <h3 className="font-bold pb-2">Easton Chamber Music Festival Faculty Concerts</h3>
+                        <p className=' font-extralight text-sm pb-2'>June 23, 7:30 PM (EST)
                             June 24, 7:30 PM (EST) <br />
                             Covenant Congregational Church
                             204 Center St., Easton MA</p>
-                           <a href="http://eastonchambermusicfestival.org/concerts.html" className='font-extrabold'>Learn More</a>
+                           <a href="http://eastonchambermusicfestival.org/concerts.html" className='font-bold'>Learn More</a>
                     </div>
                     <div className="bg-white md:bg-transparent rounded-lg shadow-md md:shadow-none p-6 md:p-0">
-                        <h3 className="font-bold">Luzerne Music Center Faculty Artist Series</h3>
-                        <p>July 21, 7:30 PM (EST)
+                        <h3 className="font-bold pb-2">Luzerne Music Center Faculty Artist Series</h3>
+                        <p className='font-extralight text-sm pb-2'>July 21, 7:30 PM (EST)
                             July 28, 7:30 PM (EST)
                             August 4, 7:30 PM (EST)<br />
                             203 Lake Tour Road
                             Lake Luzerne, NY</p>
-                           <a href="https://www.luzernemusic.org/2023-season" className='font-extrabold'>Learn More</a>
+                           <a href="https://www.luzernemusic.org/2023-season" className='font-bold'>Learn More</a>
                     </div>
                 </div>
             </div>
