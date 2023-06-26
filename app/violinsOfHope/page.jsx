@@ -25,13 +25,13 @@ export default function ViolinsOfHope() {
                      src={violinsofhope}
                      alt="violinsofhope"
                      priority={true}
-                     placeholder="blur"
                     className="object-cover object-center w-full h-full"
                     />
                 </div>
             </div>
-            <div className="relative p-8 py-24 md:px-12 md:py-24 md:absolute md:inset-0 md:z-10">
-            <h1 className="py-8 text-xl font-semibold text-black md:py-8 text-left">Rebecca Kasdan's Doctoral Recital</h1>
+            <div className="relative py-24 md:px-12 md:py-24 md:absolute md:inset-0 md:z-10">
+            <h1 className="py-8 text-xl font-semibold text-black md:py-8 text-center md:text-left">- Rebecca Kasdan's Doctoral Recital -</h1>
+            <p></p>
                 <div className="flex flex-col text-center md:items-star">
                     <YouTube videoId={videoId} opts={videoOptions} className='w-full h-60 2xl:h-[350px] 2xl:w-[350px] 
                     md:h-[250px] md:w-[250px] mb-8'/>
@@ -40,7 +40,8 @@ export default function ViolinsOfHope() {
                         <iframe 
                             src="https://heyzine.com/flip-book/9b76a89d4b.html" 
                             title="Violins of Hope"
-                            className="w-full h-80 2xl:h-[450px] 2xl:w-[390px] 2xl:px-8 md:h-[250px] md:w-[250px]"
+                            className="w-full h-60 2xl:h-[350px] 2xl:w-[350px] 
+                            md:h-[250px] md:w-[250px] mb-8"
                         />
             </div>
         </div>

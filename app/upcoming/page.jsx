@@ -4,16 +4,16 @@ import upcoming from "public/upcoming.jpg";
 export default function Upcoming() {
     return (
         <div className="relative md:grid md:grid-cols-1 min-h-screen">
-            <div className='md:fixed inset-0'>
+            <div className=' inset-0'>
               <div className="relative top-24 w-full h-64 md:h-screen">
                 <Image 
                     src={upcoming} 
                     alt="Becca" 
-                    className="object-cover object-center w-full h-full" 
+                    className="object-cover object-center w-full h-full md:fixed" 
                     priority={true}
                 />
                </div>
-             </div>
+            </div>
             <div className="relative p-8 py-24 md:px-12 md:py-24 md:absolute md:inset-0 md:z-10 md:bg-transparent">
                 <h2 className=" py-8 text-2xl font-semibold text-black md:text-white md:py-8 text-center md:text-left">Upcoming Events</h2>
                 <div className='md:text-white md:text-left space-y-6'>
