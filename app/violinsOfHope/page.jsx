@@ -40,7 +40,7 @@ export default function ViolinsOfHope() {
                         <iframe 
                             src="https://heyzine.com/flip-book/9b76a89d4b.html" 
                             title="Violins of Hope"
-                            className="w-full h-80 2xl:h-[450px] 2xl:w-[380px] 2xl:px-8 md:h-[250px] md:w-[250px]"
+                            className="w-full h-80 2xl:h-[450px] 2xl:w-[390px] 2xl:px-8 md:h-[250px] md:w-[250px]"
                         />
             </div>
         </div>
