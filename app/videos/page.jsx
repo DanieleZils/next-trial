@@ -32,7 +32,7 @@ export default function Videos() {
               <Image 
                 src={beccaprofile} 
                 alt="Becca" 
-                quality={100}
+                quality={75}
                 className="object-contain md:object-right w-full h-full md:h-screen md:fixed" 
                 priority={true}
               />

@@ -10,7 +10,7 @@ export default function Upcoming() {
                     src={upcoming} 
                     alt="Becca" 
                     placeholder='blur'
-                    quality={100}
+                    quality={75}
                     fill
                     sizes="100vx"
                     priority={true}

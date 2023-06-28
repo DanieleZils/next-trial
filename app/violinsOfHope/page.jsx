@@ -26,7 +26,7 @@ export default function ViolinsOfHope() {
                      alt="violinsofhope"
                      placeholder='blur'
                      priority={true}
-                     quality={100}
+                     quality={75}
                      fill
                      sizes="100vx"
                     className="object-cover object-center w-full h-full"
@@ -48,7 +48,7 @@ export default function ViolinsOfHope() {
                             md:h-[250px] md:w-[250px] mb-8"
                         />
                         <a href="https://heyzine.com/flip-book/9b76a89d4b.html" target="_blank" rel="noreferrer">
-                        <button className="bg-black text-white font-bold py-2 px-4 rounded-full transform hover:scale-110">Full Screen</button>
+                        <button className="bg-black text-white font-bold py-2 px-4 mx-36 rounded-full transform hover:scale-110">Full Screen</button>
                         </a>
             </div>
         </div>
