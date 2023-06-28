@@ -11,8 +11,8 @@ export default function Videos() {
     
 
     const videoOptions = {
-        height: '400',
-        width: '480',
+        height: '280',
+        width: '380',
         playerVars: {
             autoplay: 0,
         },
@@ -50,7 +50,7 @@ export default function Videos() {
                     className='bg-white md:bg-transparent md:shadow-none rounded-lg shadow-md p-4 md:p-0'>
                     <h3 className='text-md md:p-8 md:text-left md:text-stone-100 font-bold'>{video.title}</h3>
                     <div className='overflow-hidden shadow-md md:shadow-none'>
-                      <YouTube videoId={video.id}  opts={videoOptions} className='rounded-3xl w-full h-62 2xl:h-[350px] 2xl:w-[350px] 
+                      <YouTube videoId={video.id}  opts={videoOptions} className='rounded-3xl w-full h-full 2xl:h-[350px] 2xl:w-[350px] 
                     md:h-[250px] md:w-[250px]'/>
                     </div>
                   </div>
