@@ -9,8 +9,13 @@ export default function Upcoming() {
                 <Image 
                     src={upcoming} 
                     alt="Becca" 
-                    className="object-cover object-center w-full h-full md:fixed" 
+                    placeholder='blur'
+                    quality={100}
+                    fill
+                    sizes="100vx"
                     priority={true}
+                    className="object-cover object-center w-full h-full md:fixed" 
+                    
                 />
                </div>
             </div>

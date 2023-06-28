@@ -24,7 +24,11 @@ export default function ViolinsOfHope() {
                     <Image
                      src={violinsofhope}
                      alt="violinsofhope"
+                     placeholder='blur'
                      priority={true}
+                     quality={100}
+                     fill
+                     sizes="100vx"
                     className="object-cover object-center w-full h-full"
                     />
                 </div>
