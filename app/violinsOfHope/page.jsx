@@ -20,7 +20,7 @@ export default function ViolinsOfHope() {
     return (
         <div className="relative md:grid md:grid-cols-1 min-h-screen">
             <div className='md:fixed inset-0'>
-                <div className="relative top-24 w-full h-64 md:h-screen">
+                <div className="relative top-20 w-full h-64 md:h-screen">
                     <Image
                      src={violinsofhope}
                      alt="violinsofhope"

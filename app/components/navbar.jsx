@@ -15,7 +15,7 @@ export default function Navbar() {
 
 
     return (
-        <div className='navbar fixed z-50 w-full flex justify-between items-center h-24 px-4 md:px-12'>
+        <div className='navbar fixed z-50 w-full flex justify-between items-center h-20 px-4 md:px-12'>
                     <div className="">
                         <a className="text-2xl font-bold w-full" href="/">Becca</a>
                     </div>
@@ -46,7 +46,7 @@ export default function Navbar() {
                     </a>
                 </li>
                 <li className="p-8 group">
-                    <a href="/upcoming" className="relative overflow-hidden inline-block">Events
+                    <a href="/upcoming" className="relative overflow-hidden inline-block">Upcoming Events
                     <span className="absolute inset-x-0 bottom-0 h-0.5 bg-maroon transform scale-x-0 group-hover:scale-x-100 transition duration-300 ease-in-out"></span>
                     </a>
                 </li>
@@ -90,7 +90,7 @@ export default function Navbar() {
                         </a>
                     </li>
                     <li className="p-4 border-b border-r-gray-300 group">
-                        <a href="/upcoming" className="relative overflow-hidden inline-block">Events
+                        <a href="/upcoming" className="relative overflow-hidden inline-block">Upcoming Events
                             <span className="absolute inset-x-0 bottom-0 h-0.5 bg-maroon transform scale-x-0 group-hover:scale-x-100 transition duration-300 ease-in-out"></span>
                             </a>
                     </li>
