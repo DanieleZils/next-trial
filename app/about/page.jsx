@@ -1,6 +1,6 @@
 
 import Image from "next/image";
-import back from "/public/back.jpg";
+import VoH from "/public/VoH.jpg";
 
 export default function Home() {
   return (
@@ -8,11 +8,11 @@ export default function Home() {
       <div className="inset-0 fixed md:h-screen">
         <div className="relative top-24 w-full h-64 md:h-full">
           < Image 
-          src={back} 
+          src={VoH} 
           alt="Becca" 
           fill="responsive"
           priority = {true}
-          className="object-cover object-center w-full h-full" 
+          className="object-cover object-top w-full h-full" 
           />
         </div>
       </div>

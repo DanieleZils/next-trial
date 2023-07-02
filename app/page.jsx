@@ -9,9 +9,10 @@ export default function Home() {
           < Image 
           src={homepic} 
           alt="Becca" 
-          fill={true}
+          fill
           priority = {true}
-          className="object-cover object-center w-full h-full" 
+          quality={75}
+          className="object-cover object-top w-full h-full" 
           />
         </div>
       </div>
