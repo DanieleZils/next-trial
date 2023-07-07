@@ -3,7 +3,7 @@ import YouTube from 'react-youtube';
 import VoH from 'public/VoH.jpg'
 import Image from 'next/image';
 
-export default function ViolinsOfHope() {
+export default function VohCabaretConcert() {
 
 
     const videoOptions = {

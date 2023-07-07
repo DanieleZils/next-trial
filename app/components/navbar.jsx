@@ -26,17 +26,17 @@ export default function Navbar() {
                     </a>
                 </li>
                 <li className="p-8 group">
-                    <a href="/violinsOfHope" className="relative overflow-hidden inline-block"> VoH Cabaret Concert
+                    <a href="/voh-cabaret-concert" className="relative overflow-hidden inline-block"> VoH Cabaret Concert
                     <span className="absolute inset-x-0 bottom-0 h-0.5 bg-maroon transform scale-x-0 group-hover:scale-x-100 transition duration-300 ease-in-out"></span>
                     </a>
                 </li>
                 <li className="p-8 group">
-                    <a href="/videos" className="relative overflow-hidden inline-block">Media
+                    <a href="/media" className="relative overflow-hidden inline-block">Media
                     <span className="absolute inset-x-0 bottom-0 h-0.5 bg-maroon transform scale-x-0 group-hover:scale-x-100 transition duration-300 ease-in-out"></span>
                     </a>
                 </li>
                 <li className="p-8 group">
-                    <a href="/community" className="relative overflow-hidden inline-block">Community Engagement
+                    <a href="/community-engagement" className="relative overflow-hidden inline-block">Community Engagement
                     <span className="absolute inset-x-0 bottom-0 h-0.5 bg-maroon transform scale-x-0 group-hover:scale-x-100 transition duration-300 ease-in-out"></span>
                     </a>
                 </li>
@@ -46,7 +46,7 @@ export default function Navbar() {
                     </a>
                 </li>
                 <li className="p-8 group">
-                    <a href="/upcoming" className="relative overflow-hidden inline-block">Upcoming Events
+                    <a href="/upcoming-events" className="relative overflow-hidden inline-block">Upcoming Events
                     <span className="absolute inset-x-0 bottom-0 h-0.5 bg-maroon transform scale-x-0 group-hover:scale-x-100 transition duration-300 ease-in-out"></span>
                     </a>
                 </li>
@@ -70,17 +70,17 @@ export default function Navbar() {
                         </a>
                     </li>
                     <li className="text-md p-4 border-b border-r-gray-300 group">
-                    <a href="/violinsOfHope" className="relative overflow-hidden inline-block">VoH Cabaret Concert
+                    <a href="/voh-cabaret-concert" className="relative overflow-hidden inline-block">VoH Cabaret Concert
                     <span className="absolute inset-x-0 bottom-0 h-0.5 bg-maroon transform scale-x-0 group-hover:scale-x-100 transition duration-300 ease-in-out"></span>
                     </a>
                     </li>
                     <li className="p-4 border-b border-r-gray-300 group" >
-                        <a href="/videos" className="relative overflow-hidden inline-block">Media
+                        <a href="/media" className="relative overflow-hidden inline-block">Media
                         <span className="absolute inset-x-0 bottom-0 h-0.5 bg-maroon transform scale-x-0 group-hover:scale-x-100 transition duration-300 ease-in-out"></span>
                         </a>
                     </li>
                     <li className="p-4 border-b border-r-gray-300 group">
-                        <a href="/community" className="relative overflow-hidden inline-block">Community Engagement
+                        <a href="/community-engagement" className="relative overflow-hidden inline-block">Community Engagement
                         <span className="absolute inset-x-0 bottom-0 h-0.5 bg-maroon transform scale-x-0 group-hover:scale-x-100 transition duration-300 ease-in-out"></span>
                         </a>
                     </li>
@@ -90,7 +90,7 @@ export default function Navbar() {
                         </a>
                     </li>
                     <li className="p-4 border-b border-r-gray-300 group">
-                        <a href="/upcoming" className="relative overflow-hidden inline-block">Upcoming Events
+                        <a href="/upcoming-events" className="relative overflow-hidden inline-block">Upcoming Events
                             <span className="absolute inset-x-0 bottom-0 h-0.5 bg-maroon transform scale-x-0 group-hover:scale-x-100 transition duration-300 ease-in-out"></span>
                             </a>
                     </li>

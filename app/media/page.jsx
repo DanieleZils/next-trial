@@ -6,7 +6,7 @@ import Image from 'next/image';
 import beccaprofile from 'public/beccaprofile.jpg'
 
 
-export default function Videos() {
+export default function Media() {
 
     
 

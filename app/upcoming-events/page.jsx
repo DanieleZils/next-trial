@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import upcoming from "public/upcoming.jpg";
 
-export default function Upcoming() {
+export default function UpcomingEvents() {
     return (
         <div className="relative md:grid md:grid-cols-1 min-h-screen">
             <div className=' inset-0'>
