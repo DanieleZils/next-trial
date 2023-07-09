@@ -1,14 +1,25 @@
 "use client";
 import React, {useRef} from "react";
+import emailjs from "@emailjs/browser";
 
 export default function Contact() {
     const form = useRef();
 
+    const sendEmail = (e) => {
+        e.preventDefault();
 
+
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+          .then((result) => {
+            console.log(result.text);
+          }, (error) => {
+            console.log(error.text);
+          });
+    };
 
     return (
         <div className="flex items-center h-screen justify-center">
-            <form ref={form} className="bg-white flex rounded-lg w-1/2">
+            <form ref={form} onSubmit={sendEmail} className="bg-white flex rounded-lg w-1/2">
               <div className="flex-1 text-gray-700 p-20">
                 <h1 className="text-3xl pb-6">Let's Connect!</h1>
                 <div className="mb-4">
