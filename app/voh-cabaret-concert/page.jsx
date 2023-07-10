@@ -44,7 +44,7 @@ export default function VohCabaretConcert() {
                             className="w-full h-60 px-4 md:h-[400px] md:w-[400px] mb-8"
                         />
                         <a href="https://heyzine.com/flip-book/9b76a89d4b.html" target="_blank" rel="noreferrer">
-                        <button className="bg-black text-white font-bold py-2 px-2 mx-36 rounded-full transform hover:scale-110 mx-auto">Full Screen</button>
+                        <button className="bg-black text-white font-bold py-2 px-2 mx-36 rounded-full transform hover:scale-110">Full Screen</button>
                         </a>
                     </div>
                 </div>
