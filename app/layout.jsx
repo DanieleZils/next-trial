@@ -1,9 +1,14 @@
 import Navbar from './components/navbar'
 import './globals.css'
-// import { Inter } from 'next/font/google'
+import { Raleway } from 'next/font/google'
 
 
 // const inter = Inter({ subsets: ['latin'] })
+
+const raleway = Raleway({
+  subsets: ['latin'],
+  display: 'swap',
+})
 
 export const metadata = {
   title: 'Becca Kasdan',
@@ -15,7 +20,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={raleway.className}>
       <body 
         suppressHydrationWarning={true}>
         <Navbar />
