@@ -6,14 +6,16 @@ export default function Contact() {
     const form = useRef();
 
     const sendEmail = (e) => {
+        console.log("sendEmail called");
         e.preventDefault();
+        console.log('Form:', form.current)
 
 
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+        emailjs.sendForm('service_wy4624e', 'template_1aqwmd8', form.current, process.env.NEXT_PUBLIC_EMAILJS_USERID)
           .then((result) => {
-            console.log(result.text);
+            console.log("email sent", result.text);
           }, (error) => {
-            console.log(error.text);
+            console.log("error sending", error.text);
           });
     };
 
