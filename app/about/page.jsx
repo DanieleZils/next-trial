@@ -49,7 +49,7 @@ export default function Home() {
             In addition, Becca is extremely devoted to bringing music into the community. She served as the first co-
             director of the Peabody String Sinfonia, a conductor-less string ensemble at Peabody Conservatory that
             performs exclusively at community venues. Becca has also been on a discussion panel with Midori
-            discussing community engagement and outreach in the 21 st century. Currently, Becca is on the Board of
+            discussing community engagement and outreach in the 21 st century.<br/><br/>Currently, Becca is on the Board of
             Trustees for the Volunteer Musicians for the Arts in Boston, MA where she received a Community
             Leadership Award in 2021. Becca Kasdan is the 2018 recipient of the Johns Hopkins President’s
             Commendation for Achievement in the Arts, the Grace Clagett Ranney Prize in Chamber Music, the
