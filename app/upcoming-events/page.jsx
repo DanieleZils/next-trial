@@ -1,31 +1,31 @@
 import Image from 'next/image';
-import upcoming from "public/upcoming.jpg";
+import events from "public/events.jpg";
 
 export default function UpcomingEvents() {
     return (
         <div className="relative md:grid md:grid-cols-1 min-h-screen">
-            <div className=' inset-0'>
-              <div className="relative top-24 w-full h-64 md:h-screen">
+            <div className=' inset-0 md:fixed'>
+              <div className="relative top-20 w-full h-64 md:h-screen">
                 <Image 
-                    src={upcoming} 
+                    src={events} 
                     alt="Becca" 
                     placeholder='blur'
                     quality={75}
                     fill
                     sizes="100vx"
                     priority={true}
-                    className="object-cover object-center w-full h-full md:fixed" 
+                    className="object-cover object-top w-full h-full md:fixed" 
                     
                 />
                </div>
             </div>
             <div className="relative p-8 py-24 md:px-12 md:py-24 md:absolute md:inset-0 md:z-10 md:bg-transparent">
-                <h2 className=" py-8 text-2xl font-semibold text-black md:text-white md:py-8 text-center md:text-left">Upcoming Events</h2>
-                <div className='md:text-white md:text-left space-y-6'>
+                <h2 className=" py-8 text-2xl font-semibold text-black md:text-black md:py-8 text-center md:text-left">Upcoming Events</h2>
+                <div className='md:text-black md:text-left space-y-6'>
                     {/* Replace these divs with your own event data */}
                     <div className="bg-white md:bg-transparent md:shadow-none rounded-lg shadow-md p-6 md:p-0">
                         <h3 className="font-bold pb-2">Orchestra on the Hill: Inspirations- Music, Art, Poetry</h3>
-                        <p className=' font-extralight text-sm pb-2'>June 10, 7:30 PM (EST)
+                        <p className=' font-medium text-base pb-2'>June 10, 7:30 PM (EST)
                             June 11, 2:30 PM (EST) <br />
                             Gordon-Conwell Theological Seminary
                             130 Essex St., South Hamilton, MA</p>

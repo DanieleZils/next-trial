@@ -24,7 +24,7 @@ export default function VohCabaretConcert() {
 
     const videoId = "Wiv3d5C9Ng4"
     return (
-        <div className="relative bg-white">
+        <div className="relative bg-white h-full">
         <div className='inset-0'>
             <div className="relative w-full h-72 md:h-screen">
                 <Image
