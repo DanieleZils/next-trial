@@ -64,10 +64,7 @@ export default function VohCabaretConcert() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-4 grid grid-cols-1 md:grid-cols-12 gap-0 my-2 md:my-2 ">
             <div className="order-2 md:order-1 md:col-span-7 relative">
                 <Image src={ensemble} alt="violinsofhope" priority={true} quality={75} className='w-full h-60 md:h-[400px] mb-8'/>
-                <p className="font-medium text-sm md:absolute left-0 text-center py-2  px-4 leading-5">An unprecedented art form, the Berlin Cabarets of the Weimar Republic sought to break down
-                    traditional barriers by creating improvisatory and impromptu programs that emphasized artistic
-                    creativity, freedom, casualness, and acceptance and valued collaboration between a variety of different
-                    art forms. During my concert, I combined the most successful elements of the Berlin cabarets to
+                <p className="font-medium text-sm md:absolute left-0 py-2  px-4 leading-5 text-justify"> During my concert, I combined the most successful elements of the Berlin cabarets to
                     reimagine an innovative format and performance practice for classical music concerts in the 21 st -century
                     that celebrates inclusivity and creativity in the arts. I collaborated with puppeteers, dancers, visual
                     artists, and musicians from Israel, Poland, Hungary, Norway, Austria, England, and the United States to
@@ -78,18 +75,21 @@ export default function VohCabaretConcert() {
             </div>
             <div className='order-1 md:order-2 md:col-span-5'>
             <div className="col-span-5 relative">
-            <p className="py-8 text-sm font-medium text-black md:pt-16 md:px-3 text-center md:text-center">
+            <p className="py-3 text-sm font-medium text-black md:px-4 text-justify ">
             On April 23, 2023 I presented a Violins of Hope Cabaret Concert, the culmination of my Doctoral
             performance and research. I performed this recital at the Spurlock Museum of World Cultures in
             Urbana, Illinois in collaboration with Avshalom Weinstein, co-founder of Violins of Hope. As featured in
             the PBS Documentary- Strings of the Holocaust, Violins of Hope is a collection of instruments recovered
             from the Holocaust and painstakingly restored by Amnon Weinstein and Avshi Weinstein in Israel. The
             instruments have heartbreaking stories of being performed in concentration camps, thrown off cattle
-            cars, buried in the ground, and etched with Swastikas. 
+            cars, buried in the ground, and etched with Swastikas. An unprecedented art form, the Berlin Cabarets of the Weimar Republic sought to break down
+            traditional barriers by creating improvisatory and impromptu programs that emphasized artistic
+            creativity, freedom, casualness, and acceptance and valued collaboration between a variety of different
+            art forms. 
             </p>
             </div> 
                 <div className="order-3 md:order-3 flex flex-col items-center">
-                <Image src={beccarecital} alt="violinsofhope" priority={true} quality={75} className='w-full md:mb-8 md:my-16 my-4'/>
+                <Image src={beccarecital} alt="violinsofhope" priority={true} quality={75} className='w-full md:mb-8 my-4'/>
                     <a href="https://www.violins-of-hope.com/" target="_blank" rel="noreferrer">
                         <button className="bg-black text-white font-bold py-2 px-2 md:py-3 mb-4 text-sm md:text-base rounded-full transform hover:scale-110">Violins of Hope</button>
                     </a>
@@ -114,13 +114,13 @@ export default function VohCabaretConcert() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-2 grid grid-cols-1 md:grid-cols-12 gap-0 md:my-8  ">
             <div className="order-2 md:order-1 md:col-span-6 relative">
                 <Image src={vohsmile} alt="violinsofhope" priority={true} quality={75} className='w-full mb-8'/>
-                <p className="text-sm md:absolute left-0 px-6 font-medium text-center md:my-16 py-4">“This has been the most extraordinary lecture/recital I have ever had the privilege to experience. The
+                <p className="text-sm md:absolute left-0 px-6 font-medium text-justify md:my-16 py-4">“This has been the most extraordinary lecture/recital I have ever had the privilege to experience. The
                 presentation and performance of your work has truly changed what I know about and how I absorb
                 cabaret music.”</p>
             </div>
             <div className='order-1 md:order-2 md:col-span-6'>
             <div className="col-span-4 relative">
-            <p className="py-8 text-sm text-black md:pt-16 md:px-4 text-center md:text-center font-medium">
+            <p className="py-8 text-sm text-black md:pt-16 md:px-4 text-justify font-medium">
             “This performance was the most impressive community-facing performance I have seen. It was
             the best of community engagement. Her integration of other art forms (dance, puppetry, and visual art)
             with musical performance reflected deep understanding of all these art forms. Her educational talks about
