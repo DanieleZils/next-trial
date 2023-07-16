@@ -60,7 +60,7 @@ export default function VohCabaretConcert() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 grid grid-cols-1 md:grid-cols-12 gap-0 my-2 md:my-2 ">
             <div className="order-2 md:order-1 md:col-span-7 relative">
                 <Image src={ensemble} alt="violinsofhope" priority={true} quality={75} className='w-full h-60 md:h-[400px] mb-8'/>
-                <p className="font-medium text-sm md:absolute left-0 py-2  px-8 leading-5 text-justify"> During my concert, I combined the most successful elements of the Berlin cabarets to
+                <p className="font-medium text-sm md:absolute left-0 py-2  px-6 leading-5 text-justify"> During my concert, I combined the most successful elements of the Berlin cabarets to
                     reimagine an innovative format and performance practice for classical music concerts in the 21 st -century
                     that celebrates inclusivity and creativity in the arts. I collaborated with puppeteers, dancers, visual
                     artists, and musicians from Israel, Poland, Hungary, Norway, Austria, England, and the United States to
@@ -71,7 +71,7 @@ export default function VohCabaretConcert() {
             </div>
             <div className='order-1 md:order-2 md:col-span-5'>
             <div className="col-span-5 relative">
-            <p className="py-3 text-sm font-medium text-black md:px-8 text-justify ">
+            <p className="py-3 text-sm font-medium text-black md:px-6 text-justify ">
             On April 23, 2023 I presented a Violins of Hope Cabaret Concert, the culmination of my Doctoral
             performance and research. I performed this recital at the Spurlock Museum of World Cultures in
             Urbana, Illinois in collaboration with Avshalom Weinstein, co-founder of Violins of Hope. As featured in
@@ -116,7 +116,7 @@ export default function VohCabaretConcert() {
             </div>
             <div className='order-1 md:order-2 md:col-span-6'>
             <div className="col-span-4 relative">
-            <p className="py-8 text-sm text-black md:pt-20 md:px-8 text-justify font-medium">
+            <p className="py-8 text-sm text-black md:pt-20 md:px-6 text-justify font-medium">
             “This performance was the most impressive community-facing performance I have seen. It was
             the best of community engagement. Her integration of other art forms (dance, puppetry, and visual art)
             with musical performance reflected deep understanding of all these art forms. Her educational talks about
