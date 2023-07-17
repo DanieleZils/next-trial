@@ -4,6 +4,7 @@ import YouTube from 'react-youtube';
 import { FaYoutube } from 'react-icons/fa';
 import Image from 'next/image';
 import standing from 'public/standing.jpg'
+import mediaPage from 'public/mediaPage.png';
 
 
 export default function Media() {
@@ -11,8 +12,8 @@ export default function Media() {
     
 
     const videoOptions = {
-        height: '280',
-        width: '380',
+        height: '360',
+        width: '480',
         playerVars: {
             autoplay: 0,
         },
@@ -25,28 +26,29 @@ export default function Media() {
     ]
 
     return (
-        <div className="relative md:grid md:grid-cols-1 overflow-y-auto">
-          <div className='md:fixed inset-0  bg-white z-0'></div> {/* Fixed full-screen black div for large screens */}
-          <div className="relative md:h-screen overflow-y-auto z-10"> {/* Content layer */}
-            <div className=" relative top-20 w-full h-64 md:h-screen">
+        <div className="relative md:grid md:grid-cols-1 min-h-screen bg-white">
+          <div className='md:fixed inset-0'> 
+            <div className="relative top-20 w-full h-64 md:h-screen">
               <Image 
-                src={standing} 
+                src={mediaPage} 
                 alt="Becca" 
-                quality={75}
-                className="object-contain md:object-right w-full h-full md:h-screen md:fixed" 
+                fill
+                quality={95}
+                sizes="100vx"
+                className="object-cover object-top w-full h-full " 
                 priority={true}
               />
             </div>
-            <div className="relative py-24 md:px-12 md:py-24 md:absolute md:inset-0 md:z-10">
-              <div className='md:text-black md:text-left space-y-6 text-center '>
-                <h1 className="text-2xl font-semibold pt-6 md:text-black mx-auto">Media</h1>
+            </div>
+            <div className="relative py-24 md:px-12 md:py-24 md:absolute md:inset-0">
+              <div className='md:text-black md:text-left space-y-4'>
+                <h1 className="text-2xl font-semibold pt-6 md:text-black mx-auto text-center md:text-left">Media</h1>
                 {videos.map((video, index) => (
                   <div key={index} 
-                    className='bg-white md:bg-transparent md:shadow-none rounded-lg shadow-md p-4 md:p-0'>
-                    <h3 className='text-md md:py-4 md:text-left md:text-black font-bold'>{video.title}</h3>
-                    <div className='overflow-hidden shadow-md md:shadow-none'>
-                      <YouTube videoId={video.id}  opts={videoOptions} className='rounded-3xl w-full h-full 2xl:h-[350px] 2xl:w-[350px] 
-                    md:h-[250px] md:w-[250px]'/>
+                    className='p-4 md:p-0'>
+                    <h3 className='text-base md:text-lg md:py-4 md:text-left sm:text-left md:text-black font-semibold'>{video.title}</h3>
+                    <div className='overflow-hidden'>
+                      <YouTube videoId={video.id}  opts={videoOptions} className='rounded-3xl w-full h-full 2xl:h-[350px] 2xl:w-[350px]'/>
                     </div>
                   </div>
                 ))} 
@@ -54,7 +56,6 @@ export default function Media() {
               <br/>
             </div>
           </div>
-        </div>
       )
     }
 
