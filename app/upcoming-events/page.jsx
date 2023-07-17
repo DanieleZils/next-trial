@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import events from "public/events.jpg";
+import beccaup from "public/beccaup.jpg"
+import ContactPage from "public/ContactPage.png"
 
 export default function UpcomingEvents() {
     return (
@@ -7,10 +9,10 @@ export default function UpcomingEvents() {
             <div className=' inset-0 md:fixed'>
               <div className="relative top-20 w-full h-64 md:h-screen">
                 <Image 
-                    src={events} 
+                    src={ContactPage} 
                     alt="Becca" 
                     placeholder='blur'
-                    quality={75}
+                    quality={95}
                     fill
                     sizes="100vx"
                     priority={true}

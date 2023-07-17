@@ -11,7 +11,7 @@ export default function Teaching() {
 
     return (
         <div className="relative w-full bg-white min-h-screen flex flex-col">
-        <div className='inset-0'>
+        {/* <div className='inset-0'>
             <div className="relative w-full h-72 top-20 md:h-screen">
                 <Image
                     src={porta}
@@ -24,7 +24,7 @@ export default function Teaching() {
                     className="object-cover object-top w-full h-full"
                 />
             </div>
-        </div>
+        </div> */}
         <h1 className="text-center text-xl md:text-4xl font-bold mt-20 py-5 px-6 md:px-0 bg-black bg-opacity-50 text-white">Teaching Philosophy</h1>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 grid grid-cols-1 md:grid-cols-12 gap-0 my-2 md:my-2 ">
             <div className="order-2 md:order-1 md:col-span-7 relative flex flex-col">
