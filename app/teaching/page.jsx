@@ -29,7 +29,7 @@ export default function Teaching() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 grid grid-cols-1 md:grid-cols-12 gap-0 my-2 md:my-2 ">
             <div className="order-2 md:order-1 md:col-span-7 relative flex flex-col">
             <Image src={herovoh} alt="violinsofhope" priority={true} quality={75} className='w-full h-60 md:h-[400px] mb-8 order-3 md:order-1'/>
-            <p className="font-medium text-sm left-0 py-2 mb-5 md:mb-0 px-6 leading-5 text-justify order-2 md:order-1"> I take the time to set up personal meetings with my students before they begin their studies and discuss 
+            <p className="font-medium text-sm left-0 py-2 mb-5 md:mb-0 px-6 leading-5 md:text-justify text-center order-2 md:order-1"> I take the time to set up personal meetings with my students before they begin their studies and discuss 
             their learning objectives and musical interests. Together we collaborate on choosing repertoire that interests and excites them. As a result, 
             I teach a wide variety of genres, composers from underrepresented backgrounds, and I am constantly learning new works alongside my students which I enjoy 
             immensely. Beyond studio lessons, 
@@ -42,7 +42,7 @@ export default function Teaching() {
             </div>
             <div className='order-1 md:order-2 md:col-span-5'>
             <div className="col-span-5 relative">
-            <p className="py-3 text-sm px-6 font-medium text-black md:px-6 text-justify ">
+            <p className="py-3 text-sm px-6 font-medium text-black md:px-6 md:text-justify text-center ">
             My goal as a teacher is to inspire each of my students to become their own teacher by developing as creative and thoughtful musicians. 
             I believe that communicating with students in a kind and respectful manner is of the utmost importance to foster a love of learning 
             and performing and to instill life-long practice skills. I urge my students to constantly be creative in their approach to practicing 
@@ -55,7 +55,7 @@ export default function Teaching() {
             </div> 
                 <div className="order-1 md:order-3 flex flex-col items-center">
                 <Image src={Teachingbecca} alt="violinsofhope" priority={true} quality={75} className='w-full md:mb-8 my-6'/>
-                    <a href="https://www.violins-of-hope.com/" target="_blank" rel="noreferrer">
+                    <a href="/contact" target="_blank" rel="noreferrer">
                         <button className="bg-black text-white font-bold py-2 px-4 md:py-4 mb-4 text-sm md:text-base rounded-full transform hover:scale-110">Contact</button>
                     </a>
                 </div>
@@ -66,7 +66,7 @@ export default function Teaching() {
             <div className="flex-1 relative w-full top-10 md:top-0">
                 <Image src={stairs} alt="stairs" priority={true} quality={75} className='w-full md:h-full mb-8'/>
             </div>
-            <div className='w-full flex-1'>
+            <div className='w-full flex-1 md:text-left text-center'>
                 <div className="flex flex-col h-full">
                     <div className='py-8 px-6'>
                         <h3 className='text-base md:text-lg font-bold '>Community MusicWorks, Resident Musician- Providence, RI</h3>

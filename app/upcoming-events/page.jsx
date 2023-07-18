@@ -5,7 +5,7 @@ import ContactPage from "public/ContactPage.png"
 
 export default function UpcomingEvents() {
     return (
-        <div className="relative md:grid md:grid-cols-1 min-h-screen">
+        <div className="relative md:grid md:grid-cols-1 min-h-screen bg-white">
             <div className=' inset-0 md:fixed'>
               <div className="relative top-20 w-full h-64 md:h-screen">
                 <Image 
@@ -25,7 +25,7 @@ export default function UpcomingEvents() {
                 <h2 className=" py-8 text-2xl font-semibold text-black md:text-black md:py-8 text-center md:text-left">Upcoming Events</h2>
                 <div className='md:text-black md:text-left space-y-6'>
                     {/* Replace these divs with your own event data */}
-                    <div className="bg-white md:bg-transparent rounded-lg shadow-md md:shadow-none p-6 md:p-0">
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-md md:shadow-none p-6 md:p-0">
                         <h3 className="font-bold pb-2">Luzerne Music Center Faculty Artist Series</h3>
                         <p className='font-medium text-base pb-2'>July 21, 7:30 PM (EST) <br/>
                             July 28, 7:30 PM (EST) <br/>
@@ -38,7 +38,7 @@ export default function UpcomingEvents() {
                 <h2 className=" py-8 text-2xl font-semibold text-black md:text-black md:py-8 text-center md:text-left">Past Events</h2>
                 <div className='md:text-black md:text-left space-y-6'>
                     {/* Replace these divs with your own event data */}
-                    <div className="bg-white md:bg-transparent md:shadow-none rounded-lg shadow-md p-6 md:p-0">
+                    <div className="bg-black bg-opacity-30 text-white md:text-black md:bg-transparent md:shadow-none rounded-lg shadow-md p-6 md:p-0">
                         <h3 className="font-bold pb-2">Orchestra on the Hill: Inspirations- Music, Art, Poetry</h3>
                         <p className=' font-medium text-base pb-2'>June 10, 7:30 PM (EST)<br/>
                             June 11, 2:30 PM (EST) <br />
@@ -46,13 +46,13 @@ export default function UpcomingEvents() {
                             130 Essex St., South Hamilton, MA</p>
                             <a href="https://www.theorchestraonthehill.org/upcoming" className='font-bold'>Learn More</a>
                     </div>
-                    <div className="bg-white md:bg-transparent rounded-lg shadow-md md:shadow-none p-6 md:p-0">
+                    <div className="bg-black bg-opacity-30 text-white md:text-black md:bg-transparent rounded-lg shadow-md md:shadow-none p-6 md:p-0">
                         <h3 className="font-bold pb-2">Tonebase Violin</h3>
                         <p className=' font-medium text-base pb-2'>June 20, 3 PM (EST), virtual <br />
                            Sight Reading Skills and Tips.</p>
                            <a href="https://www.tonebase.co/violin" className='font-bold'>Learn More</a>
                     </div>
-                    <div className="bg-white md:bg-transparent  rounded-lg shadow-md md:shadow-none p-6 md:p-0">
+                    <div className="bg-black bg-opacity-30 text-white md:bg-transparent md:text-black  rounded-lg shadow-md md:shadow-none p-6 md:p-0">
                         <h3 className="font-bold pb-2">Easton Chamber Music Festival Faculty Concerts</h3>
                         <p className=' font-medium text-base pb-2'>June 23, 7:30 PM (EST) <br/>
                             June 24, 7:30 PM (EST) <br />

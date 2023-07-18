@@ -56,10 +56,11 @@ export default function Navbar() {
                     </a>
                 </li>
             </ul>
+                
                 <div onClick={handleClick} className='block md:hidden'>
                     {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
                 </div>
-                <div className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-300 bg-gray-100 ease-in-out duration-500 z-50': 'ease-in-out duration-500 fixed left-[-100%] z-50'}>
+                <div className={nav ? 'fixed left-0 top-0 w-[85%] h-full border-r border-r-gray-300 bg-gray-100 ease-in-out duration-500 z-50' : 'ease-in-out duration-500 fixed left-[-100%] z-50'}>
                 <div className="m-4 p-4">
                     <a className="text-2xl font-bold" href="/">Becca Kasdan</a>
                 </div>

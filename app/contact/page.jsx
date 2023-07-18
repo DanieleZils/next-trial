@@ -20,9 +20,9 @@ export default function Contact() {
     };
 
     return (
-        <div className="flex items-center h-screen justify-center ">
+        <div className="flex items-center h-screen justify-center bg-white ">
             <form ref={form} onSubmit={sendEmail} className="bg-white flex rounded-lg md:w-1/2 w-full">
-              <div className="flex-1 text-gray-700 p-20">
+              <div className="flex-1 text-gray-700 p-20 shadow-lg">
                 <h1 className="md:text-3xl text-2xl pb-6">Let's Connect!</h1>
                 <div className="mb-4">
                     <label htmlFor="Name" className="block font-medium">Name </label>

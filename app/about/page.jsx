@@ -4,7 +4,7 @@ import VoH from "/public/VoH.jpg";
 
 export default function Home() {
   return (
-    <main className="relative md:grid md:grid-cols-1 min-h-screen">
+    <main className="relative md:grid md:grid-cols-1 min-h-screen bg-white">
         <div className="relative md:fixed inset-0 top-20 w-full h-64 md:h-full ">
           < Image 
           src={VoH} 
