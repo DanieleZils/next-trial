@@ -1,11 +1,12 @@
 
-
+import EmblaCarousel from '../carousel.jsx'; // adjust path as needed
 
 export default function CommunityEngagement() {
+  const slides = Array.from({ length: 5 }, (_, index) => index); 
 
-    return (
-        <div className="flex min-h-screen flex-col items-center justify-between p-24">
-            <h1 className="text-4xl font-bold">Community Engagement</h1>
-        </div>
-    )
+  return (
+    <div className="">
+        <EmblaCarousel slides={slides} />
+    </div>
+  )
 }
