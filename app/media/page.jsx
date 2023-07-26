@@ -3,8 +3,8 @@
 import YouTube from 'react-youtube';
 import { FaYoutube } from 'react-icons/fa';
 import Image from 'next/image';
-import standing from 'public/standing.jpg'
-import mediaPage from 'public/mediaPage.png';
+import anothermedia from 'public/anothermedia.png';
+import mediah from 'public/mediah.jpg';
 
 
 export default function Media() {
@@ -30,22 +30,22 @@ export default function Media() {
           <div className='md:fixed inset-0'> 
             <div className="relative top-20 w-full h-64 md:h-screen">
               <Image 
-                src={mediaPage} 
+                src={anothermedia} 
                 alt="Becca" 
                 fill
                 quality={95}
                 sizes="100vx"
-                className="object-cover object-top w-full h-full " 
+                className="object-cover object-top w-full h-full" 
                 priority={true}
               />
             </div>
             </div>
-            <div className="relative py-24 md:px-12 md:py-24 md:absolute md:inset-0">
+            <div className="relative py-24 md:px-12 md:py-24 md:absolute md:inset-0 ">
               <div className='md:text-black md:text-left space-y-4'>
-                <h1 className="text-2xl font-semibold pt-6 md:text-black mx-auto text-center md:text-left">Media</h1>
+                <h1 className="text-2xl font-semibold pt-6 md:text-black mx-auto text-center md:text-left md:px-4">Media</h1>
                 {videos.map((video, index) => (
                   <div key={index} 
-                    className='p-4 md:p-0'>
+                    className='p-4'>
                     <h3 className='text-base md:text-lg md:py-4 md:text-left sm:text-left md:text-black font-semibold'>{video.title}</h3>
                     <div className='overflow-hidden'>
                       <YouTube videoId={video.id}  opts={videoOptions} className='rounded-3xl w-full h-full 2xl:h-[350px] 2xl:w-[350px]'/>
