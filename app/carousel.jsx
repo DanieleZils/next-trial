@@ -116,7 +116,7 @@ export default function EmblaCarousel(props) {
               ))}
             </div>
           </div>
-          <div className="absolute bottom-0 left-0 flex overflow-x-auto p-4 z-50 w-full justify-center">
+          <div className="absolute bottom-0 left-0 flex overflow-x-auto p-4 z-2 w-full justify-center">
               {images.map((slide, index) => (
                 <Thumb
                   onClick={() => onThumbClick(index)}
