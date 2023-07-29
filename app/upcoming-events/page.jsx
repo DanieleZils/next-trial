@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import piano from 'public/piano.jpg'
-import ContactPage from "public/ContactPage.png"
 import event from "public/event.jpg"
 
 export default function UpcomingEvents() {

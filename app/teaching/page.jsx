@@ -1,6 +1,5 @@
 'use client';
 import Image from 'next/image';
-import porta from 'public/porta.jpg';
 import Teachingbecca from 'public/Teachingbecca.png';
 import herovoh from 'public/herovoh.jpg';
 import stairs from 'public/stairs.jpg';

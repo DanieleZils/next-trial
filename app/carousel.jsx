@@ -32,7 +32,7 @@ export default function EmblaCarousel(props) {
     if (emblaApi) {
       setIntervalId(setInterval(() => {
         emblaApi.scrollNext();
-      }, 5000));
+      }, 6000));
     }
 
     return () => {
@@ -53,7 +53,7 @@ export default function EmblaCarousel(props) {
         if (!intervalId) {
           setIntervalId(setInterval(() => {
             emblaApi.scrollNext();
-          }, 5000));
+          }, 6000));
         }
         break;
       default:
@@ -73,18 +73,18 @@ export default function EmblaCarousel(props) {
 ];
 
     return (
-
-        <div className="relative h-screen md:p-5">
+      //here is where i can fix the height for the mobile//
+        <div className="relative h-screen ">
           <div className=" w-full h-full overflow-hidden" ref={emblaRef}>
             <div className="flex h-full ml-[-0.25rem]">
               {images.map((slide, index) => (
-                <div className="w-screen flex-none h-3/4 top-20 relative ml-0.25-rem" key={index}>
+                <div className="w-full flex-none h-3/4 top-20 relative ml-0.25-rem" key={index}>
                    {slide.type === 'image' ? (
                   <Image 
                     src={images[index].src}
                     alt={`Slide ${index + 1}`}
                     priority={true}
-                    quality={85}   
+                    quality={95}   
                     fill
                     className='absolute z-10 object-contain md:object-cover md:object-center'
                   />

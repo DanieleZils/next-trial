@@ -4,7 +4,7 @@ import YouTube from 'react-youtube';
 import { FaYoutube } from 'react-icons/fa';
 import Image from 'next/image';
 import anothermedia from 'public/anothermedia.png';
-import mediah from 'public/mediah.jpg';
+
 
 
 export default function Media() {
