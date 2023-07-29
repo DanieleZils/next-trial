@@ -14,15 +14,15 @@ export default function CommunityEngagement() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 my-16 ">
             <div className="relative flex flex-col md:flex-row">
             <Image src={image1} alt="violinsofhope" priority={true} quality={75} className='w-full md:w-1/2 h-60 md:h-[600px] object-contain'/>
-            <p className="font-medium text-sm md:text-base py-5 mb-5 md:mb-0 md:mt-32 leading-relaxed text-center w-full md:w-1/2 md:px-12"> I am deeply passionate about community engagement, 
+            <p className=" px-6 font-medium text-sm md:text-base py-5 md:mb-0 md:mt-32 leading-relaxed text-center w-full md:w-1/2 md:px-12"> I am deeply passionate about community engagement, 
             frequently performing at community venues and engaging with the community in meaningful ways. I have organized and performed concerts at addiction recovery centers, 
             veteran homes, breweries, museums, libraries, retirement centers, prisons, hospitals, baseball stadiums, places of worship, and Early Head Start programs among others.
              I strongly believe that presenting concerts to audiences who may not have access to traditional concert spaces is the key to breaking down racial, economic, 
              and cultural barriers in our community.</p>
             </div>
           </div>
-          <h1 className="text-center text-xl md:text-4xl font-bold  py-5 px-6 md:px-0 bg-black bg-opacity-50 text-white"></h1>
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 md:my-10 flex flex-col md:flex-col sm:flex-col lg:flex-row lg:space-y-0 lg:space-x-1">
+          <span className="block h-2 my-12 mx-auto w-1/3 bg-gradient-to-r from-slate-400 via-slate-900 to-maroon"></span>
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 md:my-10 flex flex-col md:flex-col sm:flex-col lg:flex-row lg:space-y-0 lg:space-x-1">
             <div className="flex-1 relative w-full top-10 md:top-0">
                 <Image src={vohshadows} alt="stairs" priority={true} quality={75} className='w-full md:h-full mb-8 object-contain lg:object-cover '/>
             </div>
@@ -46,10 +46,15 @@ export default function CommunityEngagement() {
                         <p className='text-sm  leading-relaxed'>In Harmony: The Complementary Musical Tales of the Brockton Symphony Orchestra, Sharon Civic Orchestra, and Sharon Community Chamber Orchestra. Buy your copy today!
                         </p>
                         <a href="https://www.amazon.com/Harmony-Complementary-Brockton-Orchestra-Community/dp/1627343830" target="_blank" rel="noreferrer" className='text-sm md:text-base font-medium text-maroon'>Learn More!</a>
+                        
                   </div>
+                  
                 </div>
+
               </div>
+              
            </div>
+           <span className="block h-2 my-12 mx-auto w-1/3 bg-gradient-to-r from-slate-400 via-slate-900 to-maroon"></span>
     </div>
     
   )

@@ -11,7 +11,6 @@ import Thumb from './thumb.jsx';
 export default function EmblaCarousel(props) {
   const { slides, options } = props;
   const [emblaRef, emblaApi] = useEmblaCarousel(options);
-  const [intervalId, setIntervalId] = useState(null);
   const [selectedIndex, setSelectedIndex] = useState(0);
 
   useEffect(() => {
@@ -30,36 +29,22 @@ export default function EmblaCarousel(props) {
 
   useEffect(() => {
     if (emblaApi) {
-      setIntervalId(setInterval(() => {
+      const intervalId = setInterval(() => {
         emblaApi.scrollNext();
-      }, 6000));
-    }
+      }, 6000);
 
-    return () => {
-      if (intervalId) clearInterval(intervalId);
-    };
+      return () => clearInterval(intervalId);
+    }
   }, [emblaApi]);
 
   const onPlayerStateChange = useCallback((event) => {
-    switch(event.data) {
-      case 1:  // The video started playing
-        if (intervalId) {
-          clearInterval(intervalId);
-          setIntervalId(null);
-        }
-        break;
-      case 0:  // The video ended
-      case 2:  // The video is paused
-        if (!intervalId) {
-          setIntervalId(setInterval(() => {
-            emblaApi.scrollNext();
-          }, 6000));
-        }
-        break;
-      default:
-        break;
+    if (event.data === 1) {  // The video started playing
+      const intervalId = setInterval(() => {
+        emblaApi.scrollNext();
+      }, 6000);
+      clearInterval(intervalId);
     }
-  }, [intervalId, emblaApi]);
+  }, [emblaApi]);
 
  
 

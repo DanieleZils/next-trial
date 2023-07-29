@@ -23,7 +23,7 @@ export default function Home() {
             performs as a member of the MusicWorks Collective, teaches violin lessons, and actively participates
             and coordinates community engagement projects and initiatives.<br/> <br/> Becca received her Doctor of Musical
             Arts in Violin Performance at the University of Illinois at Urbana-Champaign where she studied with Meg
-            Freviogel of the Jupiter String Quartet and served as the Violin Teaching Assistant. Previously, Becca
+            Freivogel of the Jupiter String Quartet and served as the Violin Teaching Assistant. Previously, Becca
             studied with Violaine Melancon at the Schulich School of Music at McGill University and the Peabody
             Institute of Johns Hopkins University where she received her MM and BM in Violin Performance.<br/> <br/>
             Deeply passionate about chamber music, Becca has worked closely with members of the Juilliard,
