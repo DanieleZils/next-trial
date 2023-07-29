@@ -25,7 +25,7 @@ export default function Contact() {
         <div className="flex items-center md:h-screen justify-center bg-white">
             <div className="bg-white rounded-lg md:w-1/2 w-full flex flex-col sm:flex-row border-4 border-gray-300 shadow-xl p-2 mt-10 ">
                 <div className="w-full md:w-1/2 flex items-center justify-center ">
-                    <Image src={piano} alt="piano" priority={true} quality={85}className="max-w-full h-auto"/>
+                    <Image src={piano} alt="piano" priority={true} quality={75}className="max-w-full h-auto"/>
                 </div>
                 <form ref={form} onSubmit={sendEmail} className="w-full md:w-1/2 md:p-20">
                     <h1 className="md:text-3xl text-2xl pb-6 py-5 md:py-0">Let's Connect!</h1>
