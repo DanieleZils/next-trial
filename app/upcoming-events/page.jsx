@@ -1,3 +1,4 @@
+"use client";
 import Image from 'next/image';
 import event from "public/event.jpg"
 
@@ -9,11 +10,12 @@ export default function UpcomingEvents() {
                 <Image 
                     src={event} 
                     alt="Becca" 
-                    quality={95}
+                    quality={100}
                     fill
                     sizes="100vx"
                     priority={true}
-                    className="object-contain md:object-right w-full h-full md:h-screen md:fixed" 
+                    className="object-contain md:object-right w-full h-full md:h-screen md:fixed transition-opacity opacity-0 duration-[2s]"
+                    onLoadingComplete={(image)=> image.classList.remove("opacity-0")}
                     
                 />
                </div>

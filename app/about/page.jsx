@@ -1,3 +1,4 @@
+"use client";
 
 import Image from "next/image";
 import VoH from "/public/VoH.jpg";
@@ -12,7 +13,8 @@ export default function Home() {
           fill
           quality={75}
           priority = {true}
-          className="object-cover object-top w-full h-full" 
+          className="object-cover object-top w-full h-full transition-opacity opacity-0 duration-[2s]" 
+          onLoadingComplete={(image)=> image.classList.remove("opacity-0")}
           />
           </div>
           <div className="relative md:grid md:grid-cols-1 min-h-screen mx-14 md:mt-0">

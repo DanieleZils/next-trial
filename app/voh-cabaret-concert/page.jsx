@@ -33,7 +33,8 @@ export default function VohCabaretConcert() {
                     quality={75}
                     sizes="100vw"
                     fill
-                    className="object-cover object-center w-full h-full"
+                    className="object-cover object-center w-full h-full transition-opacity opacity-0 duration-[2s]"
+                    onLoadingComplete={(image) => image.classList.remove('opacity-0')}
                 />
             </div>
         </div>

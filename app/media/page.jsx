@@ -35,8 +35,9 @@ export default function Media() {
                 fill
                 quality={95}
                 sizes="100vx"
-                className="object-cover object-top w-full h-full" 
+                className="object-cover object-top w-full h-full transition-opacity opacity-0 duration-[2s]" 
                 priority={true}
+                onLoadingComplete={(image)=> image.classList.remove("opacity-0")}
               />
             </div>
             </div>
