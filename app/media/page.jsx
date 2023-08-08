@@ -4,11 +4,20 @@ import YouTube from 'react-youtube';
 import { FaYoutube } from 'react-icons/fa';
 import Image from 'next/image';
 import anothermedia from 'public/anothermedia.png';
+import { useEffect, useRef } from 'react';
 
 
 
 export default function Media() {
 
+  const contentRef = useRef(null);
+
+    useEffect(() => {
+        const contentEl = contentRef.current;
+        if(contentEl){
+            contentEl.classList.remove("opacity-0");
+        }
+    },[]);
     
 
     const videoOptions = {
@@ -26,7 +35,7 @@ export default function Media() {
     ]
 
     return (
-        <div className="relative md:grid md:grid-cols-1 min-h-screen bg-white">
+        <div ref={contentRef} className="relative md:grid md:grid-cols-1 min-h-screen bg-white transition-opacity opacity-0 duration-[3s]">
           <div className='md:fixed inset-0'> 
             <div className="relative top-20 w-full h-64 md:h-screen">
               <Image 

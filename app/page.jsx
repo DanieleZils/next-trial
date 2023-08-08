@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import homepic from "../public/homepic-2.jpg";
 import homepicmobile from "../public/homepic-mobile.jpg"
@@ -8,6 +8,15 @@ import Typewriter from 'typewriter-effect';
 
 export default function Home() {
   const [windowWidth, setWindowWidth] = useState(null);
+
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+      const contentEl = contentRef.current;
+      if(contentEl){
+          contentEl.classList.remove("opacity-0");
+      }
+  },[]);
 
   useEffect(() => {
     function handleResize() {
@@ -25,7 +34,7 @@ export default function Home() {
 
 
   return (
-    <main className="relative w-full h-screen">
+    <main ref={contentRef} className="relative w-full h-screen transition-opacity opacity-0 duration-[2s]">
         <style>{`
         .hidden-large {
             display: none;

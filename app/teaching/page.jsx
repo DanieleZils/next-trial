@@ -4,33 +4,28 @@ import Teachingbecca from 'public/Teachingbecca.png';
 import smallert from 'public/smallert.jpg';
 import smallerstairs from 'public/smallerstairs.jpg';
 import fixed from "public/fixed.jpg";
-
+import { useEffect, useRef } from 'react';
 
 
 
 export default function Teaching() {
 
+    const contentRef = useRef(null);
+
+    useEffect(() => {
+        const contentEl = contentRef.current;
+        if(contentEl){
+            contentEl.classList.remove("opacity-0");
+        }
+    },[]);
+
     return (
-        <div className="relative w-full bg-white min-h-screen flex flex-col">
-        {/* <div className='inset-0'>
-            <div className="relative w-full h-72 top-20 md:h-screen">
-                <Image
-                    src={porta}
-                    alt="violinsofhope"
-                    placeholder='blur'
-                    priority={true}
-                    quality={75}
-                    sizes="100vw"
-                    fill
-                    className="object-cover object-top w-full h-full"
-                />
-            </div>
-        </div> */}
+        <div ref={contentRef} className="relative w-full bg-white min-h-screen flex flex-col transition-opacity opacity-0 duration-[2s]">
         <h1 className="text-center text-xl md:text-4xl font-bold mt-20 py-5 px-6 md:px-0 bg-black bg-opacity-50 text-white">Teaching Philosophy</h1>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 grid grid-cols-1 md:grid-cols-12 gap-0 my-2 md:my-2 md:px-12 ">
             <div className="order-2 md:order-1 md:col-span-6 relative flex flex-col">
             <Image src={fixed} alt="violinsofhope" priority={true} quality={90} sizes="100vw" className='w-full object-contain h-60 md:h-[400px] mb-8 order-3 md:order-1'/>
-            <p className="font-medium text-sm left-0 py-2 mb-5 md:mb-0 px-6 leading-5 md:text-justify text-center order-2 md:order-1"> I take the time to set up personal meetings with my students before they begin their studies and discuss 
+            <p className="font-medium text-sm left-0 py-2 mb-5 md:mb-0 px-6 leading-5 md:text-justify text-center order-3 md:order-1"> I take the time to set up personal meetings with my students before they begin their studies and discuss 
             their learning objectives and musical interests. Together we collaborate on choosing repertoire that interests and excites them. As a result, 
             I teach a wide variety of genres, composers from underrepresented backgrounds, and I am constantly learning new works alongside my students which I enjoy 
             immensely. Beyond studio lessons, 

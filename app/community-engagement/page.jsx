@@ -1,14 +1,24 @@
-
+'use client';
 import EmblaCarousel from '../carousel.jsx'; // adjust path as needed
 import Image from 'next/image.js';
 import image1 from 'public/image1.jpeg';
 import vohshadows from 'public/vohshadows.jpg';
+import { useEffect, useRef } from 'react';
 
 export default function CommunityEngagement() {
   const slides = Array.from({ length: 5 }, (_, index) => index); 
 
+  const contentRef = useRef(null);
+
+  useEffect(() => {
+      const contentEl = contentRef.current;
+      if(contentEl){
+          contentEl.classList.remove("opacity-0");
+      }
+  },[]);
+
   return (
-    <div className="relative w-ful min-h-screen flex flex-col">
+    <div ref={contentRef}className="relative w-ful min-h-screen flex flex-col transition-opacity opacity-0 duration-[2s] ">
         <EmblaCarousel slides={slides} />
         <h1 className="text-center text-xl md:text-4xl font-bold  py-5 px-6 md:px-0 bg-black bg-opacity-50 text-white">Community Engagement</h1>
         <div className="max-w-7xl mx-auto grid grid-cols-1 my-16 ">

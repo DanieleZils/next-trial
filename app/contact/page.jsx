@@ -1,5 +1,5 @@
 "use client";
-import React, {useRef, useState} from "react";
+import React, {useRef, useState, useEffect} from "react";
 import emailjs from "@emailjs/browser";
 import piano1 from "public/piano1.jpg";
 import Image from 'next/image';
@@ -7,6 +7,14 @@ import Image from 'next/image';
 export default function Contact() {
     const form = useRef();
     const [success, setSuccess] = useState(false);
+    const contentRef = useRef(null);
+
+    useEffect(() => {
+        const contentEl = contentRef.current;
+        if(contentEl){
+            contentEl.classList.remove("opacity-0");
+        }
+    },[]);
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -23,7 +31,7 @@ export default function Contact() {
     };
 
     return (
-        <div className="flex items-center min-h-screen justify-center bg-white">
+        <div ref={contentRef} className="flex items-center min-h-screen justify-center bg-white transition-opacity opacity-0 duration-[2s]">
             <div className="relative bg-white rounded-lg lg:w-1/2 w-full flex flex-col sm:flex-row border-4 border-gray-300 shadow-2xl p-2 mt-20">
                 <div className="w-full xl:w-1/2 flex items-center justify-center ">
                     <Image src={piano1} alt="piano" priority={true} quality={75}className="max-w-full h-full object-cover object-top"/>

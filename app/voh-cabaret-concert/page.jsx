@@ -7,8 +7,18 @@ import ballet from 'public/ballet.jpg';
 import beccarecital from 'public/beccarecital.jpg';
 import vohsmile from 'public/vohsmile.jpg';
 import end from 'public/end.jpg';
+import { useEffect, useRef } from 'react';
 
 export default function VohCabaretConcert() {
+
+    const contentRef = useRef(null);
+
+    useEffect(() => {
+        const contentEl = contentRef.current;
+        if(contentEl){
+            contentEl.classList.remove("opacity-0");
+        }
+    },[]);
 
 
     const videoOptions = {
@@ -22,7 +32,7 @@ export default function VohCabaretConcert() {
 
     const videoId = "Wiv3d5C9Ng4"
     return (
-        <div className="relative bg-white min-h-screen flex flex-col">
+        <div ref={contentRef}className="relative bg-white min-h-screen flex flex-col transition-opacity opacity-0 duration-[2s]">
         <div className='inset-0'>
             <div className="relative w-full h-72 md:h-screen">
                 <Image
