@@ -2,8 +2,19 @@
 
 import Image from "next/image";
 import VoH from "/public/VoH.jpg";
+import { useEffect, useRef } from "react";
 
 export default function Home() {
+
+  const contentRef = useRef(null);
+
+    useEffect(() => {
+        const contentEl = contentRef.current;
+        if (contentEl) {
+            contentEl.classList.remove("opacity-0");
+        }
+    }, []);
+
   return (
     <main className="relative md:grid md:grid-cols-1 min-h-screen bg-white">
         <div className="relative md:fixed inset-0 top-20 w-full h-64 md:h-full ">
@@ -17,7 +28,8 @@ export default function Home() {
           onLoadingComplete={(image)=> image.classList.remove("opacity-0")}
           />
           </div>
-          <div className="relative md:grid md:grid-cols-1 min-h-screen mx-14 md:mt-0">
+          <div  ref={contentRef}
+          className="relative md:grid md:grid-cols-1 min-h-screen mx-14 md:mt-0 transition-opacity opacity-0 duration-[3s]">
             <h1 className="font-semibold text-xl pt-32 px-2">Biography</h1>
             <div className="text-sm md:text-base max-w-lg pt-8">
             <p className="p-2 leading-relaxed md:font-medium text-justify md:text-left">

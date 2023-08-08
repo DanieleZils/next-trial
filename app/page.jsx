@@ -1,53 +1,85 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import homepic from "../public/homepic-2.jpg";
+import homepicmobile from "../public/homepic-mobile.jpg"
 import Typewriter from 'typewriter-effect';
 
 export default function Home() {
+  const [windowWidth, setWindowWidth] = useState(null);
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', handleResize);
+
+    handleResize();
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+
+
+
   return (
-    <main className="relative w-full md:h-screen ">
-      <div className="inset-0 md:h-screen md:fixed">
-        <div className="relative top-20 w-full h-64 md:h-full">
-          < Image 
-          src={homepic} 
-          alt="Becca" 
-          fill
-          priority = {true}
-          quality={75}
-          className="object-cover object-top w-full h-full" 
-          />
-          <div className="absolute top-0 w-full h-full md:flex md:items-center md:justify-center">
-           <div className="text-black font-medium mx-4 mt-72 md:mt-0 text-center md:absolute text-lg md:text-4xl md:top-[40%] md:left-1/3 md:transform md:-translate-x-1/2 md:-translate-y-1/2 font-serif">
-            {/* <h1 className="font-medium font-serif">Performer • Teacher • Community Leader and Activist</h1> */}
-            <Typewriter
-              options={{
-                autoStart: true,
-                loop: true,
-              }}
-              onInit={(typewriter) => {
-                typewriter.typeString(' <span className="text-4xl">•</span> ')
-                  .typeString('Performer')
-                  .typeString(' <span className="text-4xl">•</span> ')
-                  .pauseFor(1500)
-                  .deleteAll()
-                  .typeString(' <span className="text-4xl">•</span> ')
-                  .typeString('Teacher')
-                  .typeString(' <span className="text-4xl">•</span> ')
-                  .pauseFor(1500)
-                  .deleteAll()
-                  .typeString(' <span className="text-4xl">•</span> ')
-                  .typeString('Community Leader and Activist')
-                  .typeString(' <span className="text-4xl">•</span> ')
-                  .pauseFor(1500)
-                  .start();
-                
-              }}
+    <main className="relative w-full h-screen">
+        <style>{`
+        .hidden-large {
+            display: none;
+        }
+
+        @media (max-width: 767px) {
+            .hidden-large {
+            display: block;
+            height: 2px;
+            }
+
+            .desktop-img {
+            display: none;
+            }
+
+            .mobile-bg {
+            background-color: rgba(0, 0, 0, 0.5);
+            }
+        }
+        `}</style>
+
+        <div className="fixed inset-0 h-full w-full overflow-hidden top-20">
+            {/* For Desktop */}
+            <Image
+                src={homepic}
+                alt="Becca"
+                className="object-cover object-top w-full h-full desktop-img"
             />
-          </div>
-          </div>
+            {/* For Mobile */}
+            <Image
+                src={homepicmobile}
+                alt="Becca"
+                className="object-cover object-top w-full h-full mobile-bg "
+            />
+            <div className={`absolute ${windowWidth > 767 ? 'top-[40%] left-1/3 transform -translate-x-1/2' : 'mobile-bg bottom-20 text-white p-2 text-xl'} w-full text-center text-black font-medium md:text-2xl xl:text-3xl font-serif`}>
+                <Typewriter
+                options={{
+                    autoStart: true,
+                    delay: 80,
+                }}
+                onInit={(typewriter) => {
+                    typewriter
+                    .typeString('Performer')
+                    .typeString(' <span className="text-4xl">•</span> ')
+                    .typeString('Teacher')
+                    .typeString(' <span className="text-4xl">•</span> ')
+                    .typeString('<span class="hidden-large"><br/></span>')
+                    .typeString('Community Leader & Activist')
+                    .pauseFor(200)
+                    .start();
+                }}
+                />
+            </div>
         </div>
-      </div>
     </main>
-  )
-}
+)
+              }

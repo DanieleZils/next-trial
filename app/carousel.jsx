@@ -59,7 +59,7 @@ export default function EmblaCarousel(props) {
 
     return (
       //here is where i can fix the height for the mobile//
-        <div className="relative h-screen ">
+        <div className="relative h-[800px] md:h-screen">
           <div className=" w-full h-full overflow-hidden" ref={emblaRef}>
             <div className="flex h-full ml-[-0.25rem]">
               {images.map((slide, index) => (
@@ -95,13 +95,13 @@ export default function EmblaCarousel(props) {
                   />
                    )}
                   <div className="absolute z-20 w-full h-full bg-black bg-opacity-20 flex items-end md:pb-10 justify-center text-white text-base text-center font-medium md:text-4xl md:p-8">
-                    <p>{images[index].description}</p>
+                    <p className="text-lg md:text-4xl">{images[index].description}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
-          <div className="absolute bottom-0 left-0 flex overflow-x-auto p-4 z-2 w-full justify-center">
+          <div className="absolute bottom-0 left-0 flex overflow-x-auto z-2 w-full justify-center ">
               {images.map((slide, index) => (
                 <Thumb
                   onClick={() => onThumbClick(index)}
@@ -109,6 +109,7 @@ export default function EmblaCarousel(props) {
                   index={index}
                   imgSrc={slide.thumbSrc || slide.src}
                   key={index}
+
                 />
               ))}
             </div>
