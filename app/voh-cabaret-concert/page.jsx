@@ -32,7 +32,7 @@ export default function VohCabaretConcert() {
 
     const videoId = "Wiv3d5C9Ng4"
     return (
-        <div ref={contentRef}className="relative bg-white min-h-screen flex flex-col transition-opacity opacity-0 duration-[2s]">
+        <div ref={contentRef}className="relative bg-white min-h-screen flex flex-col transition-opacity opacity-0 duration-[3s]">
         <div className='inset-0'>
             <div className="relative w-full h-72 md:h-screen">
                 <Image
@@ -48,31 +48,31 @@ export default function VohCabaretConcert() {
                 />
             </div>
         </div>
-        <h1 className="text-center text-lg md:text-3xl font-bold py-6 px-6 md:px-0 bg-black bg-opacity-50 text-white">Becca Kasdan's Violin of Hope Cabaret Concert</h1>
+        <h1 className="text-center text-lg md:text-3xl font-semibold md:py-8 py-5 px-6 md:px-0 bg-gradient-to-r from-slate-400 via-slate-900 to-maroon text-white shadow-2xl">Becca Kasdan's Violin of Hope Cabaret Concert</h1>
         <div className="w-full mx-auto px-4 sm:px-6  md:my-16 md:px-48 flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-2">
             <div className="order-2 md:order-1 flex-1">
-                <YouTube videoId={videoId} opts={videoOptions} className='w-full h-60 md:h-[500px] mb-8'/>
+                <YouTube videoId={videoId} opts={videoOptions} className='w-full h-60 md:h-[500px]'/>
             </div>
             <div className='order-1 md:order-2 flex-1'>
                 <div className="order-3 md:order-3 flex flex-col items-center h-full">
                     <iframe 
                         src="https://heyzine.com/flip-book/9b76a89d4b.html" 
                         title="Violins of Hope"
-                        className="w-full h-60 md:h-[500px]  my-8 md:my-0"
+                        className="w-full h-60 md:h-[500px] my-6 md:my-0"
                     />
                     <a href="https://heyzine.com/flip-book/9b76a89d4b.html" target="_blank" rel="noreferrer">
-                        <button className="bg-black text-white font-bold text-sm md:text-base mb-6 py-2 px-2 md:py-4 md:px-4 md:my-6 rounded-full transform hover:scale-110">Full Screen</button>
+                        <button className="bg-black text-white font-bold text-sm md:text-base mb-8 md:mb-0 py-2 px-2 md:py-4 md:px-4 md:my-6 rounded-full transform hover:scale-110">Full Screen</button>
                     </a>
                 </div>
             </div>
         </div>
-        <span className="block h-2 my-12 mx-auto w-1/3 bg-gradient-to-r from-slate-400 via-slate-900 to-maroon"></span>
-        <h1 className="text-center text-lg md:text-2xl font-bold py-6 px-6 md:px-0 bg-black bg-opacity-50 text-white">Imagining New Possibilities for Classical Music Performances in the 21 st -Century: <br/>Drawing
+        <span className="block h-2 my-8 mx-auto w-1/3 bg-black rounded-lg"></span>
+        <h1 className="text-center text-lg md:text-2xl font-semibold md:py-8 py-2 px-6 md:px-0 bg-gradient-to-r from-slate-300 via-slate-900 to-maroon text-white shadow-2xl">Imagining New Possibilities for Classical Music Performances in the 21 st -Century: <br/>Drawing
             Inspiration from the Berlin Cabarets of the Weimar Republic</h1>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 grid grid-cols-1 md:grid-cols-12 gap-0 my-2 md:my-2 ">
             <div className="order-2 md:order-1 md:col-span-7 relative">
                 <Image src={ensemble} alt="violinsofhope" priority={true} quality={75} className='w-full h-60 md:h-[400px] mb-8'/>
-                <p className="font-medium text-sm md:absolute left-0 py-2  px-6 leading-5 text-justify"> During my concert, I combined the most successful elements of the Berlin cabarets to
+                <p className="font-medium text-sm md:absolute left-0 py-2 md:px-6 leading-5 md:text-justify text-center"> During my concert, I combined the most successful elements of the Berlin cabarets to
                     reimagine an innovative format and performance practice for classical music concerts in the 21 st -century
                     that celebrates inclusivity and creativity in the arts. I collaborated with puppeteers, dancers, visual
                     artists, and musicians from Israel, Poland, Hungary, Norway, Austria, England, and the United States to
@@ -83,7 +83,7 @@ export default function VohCabaretConcert() {
             </div>
             <div className='order-1 md:order-2 md:col-span-5'>
             <div className="col-span-5 relative">
-            <p className="py-3 text-sm font-medium text-black md:px-6 text-justify ">
+            <p className="py-3 text-sm font-medium text-black md:px-6 md:text-justify text-center mb-8 ">
             On April 23, 2023 I presented a Violins of Hope Cabaret Concert, the culmination of my Doctoral
             performance and research. I performed this recital at the Spurlock Museum of World Cultures in
             Urbana, Illinois in collaboration with Avshalom Weinstein, co-founder of Violins of Hope. As featured in
@@ -96,7 +96,7 @@ export default function VohCabaretConcert() {
             art forms. 
             </p>
             </div> 
-                <div className="order-3 md:order-3 flex flex-col items-center">
+                <div className="order-1 md:order-3 flex flex-col items-center relative">
                 <Image src={beccarecital} alt="violinsofhope" priority={true} quality={75} className='w-full md:mb-8 my-2'/>
                     <a href="https://www.violins-of-hope.com/" target="_blank" rel="noreferrer">
                         <button className="bg-black text-white font-bold py-2 px-2 md:py-3 mb-4 text-sm md:text-base rounded-full transform hover:scale-110">Violins of Hope</button>
@@ -118,17 +118,17 @@ export default function VohCabaretConcert() {
                 />
             </div>
         </div>
-        <h1 className="text-center text-xl md:text-3xl font-bold py-6 bg-black bg-opacity-50 text-white">Testimonials</h1>
+        <h1 className="text-center text-xl md:text-3xl font-semibold md:py-8 py-5 px-6 md:px-0 bg-gradient-to-r from-slate-400 via-slate-900 to-maroon text-white">Testimonials</h1>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-2 grid grid-cols-1 md:grid-cols-12 gap-0 md:my-8">
             <div className="order-2 md:order-1 md:col-span-6 relative">
                 <Image src={vohsmile} alt="violinsofhope" priority={true} quality={75} className='w-full mb-8'/>
-                <p className="text-sm md:absolute left-0 px-6 font-medium md:px-8 text-justify md:my-16 py-4">“This has been the most extraordinary lecture/recital I have ever had the privilege to experience. The
+                <p className="text-sm md:absolute left-0 px-6 font-medium md:px-8 md:text-justify text-center md:my-16 py-4">“This has been the most extraordinary lecture/recital I have ever had the privilege to experience. The
                 presentation and performance of your work has truly changed what I know about and how I absorb
                 cabaret music.”</p>
             </div>
             <div className='order-1 md:order-2 md:col-span-6'>
             <div className="col-span-4 relative">
-            <p className="py-8 text-sm text-black md:pt-20 md:px-6 text-justify font-medium">
+            <p className="py-8 text-sm text-black md:pt-20 md:px-6 md:text-justify text-center font-medium mb-8">
             “This performance was the most impressive community-facing performance I have seen. It was
             the best of community engagement. Her integration of other art forms (dance, puppetry, and visual art)
             with musical performance reflected deep understanding of all these art forms. Her educational talks about
@@ -142,7 +142,7 @@ export default function VohCabaretConcert() {
                 </div>
             </div>
         </div>
-        <span className="block h-2 my-6 mx-auto w-1/3 bg-gradient-to-r from-slate-400 via-slate-900 to-maroon"></span>
+        <span className="block h-2 my-6 mx-auto w-1/3 bg-black rounded-lg"></span>
     </div>
 )
 }
