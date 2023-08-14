@@ -74,7 +74,7 @@ export default function Home() {
                 <Typewriter
                 options={{
                     autoStart: true,
-                    delay: 80,
+                    delay: 90,
                 }}
                 onInit={(typewriter) => {
                     typewriter

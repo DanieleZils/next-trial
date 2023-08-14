@@ -64,7 +64,7 @@ export default function Teaching() {
             </div>
             <div className='w-full flex-1 md:text-left text-center sm:order-2'>
                 <div className="flex flex-col h-full">
-                    <div className='py-8 px-'>
+                    <div className='py-8 px-4'>
                         <h3 className='text-base md:text-lg font-bold '>Community MusicWorks, Resident Musician - Providence, RI</h3>
                         <a href="https://communitymusicworks.org/" target="_blank" rel="noreferrer" className='text-sm md:text-base font-medium text-maroon'>Learn More!</a>
                         <h3 className='text-base md:text-lg font-bold py-4'>Summer Teaching:</h3>

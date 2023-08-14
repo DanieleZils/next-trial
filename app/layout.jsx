@@ -12,6 +12,7 @@ const raleway = Raleway({
 })
 
 export const metadata = {
+  metadataBase: 'https://beccakasdanviolin.com',
   title: 'Becca Kasdan',
   description: "Becca Kasdan's Website",
    icons: {
