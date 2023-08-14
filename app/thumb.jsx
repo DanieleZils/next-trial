@@ -23,7 +23,7 @@ const Thumb = ({ selected, imgSrc, index, onClick }) => {
           width={200}
           height={200}
         />
-        <div className="absolute top-5 md:top-1 right-1 rounded-full bg-white bg-opacity-70 sm:w-4 sm:h-4 md:w-6 md:h-6 w-2 h-2 flex items-center justify-center text-black text-sm md:text-base">
+        <div className="absolute top-5 md:top-1 right-1 rounded-full bg-white bg-opacity-70 sm:w-4 sm:h-4 md:w-6 md:h-6 w-2 h-2 flex items-center justify-center text-black text-xs md:text-base">
           <span>{index + 1}</span>
         </div>
       </button>

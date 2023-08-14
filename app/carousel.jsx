@@ -50,8 +50,8 @@ export default function EmblaCarousel(props) {
 
     // array of images
     const images = [ 
-      {type: 'image', src: "/image0.jpeg", description: "Portland Sea Dogs- National Anthem, Bowdoin International Music Festival"},
-      {type: 'image', src:"/image2.jpeg", description:"Panel Discussion with Midori- Community Engagement in the 21st Century"},
+      {type: 'image', src: "/image0.jpeg", description: "Portland Sea Dogs - National Anthem, Bowdoin International Music Festival"},
+      {type: 'image', src:"/image2.jpeg", description:"Panel Discussion with Midori - Community Engagement in the 21st Century"},
       {type: 'image', src:"/image3.jpeg", description:"Virginia Tech String Project Masterclass"},
       {type: 'image', src:"/image4.jpeg", description: "Virginia Tech String Project Masterclass"},
       {type: 'video', src:"tSYbrkM4sDA", thumbSrc: "https://img.youtube.com/vi/tSYbrkM4sDA/hqdefault.jpg", description: "Ukraine Benefit Concert"},
@@ -95,7 +95,7 @@ export default function EmblaCarousel(props) {
                   />
                    )}
                   <div className="absolute z-20 w-full h-full bg-black bg-opacity-20 flex items-end md:pb-10 justify-center text-white text-base text-center font-medium md:text-4xl md:p-8">
-                    <p className="text-lg md:text-4xl">{images[index].description}</p>
+                    <p className="text-base md:text-4xl">{images[index].description}</p>
                   </div>
                 </div>
               ))}

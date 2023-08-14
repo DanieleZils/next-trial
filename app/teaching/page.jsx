@@ -21,7 +21,7 @@ export default function Teaching() {
 
     return (
         <div ref={contentRef} className="relative w-full bg-white min-h-screen flex flex-col transition-opacity opacity-0 duration-[2s]">
-        <h1 className="text-center text-xl md:text-4xl font-bold mt-20 py-5 px-6 md:px-0 bg-black bg-opacity-50 text-white">Teaching Philosophy</h1>
+        <h1 className="text-center text-xl md:text-3xl font-semibold mt-20 md:py-8 py-5 px-6 md:px-0 bg-gradient-to-r from-slate-400 via-slate-900 to-maroon shadow-2xl text-white">Teaching Philosophy</h1>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 grid grid-cols-1 md:grid-cols-12 gap-0 my-2 md:my-2 md:px-12 ">
             <div className="order-2 md:order-1 md:col-span-6 relative flex flex-col">
             <Image src={fixed} alt="violinsofhope" priority={true} quality={90} sizes="100vw" className='w-full object-contain h-60 md:h-[400px] mb-8 order-3 md:order-1'/>
@@ -38,7 +38,7 @@ export default function Teaching() {
             </div>
             <div className='order-1 md:order-2 md:col-span-5'>
             <div className="col-span-6 relative">
-            <p className="py-3 text-sm px-6 font-medium text-black md:px-6 md:text-justify text-center ">
+            <p className="py-4 text-sm px-6 font-medium text-black md:px-6 md:text-justify text-center mb-2 md:mb-0">
             My goal as a teacher is to inspire each of my students to become their own teacher by developing as creative and thoughtful musicians. 
             I believe that communicating with students in a kind and respectful manner is of the utmost importance to foster a love of learning 
             and performing and to instill life-long practice skills. I urge my students to constantly be creative in their approach to practicing 
@@ -50,22 +50,22 @@ export default function Teaching() {
             </p>
             </div> 
                 <div className="order-1 md:order-3 flex flex-col items-center">
-                <Image src={Teachingbecca} alt="violinsofhope" priority={true} quality={90} sizes="100vw" className='w-full md:mb-6 my-16'/>
+                <Image src={Teachingbecca} alt="violinsofhope" priority={true} quality={90} sizes="100vw" className='w-full md:mb-8 my-16'/>
                     <a href="/contact" target="_blank" rel="noreferrer">
                         <button className="bg-black text-white font-bold py-2 px-4 md:py-4 mb-4 text-sm md:text-base rounded-full transform hover:scale-110">Contact</button>
                     </a>
                 </div>
             </div>
         </div>
-        <h1 className="text-center text-xl md:text-4xl font-bold py-5 px-6 md:px-0 bg-black bg-opacity-50 text-white">Upcoming and Previous Teaching</h1>
+        <h1 className="text-center text-xl md:text-3xl font-semibold md:py-8 py-5 px-6 md:px-0 bg-gradient-to-r from-slate-400 via-slate-900 to-maroon shadow-2xl text-white">Upcoming and Previous Teaching</h1>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:my-10 flex flex-col md:flex-col sm:flex-col lg:flex-row lg:space-y-0 lg:space-x-1">
             <div className="flex-1 relative w-full top-10 md:top-0">
                 <Image src={smallerstairs} alt="stairs" priority={true} quality={100} className='w-full md:h-full mb-8 object-contain lg:object-cover '/>
             </div>
             <div className='w-full flex-1 md:text-left text-center sm:order-2'>
                 <div className="flex flex-col h-full">
-                    <div className='py-8 px-6'>
-                        <h3 className='text-base md:text-lg font-bold '>Community MusicWorks, Resident Musician- Providence, RI</h3>
+                    <div className='py-8 px-'>
+                        <h3 className='text-base md:text-lg font-bold '>Community MusicWorks, Resident Musician - Providence, RI</h3>
                         <a href="https://communitymusicworks.org/" target="_blank" rel="noreferrer" className='text-sm md:text-base font-medium text-maroon'>Learn More!</a>
                         <h3 className='text-base md:text-lg font-bold py-4'>Summer Teaching:</h3>
                         <p className='text-sm '>Faculty at Easton Chamber Music Festival in Massachusetts:</p>
