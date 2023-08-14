@@ -3,6 +3,7 @@ import './globals.css'
 import { Raleway } from 'next/font/google'
 
 
+
 // const inter = Inter({ subsets: ['latin'] })
 
 const raleway = Raleway({
@@ -15,7 +16,15 @@ export const metadata = {
   description: "Becca Kasdan's Website",
    icons: {
     icon: '/favicon.ico',
-   }
+   },
+  openGraph : {
+    title : 'Becca Kasdan',
+    description : "Becca Kasdan's Website",
+    images : [
+        {url: 'https://beccakasdanviolin.com/homepic-2.jpg', width: 800, height: 600, alt: 'Becca Kasdan'}
+    ],
+    type: 'website',
+}
 }
 
 export default function RootLayout({ children }) {

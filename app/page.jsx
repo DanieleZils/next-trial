@@ -6,6 +6,7 @@ import homepic from "../public/homepic-2.jpg";
 import homepicmobile from "../public/homepic-mobile.jpg"
 import Typewriter from 'typewriter-effect';
 
+
 export default function Home() {
   const [windowWidth, setWindowWidth] = useState(null);
 
