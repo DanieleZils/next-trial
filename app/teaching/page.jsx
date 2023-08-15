@@ -11,6 +11,7 @@ import { useEffect, useRef } from 'react';
 export default function Teaching() {
 
     const contentRef = useRef(null);
+    //comentario
 
     useEffect(() => {
         const contentEl = contentRef.current;
