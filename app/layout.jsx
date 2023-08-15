@@ -13,14 +13,14 @@ const raleway = Raleway({
 
 export const metadata = {
   metadataBase: 'https://beccakasdanviolin.com',
-  title: 'Rebecca Kasdan',
-  description: "The Official Website of Violinist Rebecca Kasdan",
+  title: 'Becca Kasdan',
+  description: "Becca Kasdan's Official Website",
    icons: {
     icon: '/favicon.ico',
    },
   openGraph : {
-    title : 'Rebecca Kasdan',
-    description : "The Official Website of Violinist Rebecca Kasdan",
+    title : 'Becca Kasdan',
+    description : "Becca Kasdan's Official Website",
     images : [
         {url: 'https://beccakasdanviolin.com/homepic-2.jpg', width: 800, height: 600, alt: 'Becca Kasdan'}
     ],
