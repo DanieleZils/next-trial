@@ -22,7 +22,7 @@ export default function UpcomingEvents() {
                 <Image 
                     src={eventtwo} 
                     alt="Becca" 
-                    quality={100}
+                    quality={90}
                     fill
                     sizes="100vx"
                     priority={true}

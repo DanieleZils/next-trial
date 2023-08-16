@@ -32,7 +32,7 @@ export default function Home() {
           className="relative md:grid md:grid-cols-1 min-h-screen mx-14 md:mt-0 transition-opacity opacity-0 duration-[3s]">
             <h1 className="font-semibold text-xl pt-32 px-2">Biography</h1>
             <div className="text-sm md:text-base max-w-lg pt-8">
-            <p className="p-2 leading-relaxed md:font-medium text-left">
+            <p className="p-2 leading-relaxed md:font-medium text-left mb-10">
             Becca Kasdan is currently a Resident Musician at Community MusicWorks in Providence, RI where she
             performs as a member of the MusicWorks Collective, teaches violin lessons, and actively participates
             and coordinates community engagement projects and initiatives.<br/> <br/> Becca received her Doctor of Musical

@@ -67,12 +67,12 @@ export default function VohCabaretConcert() {
             </div>
         </div>
         <span className="block h-2 my-8 mx-auto w-1/3 bg-black rounded-lg"></span>
-        <h1 className="text-center text-lg md:text-2xl font-semibold md:py-10 py-2 px-6 md:px-0 bg-gradient-to-r from-slate-300 via-slate-900 to-maroon text-white shadow-2xl">Imagining New Possibilities for Classical Music Performances in the 21 st -Century: <br/>Drawing
+        <h1 className="text-center text-lg md:text-3xl font-semibold md:py-10 py-2 px-6 md:px-0 bg-gradient-to-r from-slate-300 via-slate-900 to-maroon text-white shadow-2xl">Imagining New Possibilities for Classical Music Performances in the 21 st -Century: <br/>Drawing
             Inspiration from the Berlin Cabarets of the Weimar Republic</h1>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 grid grid-cols-1 md:grid-cols-12 gap-0 my-2 md:my-2 ">
             <div className="order-2 md:order-1 md:col-span-7 relative">
                 <Image src={ensemble} alt="violinsofhope" priority={true} quality={75} className='w-full h-60 md:h-[400px] mb-8'/>
-                <p className="font-medium text-sm md:absolute left-0 py-2 md:px-6 leading-5 md:text-justify text-center"> During my concert, I combined the most successful elements of the Berlin cabarets to
+                <p className="font-medium text-sm md:absolute left-0 py-2 md:px-6 leading-5 md:text-justify text-center md:mt-10"> During my concert, I combined the most successful elements of the Berlin cabarets to
                     reimagine an innovative format and performance practice for classical music concerts in the 21 st -century
                     that celebrates inclusivity and creativity in the arts. I collaborated with puppeteers, dancers, visual
                     artists, and musicians from Israel, Poland, Hungary, Norway, Austria, England, and the United States to
@@ -122,7 +122,7 @@ export default function VohCabaretConcert() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-2 grid grid-cols-1 md:grid-cols-12 gap-0 md:my-8">
             <div className="order-2 md:order-1 md:col-span-6 relative">
                 <Image src={vohsmile} alt="violinsofhope" priority={true} quality={75} className='w-full mb-8'/>
-                <p className="text-sm md:absolute left-0 px-6 font-medium md:px-8 md:text-justify text-center md:my-16 py-4">“This has been the most extraordinary lecture/recital I have ever had the privilege to experience. The
+                <p className="text-sm md:absolute left-0 px-6 font-medium md:px-8 md:text-justify text-center md:my-16 py-4 md:mt-24">“This has been the most extraordinary lecture/recital I have ever had the privilege to experience. The
                 presentation and performance of your work has truly changed what I know about and how I absorb
                 cabaret music.”</p>
             </div>
