@@ -32,7 +32,7 @@ export default function Contact() {
 
     return (
         <div ref={contentRef} className="flex items-center min-h-screen justify-center bg-white transition-opacity opacity-0 duration-[2s]">
-            <div className="relative bg-white rounded-lg lg:w-1/2 w-full flex flex-col sm:flex-row border-4 border-gray-300 shadow-2xl p-2 mt-20">
+            <div className="relative bg-white rounded-lg lg:w-[70%] w-full flex flex-col sm:flex-row border-4 border-gray-300 shadow-2xl p-2 mt-20">
                 <div className="w-full xl:w-1/2 flex items-center justify-center ">
                     <Image src={piano1} alt="piano" priority={true} quality={75}className="max-w-full h-full object-cover object-top"/>
                 </div>

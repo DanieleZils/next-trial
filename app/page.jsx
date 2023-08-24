@@ -7,6 +7,8 @@ import homepicmobile from "../public/homepic-mobile.jpg"
 import Typewriter from 'typewriter-effect';
 
 
+
+
 export default function Home() {
   const [windowWidth, setWindowWidth] = useState(null);
 
@@ -63,18 +65,20 @@ export default function Home() {
                 src={homepic}
                 alt="Becca"
                 className="object-cover object-top w-full h-full desktop-img"
+                priority={true}
             />
             {/* For Mobile */}
             <Image
                 src={homepicmobile}
                 alt="Becca"
                 className="object-cover object-top w-full h-full mobile-bg "
+                priority={true}
             />
             <div className={`absolute ${windowWidth > 767 ? 'top-[40%] left-1/3 transform -translate-x-1/2' : 'mobile-bg bottom-20 text-white p-2 text-xl'} w-full text-center text-black font-medium md:text-2xl xl:text-3xl font-serif`}>
                 <Typewriter
                 options={{
                     autoStart: true,
-                    delay: 90,
+                    delay: 100,
                 }}
                 onInit={(typewriter) => {
                     typewriter
@@ -92,4 +96,4 @@ export default function Home() {
         </div>
     </main>
 )
-              }
+}

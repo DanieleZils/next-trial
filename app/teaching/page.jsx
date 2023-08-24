@@ -39,7 +39,7 @@ export default function Teaching() {
             </div>
             <div className='order-1 md:order-2 md:col-span-5'>
             <div className="col-span-6 relative">
-            <p className="py-4 text-sm px-6 font-medium text-black md:px-6 md:text-justify text-center mb-2 md:mb-0">
+            <p className="md:py-4 text-sm px-6 font-medium text-black md:px-6 md:text-justify text-center mb-2 md:mb-0">
             My goal as a teacher is to inspire each of my students to become their own teacher by developing as creative and thoughtful musicians. 
             I believe that communicating with students in a kind and respectful manner is of the utmost importance to foster a love of learning 
             and performing and to instill life-long practice skills. I urge my students to constantly be creative in their approach to practicing 
@@ -51,7 +51,7 @@ export default function Teaching() {
             </p>
             </div> 
                 <div className="order-1 md:order-3 flex flex-col items-center">
-                <Image src={Teachingbecca} alt="violinsofhope" priority={true} quality={90} sizes="100vw" className='w-full md:mb-8 my-16'/>
+                <Image src={Teachingbecca} alt="violinsofhope" priority={true} quality={90} sizes="100vw" className='w-full md:mb-8 my-6 md:my-16'/>
                     <a href="/contact" target="_blank" rel="noreferrer">
                         <button className="bg-black text-white font-bold py-2 px-4 md:py-4 mb-4 text-sm md:text-base rounded-full transform hover:scale-110">Contact</button>
                     </a>
