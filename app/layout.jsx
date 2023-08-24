@@ -31,9 +31,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={raleway.className} suppressHydrationWarning={true}>
-      <body className="flex flex-col min-h-screen">
+      <body className="grid grid-rows-layout-h-screen">
         <Navbar />
-        <div className='flex-grow'>
+        <div className='row-content'>
         {children}
         </div>
         <Footer hideOnMobile={true}/>

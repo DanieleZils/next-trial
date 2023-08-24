@@ -66,21 +66,26 @@ export default function Teaching() {
             <div className='w-full flex-1 md:text-left text-center sm:order-2'>
                 <div className="flex flex-col h-full">
                     <div className='py-8 px-4'>
-                        <h3 className='text-base md:text-lg font-bold '>Community MusicWorks, Resident Musician - Providence, RI</h3>
+                        <h3 className='text-base md:text-lg font-bold'>Community MusicWorks, Resident Musician - Providence, RI</h3>
                         <a href="https://communitymusicworks.org/" target="_blank" rel="noreferrer" className='text-sm md:text-base font-medium text-maroon'>Learn More!</a>
+                        <h3 className='text-base md:text-lg font-bold pt-4 '>Teaching Associate- Brown University</h3>
+                        <a href="https://music.brown.edu/" target="_blank" rel="noreferrer" className='text-sm md:text-base font-medium text-maroon'>Learn More!</a>
+                        
                         <h3 className='text-base md:text-lg font-bold py-4'>Summer Teaching:</h3>
+                        <p className='text-sm '>Faculty- Rhode Island Philharmonic Summer Chamber Music Workshop:</p>
+                        <a href="https://www.riphil.org/music-school/summer-2023-workshops" target="_blank" rel="noreferrer" className='text-maroon text-sm md:text-sm'> http://eastonchambermusicfestival.org/index.html</a>
                         <p className='text-sm '>Faculty at Easton Chamber Music Festival in Massachusetts:</p>
-                        <a href="http://eastonchambermusicfestival.org/index.html" target="_blank" rel="noreferrer" className='text-maroon text-sm md:text-base'> http://eastonchambermusicfestival.org/index.html</a>
+                        <a href="http://eastonchambermusicfestival.org/index.html" target="_blank" rel="noreferrer" className='text-maroon text-sm md:text-sm'> http://eastonchambermusicfestival.org/index.html</a>
                         <p className='text-sm '>Faculty at Luzerne Music Center, Senior Session in New York:</p> 
-                        <a href="https://www.luzernemusic.org/" target="_blank" rel="noreferrer" className='text-maroon text-sm md:text-base'> https://www.luzernemusic.org</a>
+                        <a href="https://www.luzernemusic.org/" target="_blank" rel="noreferrer" className='text-maroon text-sm'> https://www.luzernemusic.org</a>
                         <h3 className='text-base md:text-lg font-bold py-4'> Previous Masterclasses and Lectures:</h3>
                         <p className='text-sm  leading-relaxed'>Virginia Tech (preparatory and collegiate), DePaul University School of Music, Tonebase Violin (sightreading skills and tips).
                         <br/>I have lectured on String Quartet Pedagogy in Higher Education at the Paul Rolland String Pedagogy Workshop (2021) and the American String Teacher’s Association (ASTA) National Conference (2022). I received my Level 1 Rolland Certification in 2021.
                         <br/>I am also available for Public Speaking Workshops for Presenting Music in Community Settings. Past masterclasses have been given at the University of Illinois Urbana-Champaign and for the Peabody String Sinfonia in Baltimore, MD.
                         </p>
                         <h3 className='text-base md:text-lg font-bold py-4'> Previous Teaching: </h3>
-                        <p className='text-sm '>Core Teaching Artist at Apollo’s Fire-Cleveland Baroque Orchestra: Matteson, IL Side-by-Side Program:
-                            <br/>Taught elementary beginner group string classes (violin, viola, cello) and high school string students;
+                        <p className='text-base font-bold '>Core Teaching Artist at Apollo’s Fire-Cleveland Baroque Orchestra, Matteson, IL Side-by-Side Program:</p>
+                            <p className='text-sm'><br/>Taught elementary beginner group string classes (violin, viola, cello) and high school string students;
                             <br/> Performed in side-by-side concerts with students;
                             <br/>Designed elementary school curriculum.
                         </p>

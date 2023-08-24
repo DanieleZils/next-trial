@@ -17,6 +17,14 @@
    
   }
 }
+.grid-rows-layout {
+  grid-template-rows: auto 1fr auto;
+}
+
+.row-content {
+  overflow-y: auto; /* This allows scrolling if content exceeds viewport */
+}
+
 
 
 .navbar{
