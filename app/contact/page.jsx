@@ -8,6 +8,7 @@ export default function Contact() {
     const form = useRef();
     const [success, setSuccess] = useState(false);
     const contentRef = useRef(null);
+    const [showMessage, setShowMessage] = useState(false); 
 
     useEffect(() => {
         const contentEl = contentRef.current;
@@ -24,6 +25,13 @@ export default function Contact() {
           .then((result) => {
             console.log("email sent", result.text);
             setSuccess(true);
+            setShowMessage(true);  // Show the message
+
+            setTimeout(() => {
+                setShowMessage(false);  // Hide the message after 5 seconds
+            }, 5000);
+
+
             form.current.reset();
           }, (error) => {
             console.log("error sending", error.text);
@@ -51,7 +59,7 @@ export default function Contact() {
                         <textarea name="message" className="border-2 border-gray-300 p-2 rounded-md w-full h-32 resize-none focus:outline-none focus:ring-2 focus:ring-maroon" />
                     </div>
                     <input type="submit" value="Send" className="bg-maroon hover:bg-red-700 text-white font-medium py-2 px-4 rounded-md cursor-pointer" />
-                    {success && (
+                    {success && showMessage &&(
                     <div className="bg-maroon text-white px-4 py-2 rounded-md absolute left-0 right-0 top-full mt-2 text-center">
                         Your message has been sent!
                     </div>
