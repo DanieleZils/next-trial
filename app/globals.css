@@ -25,10 +25,9 @@
   overflow-y: auto; /* This allows scrolling if content exceeds viewport */
 }
 
-
-
 .navbar{
 
   background-color: whitesmoke;
-
 }
+
+

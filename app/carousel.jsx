@@ -50,9 +50,9 @@ export default function EmblaCarousel(props) {
 
     // array of images
     const images = [ 
+      {type: 'image', src:"/musicWorks.jpg", description:"MusicWorks Collective, Community MusicWorks"},
       {type: 'image', src: "/image0.jpeg", description: "Portland Sea Dogs - National Anthem, Bowdoin International Music Festival"},
       {type: 'image', src:"/image2.jpeg", description:"Panel Discussion with Midori - Community Engagement in the 21st Century"},
-      {type: 'image', src:"/image3.jpeg", description:"Virginia Tech String Project Masterclass"},
       {type: 'image', src:"/image4.jpeg", description: "Virginia Tech String Project Masterclass"},
       {type: 'video', src:"tSYbrkM4sDA", thumbSrc: "https://img.youtube.com/vi/tSYbrkM4sDA/hqdefault.jpg", description: "Ukraine Benefit Concert"},
 ];
