@@ -57,7 +57,7 @@ export default function UpcomingEvents() {
                         <p className='font-medium text-base pb-2'>October 26, 7 PM </p>
                         <p className='font-medium text-sm pb-2'>Dora Pejačević Violin Sonata No. 1 in D major, Op. 26. With Pianist Andrei Baumann<br/>
                         Location : Music Mansion, 88 Meeting St. Providence, RI 02906</p>
-                           <a href="https://communitymusicworks.org/" className='font-bold hover:text-maroon'>Learn More</a>
+                        <a href="https://www.eventbrite.com/e/sonata-series-event-1-tickets-732842019207?aff=oddtdtcreator" className='font-bold hover:text-maroon'>Purchase Tickets Here</a>
                     </div>
                     <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
                         <h3 className="font-bold pb-2">Rhode Island Civic Chorale and Orchestra</h3>
