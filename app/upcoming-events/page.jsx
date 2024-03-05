@@ -35,22 +35,21 @@ export default function UpcomingEvents() {
             <div ref={contentRef}
             className="relative p-8 py-24 md:px-12 md:py-24 md:absolute md:inset-0 md:z-10 md:bg-transparent md:mb-10 transition-opacity opacity-0 duration-[2s]">
                 <h2 className=" py-5 text-2xl font-semibold text-black md:text-black md:py-5 text-center md:text-left">Upcoming Events</h2>
+                <h2 className=" pb-2 text-2xl font-semibold text-black md:text-black text-center md:text-left">2024</h2>
+                <div className='md:text-black md:text-left space-y-6'>
+                    {/* Replace these divs with your own event data */}
+                    <h3 className="font-bold pb-2">Coming up soon!</h3>
+                </div>
+                <h2 className=" py-5 text-2xl font-semibold text-black md:text-black md:py-5 text-center md:text-left">Past Events</h2>
                 <h2 className=" pb-2 text-2xl font-semibold text-black md:text-black text-center md:text-left">2023</h2>
                 <div className='md:text-black md:text-left space-y-6'>
                     {/* Replace these divs with your own event data */}
-                    <div className=" bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
-                        <h3 className="font-bold pb-2">Sonata Series with pianist, Andrei Bauman</h3>
-                        <p className='font-medium text-base pb-2'>Saturday, October 21, 3 PM </p>
-                        <p className='font-medium text-sm pb-2'>Dora Pejacevic Violin Sonata Op. 26<br/>
-                        Location : Unitarian Church Jamaica Plain,
-                        <br/> 775 Centre St., Boston, MA 02130</p>
-                    </div>
+
                     <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
-                        <h3 className="font-bold pb-2">Sonata Series with pianist, Andrei Bauman</h3>
-                        <p className='font-medium text-base pb-2'>Tuesday, October 24, 7:30 PM </p>
-                        <p className='font-medium text-sm pb-2'>Dora Pejacevic Violin Sonata Op. 26<br/>
-                        Location : Laurelmead,  355 Blackstone Blvd, Providence, RI 02906
-                        <br/> *Private Concert</p>
+                        <h3 className="font-bold pb-2">Rhode Island Civic Chorale and Orchestra</h3>
+                        <p className='font-medium text-base pb-2'> November 18, 7 pm </p>
+                        <p className='font-medium text-sm pb-2'>Location : Church of St. Sebastian, Providence, RI 02096</p>
+                           <a href="https://ricco.org/spring-2021/" className='font-bold hover:text-maroon'>Learn More</a>
                     </div>
                     <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
                         <h3 className="font-bold pb-2">Community MusicWorks Sonata Series</h3>
@@ -59,23 +58,13 @@ export default function UpcomingEvents() {
                         Location : Music Mansion, 88 Meeting St. Providence, RI 02906</p>
                         <a href="https://www.eventbrite.com/e/sonata-series-event-1-tickets-732842019207?aff=oddtdtcreator" className='font-bold hover:text-maroon'>Purchase Tickets Here</a>
                     </div>
-                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
-                        <h3 className="font-bold pb-2">Rhode Island Civic Chorale and Orchestra</h3>
-                        <p className='font-medium text-base pb-2'> November 18, 7 pm </p>
-                        <p className='font-medium text-sm pb-2'>Location : Church of St. Sebastian, Providence, RI 02096</p>
-                           <a href="https://ricco.org/spring-2021/" className='font-bold hover:text-maroon'>Learn More</a>
+                    <div className=" bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">Sonata Series with pianist, Andrei Bauman</h3>
+                        <p className='font-medium text-base pb-2'>Saturday, October 21, 3 PM </p>
+                        <p className='font-medium text-sm pb-2'>Dora Pejacevic Violin Sonata Op. 26<br/>
+                        Location : Unitarian Church Jamaica Plain,
+                        <br/> 775 Centre St., Boston, MA 02130</p>
                     </div>
-                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
-                        <h3 className="font-bold pb-2">Rhode Island Civic Chorale and Orchestra</h3>
-                        <p className='font-medium text-base pb-2'> November 19, 3 pm </p>
-                        <p className='font-medium text-sm pb-2'>Location : St. James Church, Manville, RI 02096</p>
-                           <a href="https://ricco.org/spring-2021/" className='font-bold hover:text-maroon'>Learn More</a>
-                    </div>
-                </div>
-                <h2 className=" py-5 text-2xl font-semibold text-black md:text-black md:py-5 text-center md:text-left">Past Events</h2>
-                <h2 className=" pb-2 text-2xl font-semibold text-black md:text-black text-center md:text-left">2023</h2>
-                <div className='md:text-black md:text-left space-y-6'>
-                    {/* Replace these divs with your own event data */}
                     <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
                         <h3 className="font-bold pb-2">MusicWorks Collective Season Opening Concert</h3>
                         <p className='font-medium text-base pb-2'>September 8, 7 PM</p>
