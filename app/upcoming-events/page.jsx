@@ -38,16 +38,46 @@ export default function UpcomingEvents() {
                 <h2 className=" pb-2 text-2xl font-semibold text-black md:text-black text-center md:text-left">2024</h2>
                 <div className='md:text-black md:text-left space-y-6'>
                     {/* Replace these divs with your own event data */}
-                    <h3 className="font-bold pb-2">Coming up soon!</h3>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">MusicWorks Collective Providence Tour</h3>
+                        <p className='font-medium text-base pb-2'> April 6, 2:30 PM </p>
+                        <p className='font-medium text-sm pb-2'>Location : Providence Children’s Museum</p>
+                           <a href="https://communitymusicworks.org/events-calendar/" className='font-bold hover:text-maroon'>Learn More</a>
+                    </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">MusicWorks Collective End of Season Concerts</h3>
+                        <p className='font-medium text-base pb-2'>  June 8 & 9, TBD </p>
+                        <p className='font-medium text-sm pb-2'>Location : TBD</p>
+                           <a href="https://communitymusicworks.org/event/musicworks-collective-season-finale-concert/" className='font-bold hover:text-maroon'>Learn More</a>
+                    </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">Easton Chamber Music Festival Faculty Performances</h3>
+                        <p className='font-medium text-base pb-2'> June 21 & 22, 7:30 PM </p>
+                        <p className='font-medium text-sm pb-2'>Location : TBD</p>
+                           <a href="https://eastonchambermusicfestival.org/concerts.html" className='font-bold hover:text-maroon'>Learn More</a>
+                    </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">Luzerne Music Center Faculty Performances</h3>
+                        <p className='font-medium text-base pb-2'> July 26, August 2 & 9, 7:30 PM </p>
+                        <p className='font-medium text-sm pb-2'>Location : TBD</p>
+                           <a href="https://www.luzernemusic.org/2023-season" className='font-bold hover:text-maroon'>Learn More</a>
+                    </div>
+                    
                 </div>
                 <h2 className=" py-5 text-2xl font-semibold text-black md:text-black md:py-5 text-center md:text-left">Past Events</h2>
                 <h2 className=" pb-2 text-2xl font-semibold text-black md:text-black text-center md:text-left">2023</h2>
                 <div className='md:text-black md:text-left space-y-6'>
                     {/* Replace these divs with your own event data */}
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">Songs of Refuge Concert, Community MusicWorks</h3>
+                        <p className='font-medium text-base pb-2'> December 2, 7 PM </p>
+                        <p className='font-medium text-sm pb-2'>Location : Bell St Chapel, Providence, RI</p>
+                           <a href="https://communitymusicworks.org/event/musicworks-collective-and-guests-songs-of-refuge/" className='font-bold hover:text-maroon'>Learn More</a>
+                    </div>
 
                     <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
                         <h3 className="font-bold pb-2">Rhode Island Civic Chorale and Orchestra</h3>
-                        <p className='font-medium text-base pb-2'> November 18, 7 pm </p>
+                        <p className='font-medium text-base pb-2'> November 18, 7 PM </p>
                         <p className='font-medium text-sm pb-2'>Location : Church of St. Sebastian, Providence, RI 02096</p>
                            <a href="https://ricco.org/spring-2021/" className='font-bold hover:text-maroon'>Learn More</a>
                     </div>
