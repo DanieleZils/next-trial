@@ -40,8 +40,44 @@ export default function UpcomingEvents() {
                     {/* Replace these divs with your own event data */}
                     <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
                         <h3 className="font-bold pb-2">MusicWorks Collective Providence Tour</h3>
+                        <p className='font-medium text-base pb-2'> April 2, 11 AM </p>
+                        <p className='font-medium text-base pb-2'> Works by: William Grant Still, Jose Elizondo, and more! </p>
+                        <p className='font-medium text-sm pb-2'>Location : John Hope Settlement House, Providence RI <br></br> Private Concert </p>
+                           <a href="https://communitymusicworks.org/events-calendar/" className='font-bold hover:text-maroon'>Learn More</a>
+                    </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">MusicWorks Collective Providence Tour</h3>
+                        <p className='font-medium text-base pb-2'> April 3, 1 PM </p>
+                        <p className='font-medium text-base pb-2'> Works by: William Grant Still, Jose Elizondo, and more! </p>
+                        <p className='font-medium text-sm pb-2'>Location : The Providence Athenaeum, 251 Benefit St, Providence, RI 02903 <br></br> Open to the public, no reservations or tickets required</p>
+                           <a href="https://communitymusicworks.org/events-calendar/" className='font-bold hover:text-maroon'>Learn More</a>
+                    </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">MusicWorks Collective Providence Tour</h3>
+                        <p className='font-medium text-base pb-2'> April 4, 1 PM </p>
+                        <p className='font-medium text-base pb-2'> Works by: William Grant Still, Jose Elizondo, and more! </p>
+                        <p className='font-medium text-sm pb-2'>Location : Rhode Island Free Clinic, Providence RI <br></br> Private Concert</p>
+                           <a href="https://communitymusicworks.org/events-calendar/" className='font-bold hover:text-maroon'>Learn More</a>
+                    </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">MusicWorks Collective Providence Tour</h3>
+                        <p className='font-medium text-base pb-2'> April 5, 5:30 PM </p>
+                        <p className='font-medium text-base pb-2'> Works by: William Grant Still, Jose Elizondo, and more! </p>
+                        <p className='font-medium text-sm pb-2'>Location : Community MusicWorks Phase II, Providence RI <br></br> Private Concert</p>
+                           <a href="https://communitymusicworks.org/events-calendar/" className='font-bold hover:text-maroon'>Learn More</a>
+                    </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">MusicWorks Collective Providence Tour</h3>
                         <p className='font-medium text-base pb-2'> April 6, 2:30 PM </p>
-                        <p className='font-medium text-sm pb-2'>Location : Providence Children’s Museum</p>
+                        <p className='font-medium text-base pb-2'> Works by: William Grant Still, Jose Elizondo, and more! </p>
+                        <p className='font-medium text-sm pb-2'>Location : Providence Children's Museum, 100 South St, Providence, RI 02903 <br></br> Open to the public, museum admission required, all ages welcome</p>
+                           <a href="https://communitymusicworks.org/events-calendar/" className='font-bold hover:text-maroon'>Learn More</a>
+                    </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">MusicWorks Collective Providence Tour</h3>
+                        <p className='font-medium text-base pb-2'> April 6, 5 PM </p>
+                        <p className='font-medium text-base pb-2'> Works by: William Grant Still, Jose Elizondo, and more! </p>
+                        <p className='font-medium text-sm pb-2'>Location : The Avery, 18 Luongo Square, Providence, RI 02903 <br></br> Public, no tickets required, 21+</p>
                            <a href="https://communitymusicworks.org/events-calendar/" className='font-bold hover:text-maroon'>Learn More</a>
                     </div>
                     <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">

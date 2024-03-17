@@ -48,7 +48,7 @@ export default function VohCabaretConcert() {
                 />
             </div>
         </div>
-        <h1 className="text-center text-lg md:text-3xl font-semibold md:py-8 py-5 px-6 md:px-0 bg-gradient-to-r from-slate-400 via-slate-900 to-maroon text-white shadow-2xl">Becca Kasdan's Violin of Hope Cabaret Concert</h1>
+        <h1 className="text-center text-lg md:text-3xl font-semibold md:py-8 py-5 px-6 md:px-0 bg-gradient-to-r from-slate-400 via-slate-900 to-maroon text-white shadow-2xl">Becca Kasdan's Violins of Hope Cabaret Concert</h1>
         <div className="w-full mx-auto px-4 sm:px-6  md:my-16 md:px-48 flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-2">
             <div className="order-2 md:order-1 flex-1">
                 <YouTube videoId={videoId} opts={videoOptions} className='w-full h-60 md:h-[500px]'/>
