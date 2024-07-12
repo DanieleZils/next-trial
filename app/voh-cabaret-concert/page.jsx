@@ -1,12 +1,6 @@
 'use client';
 import YouTube from 'react-youtube';
 import Image from 'next/image';
-import vohprincipal from 'public/vohprincipal.jpg';
-import ensemble from 'public/ensemble.jpg';
-import ballet from 'public/ballet.jpg';
-import beccarecital from 'public/beccarecital.jpg';
-import vohsmile from 'public/vohsmile.jpg';
-import end from 'public/end.jpg';
 import { useEffect, useRef } from 'react';
 
 export default function VohCabaretConcert() {
@@ -36,11 +30,10 @@ export default function VohCabaretConcert() {
         <div className='inset-0'>
             <div className="relative w-full h-72 md:h-screen">
                 <Image
-                    src={vohprincipal}
+                    src="/vohprincipal.jpg"
                     alt="violinsofhope"
-                    placeholder='blur'
                     priority={true}
-                    quality={75}
+                    quality={90}
                     sizes="100vw"
                     fill
                     className="object-cover object-center w-full h-full transition-opacity opacity-0 duration-[2s]"
@@ -71,7 +64,7 @@ export default function VohCabaretConcert() {
             Inspiration from the Berlin Cabarets of the Weimar Republic</h1>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-4 grid grid-cols-1 md:grid-cols-12 gap-0 my-2 md:my-2 ">
             <div className="order-2 md:order-1 md:col-span-7 relative">
-                <Image src={ensemble} alt="violinsofhope" priority={true} quality={75} className='w-full h-60 md:h-[400px] mb-8'/>
+                <Image src="/ensemble.jpg" alt="violinsofhope" priority={true} quality={90} width={500} height={500} className='w-full h-60 md:h-[400px] mb-8'/>
                 <p className="font-medium text-sm md:absolute left-0 py-2 md:px-6 leading-5 md:text-justify text-center md:mt-10"> During my concert, I combined the most successful elements of the Berlin cabarets to
                     reimagine an innovative format and performance practice for classical music concerts in the 21 st -century
                     that celebrates inclusivity and creativity in the arts. I collaborated with puppeteers, dancers, visual
@@ -97,7 +90,7 @@ export default function VohCabaretConcert() {
             </p>
             </div> 
                 <div className="order-1 md:order-3 flex flex-col items-center">
-                <Image src={beccarecital} alt="violinsofhope" priority={true} quality={75} className='w-full md:mb-8 my-2'/>
+                <Image src='/beccarecital.jpg' alt="violinsofhope" priority={true} quality={90} width={500} height={500} className='w-full md:mb-8 my-2'/>
                     <a href="https://www.violins-of-hope.com/" target="_blank" rel="noreferrer">
                         <button className="bg-black text-white font-bold py-2 px-2 md:py-3 mb-4 text-sm md:text-base rounded-full transform hover:scale-110">Violins of Hope</button>
                     </a>
@@ -107,11 +100,10 @@ export default function VohCabaretConcert() {
         <div className='inset-0'>
             <div className="relative w-full h-72 md:h-screen">
                 <Image
-                    src={ballet}
+                    src='/ballet.jpg'
                     alt="violinsofhopeballet"
-                    placeholder='blur'
                     priority={true}
-                    quality={75}
+                    quality={90}
                     sizes="100vw"
                     fill
                     className="object-cover object-center w-full h-full"
@@ -121,7 +113,7 @@ export default function VohCabaretConcert() {
         <h1 className="text-center text-xl md:text-3xl font-semibold md:py-8 py-5 px-6 md:px-0 bg-gradient-to-r from-slate-400 via-slate-900 to-maroon text-white">Testimonials</h1>
         <div className="max-w-6xl mx-auto px-4 sm:px-6 py-2 grid grid-cols-1 md:grid-cols-12 gap-0 md:my-8">
             <div className="order-2 md:order-1 md:col-span-6 relative">
-                <Image src={vohsmile} alt="violinsofhope" priority={true} quality={75} className='w-full mb-8'/>
+                <Image src="/vohsmile.jpg" alt="violinsofhope" priority={true} quality={75} width={500} height={500} className='w-full mb-8'/>
                 <p className="text-sm md:absolute left-0 px-6 font-medium md:px-8 md:text-justify text-center md:my-16 py-4 md:mt-24">“This has been the most extraordinary lecture/recital I have ever had the privilege to experience. The
                 presentation and performance of your work has truly changed what I know about and how I absorb
                 cabaret music.”</p>
@@ -138,7 +130,7 @@ export default function VohCabaretConcert() {
             </p>
             </div> 
                 <div className="order-3 md:order-3 flex flex-col items-center">
-                <Image src={end} alt="violinsofhope" priority={true} quality={75} className='w-full md:mt-16'/>
+                <Image src='/end.jpg' alt="violinsofhope" priority={true} quality={75} width={500} height={500} className='w-full md:mt-16'/>
                 </div>
             </div>
         </div>

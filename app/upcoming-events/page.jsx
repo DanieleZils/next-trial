@@ -1,6 +1,5 @@
 "use client";
 import Image from 'next/image';
-import eventtwo from "public/eventtwo.jpg"
 import { useEffect, useRef } from 'react';
 
 export default function UpcomingEvents() {
@@ -20,7 +19,7 @@ export default function UpcomingEvents() {
             <div className=' inset-0 md:fixed'>
               <div className="relative top-20 w-full h-64 md:h-screen">
                 <Image 
-                    src={eventtwo} 
+                    src="/eventtwo.jpg" 
                     alt="Becca" 
                     quality={90}
                     fill

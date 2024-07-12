@@ -3,7 +3,6 @@
 import YouTube from 'react-youtube';
 import { FaYoutube } from 'react-icons/fa';
 import Image from 'next/image';
-import anothermedia from 'public/anothermedia.png';
 import { useEffect, useRef } from 'react';
 
 
@@ -40,7 +39,7 @@ export default function Media() {
           <div className='md:fixed inset-0'> 
             <div className="relative top-20 w-full h-64 md:h-screen">
               <Image 
-                src={anothermedia} 
+                src="/anothermedia.png"
                 alt="Becca" 
                 fill
                 quality={95}

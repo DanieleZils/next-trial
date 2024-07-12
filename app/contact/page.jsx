@@ -1,7 +1,6 @@
 "use client";
 import React, {useRef, useState, useEffect} from "react";
 import emailjs from "@emailjs/browser";
-import piano1 from "public/piano1.jpg";
 import Image from 'next/image';
 
 export default function Contact() {
@@ -42,9 +41,9 @@ export default function Contact() {
         <div ref={contentRef} className="flex items-center min-h-screen justify-center bg-white transition-opacity opacity-0 duration-[2s]">
             <div className="relative bg-white rounded-lg lg:w-[70%] w-full flex flex-col sm:flex-row border-4 border-gray-300 shadow-2xl p-2 mt-20">
                 <div className="w-full xl:w-1/2 flex items-center justify-center ">
-                    <Image src={piano1} alt="piano" priority={true} quality={75}className="max-w-full h-full object-cover object-top"/>
+                    <Image src="/piano1.jpg" alt="piano" priority={true} quality={90} width={700} height={400} className="max-w-full h-full object-cover object-top"/>
                 </div>
-                <form ref={form} onSubmit={sendEmail} className="w-full xl:w-1/2 xl:p-10 lg:p-0 md:p-0 sm:p-0 flex flex-col justify-center">
+                <form ref={form} onSubmit={sendEmail} className="w-full xl:w-1/2 xl:p-10 lg:p-3 md:p-3 sm:p-2 flex flex-col justify-center">
                     <h1 className="md:text-3xl text-2xl pb-6 py-8 md:py-8">Let's Connect!</h1>
                     <div className="mb-4">
                         <label htmlFor="Name" className="block font-medium">Name </label>

@@ -1,8 +1,6 @@
 'use client';
 import EmblaCarousel from '../carousel.jsx'; // adjust path as needed
 import Image from 'next/image.js';
-import image1 from 'public/image1.jpeg';
-import vohshadows from 'public/vohshadows.jpg';
 import { useEffect, useRef } from 'react';
 
 export default function CommunityEngagement() {
@@ -22,9 +20,9 @@ export default function CommunityEngagement() {
         <EmblaCarousel slides={slides} />
         <h1 className="text-center text-xl md:text-4xl font-semibold md:py-8 py-5 px-6 md:px-0 bg-gradient-to-r from-slate-400 via-slate-900 to-maroon text-white mt-4">Community Engagement</h1>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:my-16 ">
-            <div className="relative flex flex-col md:flex-row">
-            <Image src={image1} alt="violinsofhope" priority={true} quality={75} className='w-full md:w-1/2 h-60 md:h-[600px] object-contain'/>
-            <p className=" px-6 font-medium text-sm md:text-base py-5 md:mb-0 md:mt-32 leading-relaxed text-center w-full md:w-1/2 md:px-12"> I am deeply passionate about community engagement, 
+            <div className="relative flex flex-col sm:flex-col md:flex-row">
+            <Image src="/image1.jpeg" alt="teaching" priority={true} quality={75} width={500} height={500} className='w-full md:w-[530px] h-90 px-5 py-5 md:h-[500px] lg:w-[830px] lg:h-[800px] object-contain '/>
+            <p className="px-6 font-medium text-sm md:text-base py-5 md:mb-0 md:mt-10 lg:mt-40 text-center w-full md:w-1/2"> I am deeply passionate about community engagement, 
             frequently performing at community venues and engaging with the community in meaningful ways. I have organized and performed concerts at addiction recovery centers, 
             veteran homes, breweries, museums, libraries, retirement centers, prisons, hospitals, baseball stadiums, places of worship, and Early Head Start programs among others.
              I strongly believe that presenting concerts to audiences who may not have access to traditional concert spaces is the key to breaking down racial, economic, 
@@ -34,9 +32,9 @@ export default function CommunityEngagement() {
           <span className="block h-2 md:my-10 mx-auto w-1/3 bg-gradient-to-r from-slate-400 via-slate-900 to-maroon"></span>
           <div className="max-w-6xl mx-auto px-4 sm:px-6 md:my-10 flex flex-col md:flex-col sm:flex-col lg:flex-row lg:space-y-0 lg:space-x-1">
             <div className="flex-1 relative w-full top-10 md:top-0">
-                <Image src={vohshadows} alt="stairs" priority={true} quality={75} className='w-full md:h-full mb-8 object-contain lg:object-cover '/>
+                <Image src="/vohshadows.jpg" alt="shadows" priority={true} quality={75} width={500} height={500} className='w-full md:h-full mb-8 object-contain lg:object-cover '/>
             </div>
-            <div className='w-full flex-1 md:text-left text-center sm:order-2'>
+            <div className='w-full flex-1 text-center sm:order-2 lg:w-1/2'>
                 <div className="flex flex-col h-full">
                     <div className='py-8 px-6'>
                         <h3 className='text-base md:text-lg font-bold '>Volunteer Musicians for the Arts, Board of Trustees (2020-present)</h3>

@@ -1,9 +1,5 @@
 'use client';
 import Image from 'next/image';
-import Teachingbecca from 'public/Teachingbecca.png';
-import smallert from 'public/smallert.jpg';
-import smallerstairs from 'public/smallerstairs.jpg';
-import fixed from "public/fixed.jpg";
 import { useEffect, useRef } from 'react';
 
 
@@ -25,7 +21,7 @@ export default function Teaching() {
         <h1 className="text-center text-xl md:text-3xl font-semibold mt-20 md:py-8 py-5 px-6 md:px-0 bg-gradient-to-r from-slate-400 via-slate-900 to-maroon shadow-2xl text-white">Teaching Philosophy</h1>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 grid grid-cols-1 md:grid-cols-12 gap-0 my-2 md:my-2 md:px-12 ">
             <div className="order-2 md:order-1 md:col-span-6 relative flex flex-col">
-            <Image src={fixed} alt="violinsofhope" priority={true} quality={90} sizes="100vw" className='w-full object-contain h-60 md:h-[400px] mb-8 order-3 md:order-1'/>
+            <Image src="/fixed.jpg" alt="violinsofhope" priority={true} quality={90} sizes="100vw" width={10} height={10} className='w-full object-contain h-60 md:h-[400px] mb-8 order-3 md:order-1'/>
             <p className="font-medium text-sm left-0 py-2 mb-5 md:mb-0 px-6 leading-5 md:text-justify text-center order-3 md:order-1"> I take the time to set up personal meetings with my students before they begin their studies and discuss 
             their learning objectives and musical interests. Together we collaborate on choosing repertoire that interests and excites them. As a result, 
             I teach a wide variety of genres, composers from underrepresented backgrounds, and I am constantly learning new works alongside my students which I enjoy 
@@ -51,7 +47,7 @@ export default function Teaching() {
             </p>
             </div> 
                 <div className="order-1 md:order-3 flex flex-col items-center">
-                <Image src={Teachingbecca} alt="violinsofhope" priority={true} quality={90} sizes="100vw" className='w-full md:mb-8 my-6 md:my-16'/>
+                <Image src="/Teachingbecca.png" alt="violinsofhope" priority={true} quality={90} sizes="100vw" width={10} height={10} className='w-full md:mb-8 my-6 md:my-16'/>
                     <a href="/contact" target="_blank" rel="noreferrer">
                         <button className="bg-black text-white font-bold py-2 px-4 md:py-4 mb-4 text-sm md:text-base rounded-full transform hover:scale-110">Contact</button>
                     </a>
@@ -61,7 +57,7 @@ export default function Teaching() {
         <h1 className="text-center text-xl md:text-3xl font-semibold md:py-8 py-5 px-6 md:px-0 bg-gradient-to-r from-slate-400 via-slate-900 to-maroon shadow-2xl text-white">Upcoming and Previous Teaching</h1>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 md:my-10 flex flex-col md:flex-col sm:flex-col lg:flex-row lg:space-y-0 lg:space-x-1">
             <div className="flex-1 relative w-full top-10 md:top-0">
-                <Image src={smallerstairs} alt="stairs" priority={true} quality={100} className='w-full md:h-full mb-8 object-contain lg:object-cover '/>
+                <Image src="/smallerstairs.jpg" alt="stairs" priority={true} quality={100} width={500} height={500} className='w-full md:h-full mb-8 object-contain lg:object-cover '/>
             </div>
             <div className='w-full flex-1 md:text-left text-center sm:order-2'>
                 <div className="flex flex-col h-full">
