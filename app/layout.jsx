@@ -2,6 +2,7 @@ import Navbar from './components/navbar'
 import './globals.css'
 import { Raleway } from 'next/font/google'
 import Footer from './components/footer';
+import {Analytics} from "@vercel/analytics/react"
 
 
 // const inter = Inter({ subsets: ['latin'] })
@@ -35,6 +36,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <div className='row-content'>
         {children}
+        <Analytics/>
         </div>
         <Footer hideOnMobile={true}/>
       </body>
