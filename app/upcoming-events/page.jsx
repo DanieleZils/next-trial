@@ -34,14 +34,84 @@ export default function UpcomingEvents() {
             <div ref={contentRef}
             className="relative p-8 py-24 md:px-12 md:py-24 md:absolute md:inset-0 md:z-10 md:bg-transparent md:mb-10 transition-opacity opacity-0 duration-[2s]">
                 <h2 className=" py-5 text-2xl font-semibold text-black md:text-black md:py-5 text-center md:text-left">Upcoming Events</h2>
-                <h2 className=" pb-2 text-2xl font-semibold text-black md:text-black text-center md:text-left">2024</h2>
+                <h2 className=" pb-2 text-2xl font-semibold text-black md:text-black text-center md:text-left">2024 - 2025</h2>
                 <div className='md:text-black md:text-left space-y-6'>
                     {/* Replace these divs with your own event data */}
                     <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
-                        <h3 className="font-bold pb-2">MusicWorks Collective End of Season Concerts</h3>
-                        <p className='font-medium text-base pb-2'>  June 8 & 9, TBD </p>
+                        <h3 className="font-bold pb-2">Community MusicWorks Grand Opening </h3>
+                        <p className='font-medium text-base pb-2'>New Commission by composer Wang Lu</p>
+                        <p className='font-medium text-base pb-2'>September 28, 2-7 PM </p>
+                        <p className='font-medium text-sm pb-2'>Location : 1326 Westminster Street, Providence</p>
+                           <a href="https://communitymusicworks.org/event/cmw-grand-opening-celebration/" className='font-bold hover:text-maroon'>Learn More</a>
+                    </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">Community MusicWorks Sonata Series Concert</h3>
+                        <p className='font-medium text-base pb-2'>Playing works by  Jesús García Leoz and Korngold with pianist Eliko Akahori</p>
+                        <p className='font-medium text-base pb-2'>October 17, 7 PM </p>
+                           <a href="https://communitymusicworks.org/event/sonata-series-event-1-2/" className='font-bold hover:text-maroon'>Learn More</a>
+                    </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">MusicWorks Collective in Concert</h3>
+                        <p className='font-medium text-base pb-2'>Works by Wang Lu, Jessie Montgomery, Josef Suk, Reena Esmail </p>
+                        <p className='font-medium text-sm pb-2'>October 27, 3 PM</p>
+                        <p className='font-medium text-sm pb-2'>Location: Lindemann Performing Arts Center, Brown University</p>
+                    </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">Bach Marathon</h3>
+                        <p className='font-medium text-base pb-2'>November 1, 7 PM</p>
+                        <p className='font-medium text-base pb-2'>Location: Manning Chapel, Brown University </p>
+                    </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">Violins of Hope Pre-Concert and Discussion</h3>
+                        <p className='font-medium text-base pb-2'>November 8, Following Shabbat Service</p>
+                        <p className='font-medium text-base pb-2'>Location: Temple Sinai, Sharon MA </p>
+                    </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">Violins of Hope Opening Concert</h3>
+                        <p className='font-medium text-base pb-2'>Works by Korngold, Robert Dauber, John Wiliams, Joseph Achron,<br></br> 
+                        Kurt Weill, Gershwin, Ignace Lilien with Pianist Andrei Baumann</p>
+                        <p className='font-medium text-base pb-2'>November 9, 7 PM</p>
+                        <p className='font-medium text-base pb-2'>Jewish Alliance of Greater Rhode Island</p>
+                        <p className='font-medium text-base pb-2'>Location: 401 Elmgrove Ave. Providence RI 02906</p>
+                    </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">MusicWorks Collective Concert</h3>
+                        <p className='font-medium text-base pb-2'>Featuring Jeremy Eicher's book, Time's Echo,<br></br>
+                        Works by Shostakovich, Britten, and Strauss</p>
+                        <p className='font-medium text-base pb-2'>January 25, 26 - Time TBD</p>
+                        <p className='font-medium text-base pb-2'>Location: 1326 Westminster St. Providence</p>
+                    </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">Mendelssohn Octet with the Isidore Quartet</h3>
+                        <p className='font-medium text-base pb-2'>March 15, Time TBD</p>
+                        <p className='font-medium text-base pb-2'>Location: 1326 Westminster St. Providence, RI </p>
+                    </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">MusicWorks Collective Concert</h3>
+                        <p className='font-medium text-base pb-2'>April 5 and 6, Time TBD</p>
+                        <p className='font-medium text-base pb-2'>Location: 1326 Westminster St. Providence, RI</p>
+                    </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">Korngold Suite for 2 violins, cello and piano, other chamber works TBA</h3>
+                        <p className='font-medium text-base pb-2'>April 26 and 27, Time TBD</p>
+                        <p className='font-medium text-base pb-2'>Location: Providence and Dedham/Falmouth MA</p>
+                    </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">MusicWorks Collective Season Finale concerts</h3>
+                        <p className='font-medium text-base pb-2'>Works by Tchaikovsky, Jennifer Higdon, and Nikos Skalkotas</p>
+                        <p className='font-medium text-base pb-2'>June 7 and 8, Time TBD</p>
+                        <p className='font-medium text-base pb-2'>Location: 1326 Westminster St. Providence RI</p>
+                    </div>
+                </div>
+                <h2 className=" py-5 text-2xl font-semibold text-black md:text-black md:py-5 text-center md:text-left">Past Events</h2>
+                <h2 className=" pb-2 text-2xl font-semibold text-black md:text-black text-center md:text-left">2024 - 2023</h2>
+                <div className='md:text-black md:text-left space-y-6'>
+                    {/* Replace these divs with your own event data */}
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">Luzerne Music Center Faculty Performances</h3>
+                        <p className='font-medium text-base pb-2'> July 26, August 2 & 9, 7:30 PM </p>
                         <p className='font-medium text-sm pb-2'>Location : TBD</p>
-                           <a href="https://communitymusicworks.org/event/musicworks-collective-season-finale-concert/" className='font-bold hover:text-maroon'>Learn More</a>
+                           <a href="https://www.luzernemusic.org/2023-season" className='font-bold hover:text-maroon'>Learn More</a>
                     </div>
                     <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
                         <h3 className="font-bold pb-2">Easton Chamber Music Festival Faculty Performances</h3>
@@ -50,17 +120,11 @@ export default function UpcomingEvents() {
                            <a href="https://eastonchambermusicfestival.org/concerts.html" className='font-bold hover:text-maroon'>Learn More</a>
                     </div>
                     <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
-                        <h3 className="font-bold pb-2">Luzerne Music Center Faculty Performances</h3>
-                        <p className='font-medium text-base pb-2'> July 26, August 2 & 9, 7:30 PM </p>
+                        <h3 className="font-bold pb-2">MusicWorks Collective End of Season Concerts</h3>
+                        <p className='font-medium text-base pb-2'>  June 8 & 9, TBD </p>
                         <p className='font-medium text-sm pb-2'>Location : TBD</p>
-                           <a href="https://www.luzernemusic.org/2023-season" className='font-bold hover:text-maroon'>Learn More</a>
+                           <a href="https://communitymusicworks.org/event/musicworks-collective-season-finale-concert/" className='font-bold hover:text-maroon'>Learn More</a>
                     </div>
-                    
-                </div>
-                <h2 className=" py-5 text-2xl font-semibold text-black md:text-black md:py-5 text-center md:text-left">Past Events</h2>
-                <h2 className=" pb-2 text-2xl font-semibold text-black md:text-black text-center md:text-left">2024 - 2023</h2>
-                <div className='md:text-black md:text-left space-y-6'>
-                    {/* Replace these divs with your own event data */}
                     <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
                         <h3 className="font-bold pb-2">MusicWorks Collective Providence Tour</h3>
                         <p className='font-medium text-base pb-2'> April 2, 11 AM </p>

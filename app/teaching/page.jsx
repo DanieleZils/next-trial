@@ -66,6 +66,8 @@ export default function Teaching() {
                         <a href="https://communitymusicworks.org/" target="_blank" rel="noreferrer" className='text-sm md:text-base font-medium text-maroon'>Learn More!</a>
                         <h3 className='text-base md:text-lg font-bold pt-4 '>Teaching Associate- Brown University</h3>
                         <a href="https://music.brown.edu/" target="_blank" rel="noreferrer" className='text-sm md:text-base font-medium text-maroon'>Learn More!</a>
+                        <h3 className='text-base md:text-lg font-bold pt-4 '>String Faculty- New England Conservatory Preparatory/Expanded Education</h3>
+                        <a href="https://necmusic.edu/expanded-education/nec-prep/" target="_blank" rel="noreferrer" className='text-sm md:text-base font-medium text-maroon'>Learn More!</a>
                         
                         <h3 className='text-base md:text-lg font-bold py-4'>Summer Teaching:</h3>
                         <p className='text-sm '>Faculty- Rhode Island Philharmonic Summer Chamber Music Workshop:</p>

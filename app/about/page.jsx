@@ -33,9 +33,11 @@ export default function Home() {
             <h1 className="font-semibold text-xl pt-32 px-2">Biography</h1>
             <div className="text-sm md:text-base max-w-lg pt-8">
             <p className="p-2 leading-relaxed md:font-medium text-left mb-10">
-            Becca Kasdan is currently a Resident Musician at Community MusicWorks and a Teaching Associate at Brown University in Providence, RI. 
-            At CMW, Becca performs as a member of the MusicWorks Collective, teaches violin lessons, and actively participates and coordinates community engagement 
-            projects and initiatives. Dr. Kasdan teaches applied violin lessons and coaches chamber music for undergraduate and graduate students at Brown University.
+            Becca Kasdan is currently a Resident Musician at Community MusicWorks, 
+            a Teaching Associate at Brown University, and Violin Faculty at New England Conservatory Preparatory/Expanded Education.
+            At CMW, Becca performs as a member of the MusicWorks Collective, teaches violin lessons, and actively participates and coordinates 
+            community engagement projects and initiatives. Dr. Kasdan teaches applied violin lessons and coaches chamber music for undergraduate and 
+            graduate students at Brown University and pre-college lessons to violin students at NEC.
             <br/> <br/> Becca received her Doctor of Musical
             Arts in Violin Performance at the University of Illinois at Urbana-Champaign where she studied with Meg
             Freivogel of the Jupiter String Quartet and served as the Violin Teaching Assistant. Previously, Becca
