@@ -37,6 +37,13 @@ export default function UpcomingEvents() {
                 <div className='md:text-black md:text-left space-y-6'>
                     {/* Replace these divs with your own event data */}
                     <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                    <h3 className="font-bold pb-2">Newport Pocket Concerts</h3>
+                    <p className="font-medium text-base pb-2">Solo violin performance of Berlin cabaret music</p>
+                    <p className="font-medium text-base pb-2">Sunday, September 21, 2025 • 11 AM–12 PM</p>
+                    <p className="font-medium text-sm pb-2">Location: Belmont Chapel, 30 Warner St, Newport, RI 02840</p>
+                    <a href="https://pci.jotform.com/form/252384992740163" className="font-bold hover:text-maroon">Tickets &amp; Information</a>
+                    </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
                         <h3 className="font-bold pb-2">Community MusicWorks Grand Opening </h3>
                         <p className='font-medium text-base pb-2'>New Commission by composer Wang Lu</p>
                         <p className='font-medium text-base pb-2'>September 28, 2-7 PM </p>
@@ -44,10 +51,24 @@ export default function UpcomingEvents() {
                            <a href="https://communitymusicworks.org/event/cmw-grand-opening-celebration/" className='font-bold hover:text-maroon'>Learn More</a>
                     </div>
                     <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                    <h3 className="font-bold pb-2">Brown Faculty Chamber Concert</h3>
+                    <p className="font-medium text-base pb-2">Sunday, October 5, 2025 • 2 PM</p>
+                    <p className="font-medium text-sm pb-2">Location: Grant Recital Hall, 105 Benevolent St, Providence, RI 02906</p>
+                    <p className="font-medium text-sm pb-2">Program: Frank Bridge <em>Phantasy</em> for piano quartet; Korngold quartet for 2 violins, cello, piano left hand</p>
+                    <p className="font-medium text-sm pb-2">Performers: Becca Kasdan (violin), Jesse Holstein (violin/viola), Megan Koch (cello), Andrew Welch (piano)</p>
+                    <p className="font-medium text-sm pb-2">Free admission, no ticket reservations required</p>
+                    </div>
+                   
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
                         <h3 className="font-bold pb-2">Community MusicWorks Sonata Series Concert</h3>
                         <p className='font-medium text-base pb-2'>Playing works by  Jesús García Leoz and Korngold with pianist Eliko Akahori</p>
                         <p className='font-medium text-base pb-2'>October 17, 7 PM </p>
                            <a href="https://communitymusicworks.org/event/sonata-series-event-1-2/" className='font-bold hover:text-maroon'>Learn More</a>
+                    </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                    <h3 className="font-bold pb-2">Chamber Concert, Fauré Piano Quartet</h3>
+                    <p className="font-medium text-base pb-2">Saturday, October 25, 2025 • 3 PM</p>
+                    <p className="font-medium text-sm pb-2">Location: First Church, 6 Eliot Street, Jamaica Plain, MA 02130</p>
                     </div>
                     <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
                         <h3 className="font-bold pb-2">MusicWorks Collective in Concert</h3>
@@ -59,6 +80,12 @@ export default function UpcomingEvents() {
                         <h3 className="font-bold pb-2">Bach Marathon</h3>
                         <p className='font-medium text-base pb-2'>November 1, 7 PM</p>
                         <p className='font-medium text-base pb-2'>Location: Manning Chapel, Brown University </p>
+                    </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                    <h3 className="font-bold pb-2">Bach Marathon</h3>
+                    <p className="font-medium text-base pb-2">Friday, November 7, 2025 • 7 PM, all night!</p>
+                    <p className="font-medium text-sm pb-2">Location: Manning Chapel, 21 Prospect St, Providence, RI 02912</p>
+                    <p className="font-medium text-sm pb-2">Free and no tickets required</p>
                     </div>
                     <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
                         <h3 className="font-bold pb-2">Violins of Hope Pre-Concert and Discussion</h3>
@@ -111,15 +138,15 @@ export default function UpcomingEvents() {
                         <p className='font-medium text-base pb-2'>June 7</p>
                         <p className='font-medium text-base pb-2'>Location: 1326 Westminster St. Providence RI</p>
                     </div>
-                </div>
-                <h2 className=" py-5 text-2xl font-semibold text-black md:text-black md:py-5 text-center md:text-left">2024 - 2023 Events</h2>
-                <div className='md:text-black md:text-left space-y-6'>
-                    {/* Replace these divs with your own event data */}
                     <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
                         <h3 className="font-bold pb-2">Rhode Island Philharmonic - Pops concert with conductor Troy Quinn </h3>
                         <p className='font-medium text-base pb-2'> July 11, 8 PM </p>
                         <p className='font-medium text-base pb-2'>Location: Narragansett Beach </p>
                     </div>
+                </div>
+                <h2 className=" py-5 text-2xl font-semibold text-black md:text-black md:py-5 text-center md:text-left">2024 - 2023 Events</h2>
+                <div className='md:text-black md:text-left space-y-6'>
+                    {/* Replace these divs with your own event data */}
                     <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
                         <h3 className="font-bold pb-2">Luzerne Music Center Faculty Performances</h3>
                         <p className='font-medium text-base pb-2'> July 26, August 2 & 9, 7:30 PM </p>
@@ -248,4 +275,3 @@ export default function UpcomingEvents() {
         </div>
     )
 }
-// 
