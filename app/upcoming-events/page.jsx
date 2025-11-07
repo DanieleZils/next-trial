@@ -101,11 +101,25 @@ export default function UpcomingEvents() {
                         <p className='font-medium text-base pb-2'>Location: 401 Elmgrove Ave. Providence RI 02906</p>
                     </div>
                     <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">A Child’s Christmas in Wales with the Aurea Ensemble</h3>
+                        <p className='font-medium text-base pb-2'>Sunday, December 7, 3 PM</p>
+                        <p className='font-medium text-base pb-2'>Sarah Whitney, violin; Consuelo Sherba, viola; Emmanuel Feldman, cello</p>
+                        <p className='font-medium text-base pb-2'>Location: St Martin’s Episcopal Church, 50 Orchard Ave, Providence RI 02906</p>
+                    </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
                         <h3 className="font-bold pb-2">MusicWorks Collective Concert</h3>
                         <p className='font-medium text-base pb-2'>Featuring Jeremy Eicher's book, Time's Echo,<br></br>
                         Works by Shostakovich, Britten, and Strauss</p>
                         <p className='font-medium text-base pb-2'>January 26 </p>
                         <p className='font-medium text-base pb-2'>Location: 1326 Westminster St. Providence</p>
+                    </div>
+
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">New England Conservatory Expanded Education Faculty Recital</h3>
+                        <p className='font-medium text-base pb-2'>Thursday, February 19, 8 PM</p>
+                        <p className='font-medium text-base pb-2'>Location: Williams Hall, 290 Huntington Ave, Boston, MA 02115</p>
+                        <p className='font-medium text-base pb-2'>With Victor Cayres, piano, and Eugene Kim, cello</p>
+                        <p className='font-medium text-base pb-2'>Program: Works by Elgar, Amy Beach, Turina, Adrienne Albert, and Ilan Rechtman</p>
                     </div>
 
                      <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
