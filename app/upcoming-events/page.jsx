@@ -36,10 +36,10 @@ export default function UpcomingEvents() {
                 <h2 className=" py-5 text-2xl font-semibold text-black md:text-black md:py-5 text-center md:text-left">Upcoming 2025 - 2026 Events</h2>
                 <div className='md:text-black md:text-left space-y-6'>
                     <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
-                        <h3 className="font-bold pb-2">A Child’s Christmas in Wales with the Aurea Ensemble</h3>
-                        <p className='font-medium text-base pb-2'>Sunday, December 7, 2025 • 3 PM</p>
-                        <p className='font-medium text-base pb-2'>Sarah Whitney, violin; Consuelo Sherba, viola; Emmanuel Feldman, cello</p>
-                        <p className='font-medium text-sm pb-2'>Location: St Martin’s Episcopal Church, 50 Orchard Ave, Providence RI 02906</p>
+                        <h3 className="font-bold pb-2">RI Philharmonic - Handel's Messiah</h3>
+                        <p className='font-medium text-base pb-2'>Sunday, December 14, 2025 • 3 PM</p>
+                        <p className='font-medium text-sm pb-2'>Location: VETS Memorial Auditorium, Providence RI</p>
+                        <a href="https://www.thevetsri.com/events/detail/handels-messiah-25" className='font-bold hover:text-maroon'>Learn More</a>
                     </div>
                     <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
                         <h3 className="font-bold pb-2">New England Conservatory Expanded Education Faculty Recital</h3>
@@ -51,6 +51,12 @@ export default function UpcomingEvents() {
                 </div>
                 <h2 className=" py-5 text-2xl font-semibold text-black md:text-black md:py-5 text-center md:text-left">Past 2025 Events</h2>
                 <div className='md:text-black md:text-left space-y-6'>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">A Child's Christmas in Wales with the Aurea Ensemble</h3>
+                        <p className='font-medium text-base pb-2'>Sunday, December 7, 2025 • 3 PM</p>
+                        <p className='font-medium text-base pb-2'>Sarah Whitney, violin; Consuelo Sherba, viola; Emmanuel Feldman, cello</p>
+                        <p className='font-medium text-sm pb-2'>Location: St Martin's Episcopal Church, 50 Orchard Ave, Providence RI 02906</p>
+                    </div>
                     <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
                         <h3 className="font-bold pb-2">Bach Marathon</h3>
                         <p className='font-medium text-base pb-2'>Friday, November 7, 2025 • 7 PM, all night!</p>
