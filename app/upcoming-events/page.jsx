@@ -36,21 +36,46 @@ export default function UpcomingEvents() {
                 <h2 className=" py-5 text-2xl font-semibold text-black md:text-black md:py-5 text-center md:text-left">Upcoming 2025 - 2026 Events</h2>
                 <div className='md:text-black md:text-left space-y-6'>
                     <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
-                        <h3 className="font-bold pb-2">RI Philharmonic - Handel's Messiah</h3>
-                        <p className='font-medium text-base pb-2'>Sunday, December 14, 2025 • 3 PM</p>
-                        <p className='font-medium text-sm pb-2'>Location: VETS Memorial Auditorium, Providence RI</p>
-                        <a href="https://www.thevetsri.com/events/detail/handels-messiah-25" className='font-bold hover:text-maroon'>Learn More</a>
-                    </div>
-                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
                         <h3 className="font-bold pb-2">New England Conservatory Expanded Education Faculty Recital</h3>
                         <p className='font-medium text-base pb-2'>Thursday, February 19, 2026 • 8 PM</p>
                         <p className='font-medium text-base pb-2'>With Victor Cayres, piano, and Eugene Kim, cello</p>
                         <p className='font-medium text-base pb-2'>Program: Works by Elgar, Amy Beach, Turina, Adrienne Albert, and Ilan Rechtman</p>
                         <p className='font-medium text-sm pb-2'>Location: Williams Hall, 290 Huntington Ave, Boston, MA 02115</p>
                     </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">Rhode Island Philharmonic</h3>
+                        <p className='font-medium text-base pb-2'>Friday, March 13, 2026 • 6:30 PM</p>
+                        <p className='font-medium text-base pb-2'>Works by: Missy Mazzoli, Beethoven, Tchaikovsky</p>
+                        <p className='font-medium text-sm pb-2'>Location: The VETS, 1 Ave of the Arts, Providence RI 02903</p>
+                        <a href="https://riphil.org" className='font-bold hover:text-maroon'>For more information and tickets: riphil.org</a>
+                    </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">Rhode Island Philharmonic</h3>
+                        <p className='font-medium text-base pb-2'>Saturday, March 14, 2026 • 7:30 PM</p>
+                        <p className='font-medium text-base pb-2'>Works by: Missy Mazzoli, Beethoven, Tchaikovsky</p>
+                        <p className='font-medium text-sm pb-2'>Location: The VETS, 1 Ave of the Arts, Providence RI 02903</p>
+                        <a href="https://riphil.org" className='font-bold hover:text-maroon'>For more information and tickets: riphil.org</a>
+                    </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">Easton Chamber Music Festival Faculty Concert</h3>
+                        <p className='font-medium text-base pb-2'>Friday, June 26, 2026 • 7:30 PM</p>
+                        <p className='font-medium text-base pb-2'>Amy Beach Piano Quintet</p>
+                    </div>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">Easton Chamber Music Festival Faculty Concert</h3>
+                        <p className='font-medium text-base pb-2'>Saturday, June 27, 2026 • 7:30 PM</p>
+                        <p className='font-medium text-base pb-2'>Samuel Barber, Dover Beach, Op.3 for voice and string quartet</p>
+                        <p className='font-medium text-base pb-2'>Paul Juon, Piano sextet, Op.22</p>
+                    </div>
                 </div>
                 <h2 className=" py-5 text-2xl font-semibold text-black md:text-black md:py-5 text-center md:text-left">Past 2025 Events</h2>
                 <div className='md:text-black md:text-left space-y-6'>
+                    <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
+                        <h3 className="font-bold pb-2">RI Philharmonic - Handel's Messiah</h3>
+                        <p className='font-medium text-base pb-2'>Sunday, December 14, 2025 • 3 PM</p>
+                        <p className='font-medium text-sm pb-2'>Location: VETS Memorial Auditorium, Providence RI</p>
+                        <a href="https://www.thevetsri.com/events/detail/handels-messiah-25" className='font-bold hover:text-maroon'>Learn More</a>
+                    </div>
                     <div className="bg-black bg-opacity-30 md:text-black text-white md:bg-transparent rounded-lg shadow-xl md:shadow-none p-6 md:p-0">
                         <h3 className="font-bold pb-2">A Child's Christmas in Wales with the Aurea Ensemble</h3>
                         <p className='font-medium text-base pb-2'>Sunday, December 7, 2025 • 3 PM</p>
