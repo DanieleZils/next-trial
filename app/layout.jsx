@@ -1,15 +1,21 @@
 import Navbar from './components/navbar'
 import './globals.css'
-import { Raleway } from 'next/font/google'
+import { Cormorant_Garamond, Plus_Jakarta_Sans } from 'next/font/google'
 import Footer from './components/footer';
 import {Analytics} from "@vercel/analytics/react"
 
 
-// const inter = Inter({ subsets: ['latin'] })
+const cormorant = Cormorant_Garamond({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700'],
+  display: 'swap',
+  variable: '--font-cormorant',
+})
 
-const raleway = Raleway({
+const jakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
   display: 'swap',
+  variable: '--font-jakarta',
 })
 
 export const metadata = {
@@ -31,8 +37,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={raleway.className} suppressHydrationWarning={true}>
-      <body className="grid grid-rows-layout-h-screen">
+    <html lang="en" className={`${cormorant.variable} ${jakarta.variable} bg-background`} suppressHydrationWarning={true}>
+      <body className="font-sans bg-background text-foreground antialiased">
         <Navbar />
         <div className='row-content'>
         {children}

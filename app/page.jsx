@@ -1,99 +1,78 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import homepic from "../public/homepic-2.jpg";
-import homepicmobile from "../public/homepic-mobile.jpg"
-import Typewriter from 'typewriter-effect';
-
-
-
+import homepicmobile from "../public/homepic-mobile.jpg";
 
 export default function Home() {
-  const [windowWidth, setWindowWidth] = useState(null);
-
   const contentRef = useRef(null);
 
   useEffect(() => {
-      const contentEl = contentRef.current;
-      if(contentEl){
-          contentEl.classList.remove("opacity-0");
-      }
-  },[]);
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowWidth(window.innerWidth);
+    const contentEl = contentRef.current;
+    if (contentEl) {
+      contentEl.classList.remove("opacity-0");
     }
-
-    window.addEventListener('resize', handleResize);
-
-    handleResize();
-
-    return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-
-
-
   return (
-    <main ref={contentRef} className="relative w-full h-screen transition-opacity opacity-0 duration-[2s]">
-        <style>{`
-        .hidden-large {
-            display: none;
-        }
+    <main className="relative w-full h-screen overflow-hidden">
+      {/* Desktop portrait */}
+      <Image
+        src={homepic}
+        alt="Becca Kasdan"
+        fill
+        priority
+        className="hidden md:block object-cover object-top"
+      />
+      {/* Mobile portrait */}
+      <Image
+        src={homepicmobile}
+        alt="Becca Kasdan"
+        fill
+        priority
+        className="block md:hidden object-cover object-top"
+      />
 
-        @media (max-width: 767px) {
-            .hidden-large {
-            display: block;
-            height: 2px;
-            }
+      {/* Legibility scrim */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/35 to-black/10" />
 
-            .desktop-img {
-            display: none;
-            }
-
-            .mobile-bg {
-            background-color: rgba(0, 0, 0, 0.5);
-            }
-        }
-        `}</style>
-
-        <div className="fixed inset-0 h-full w-full overflow-hidden top-20">
-            {/* For Desktop */}
-            <Image
-                src={homepic}
-                alt="Becca"
-                className="object-cover object-top w-full h-full desktop-img"
-                priority={true}
-            />
-            {/* For Mobile */}
-            <Image
-                src={homepicmobile}
-                alt="Becca"
-                className="object-cover object-top w-full h-full mobile-bg "
-                priority={true}
-            />
-            <div className={`absolute ${windowWidth > 767 ? 'top-[40%] left-1/3 transform -translate-x-1/2' : 'mobile-bg bottom-20 text-white p-2 text-xl'} w-full text-center text-black font-medium md:text-2xl xl:text-3xl font-serif`}>
-                <Typewriter
-                options={{
-                    autoStart: true,
-                    delay: 100,
-                }}
-                onInit={(typewriter) => {
-                    typewriter
-                    .typeString('Performer')
-                    .typeString(' <span className="text-4xl">•</span> ')
-                    .typeString('Teacher')
-                    .typeString(' <span className="text-4xl">•</span> ')
-                    .typeString('<span class="hidden-large"><br/></span>')
-                    .typeString('Community Leader & Activist')
-                    .pauseFor(200)
-                    .start();
-                }}
-                />
-            </div>
+      {/* Caption */}
+      <div
+        ref={contentRef}
+        className="absolute inset-x-0 bottom-0 px-6 pb-12 md:px-16 md:pb-20 transition-opacity duration-[1800ms] opacity-0"
+      >
+        <div className="max-w-xl">
+          <p className="text-[11px] uppercase tracking-[0.32em] text-white/70 mb-3">
+            Violinist
+          </p>
+          <h1 className="font-serif text-5xl md:text-7xl font-medium text-white text-balance leading-[0.95]">
+            Becca Kasdan
+          </h1>
+          <p className="mt-5 text-sm md:text-base uppercase tracking-[0.22em] text-white/85">
+            Performer
+            <span className="mx-3 text-white/40">&middot;</span>
+            Teacher
+            <span className="mx-3 text-white/40">&middot;</span>
+            Community Leader &amp; Activist
+          </p>
+          <div className="mt-8 flex flex-wrap gap-4">
+            <Link
+              href="/about"
+              className="border border-white/70 text-white text-xs uppercase tracking-[0.18em] px-7 py-3 hover:bg-white hover:text-foreground transition-colors duration-300"
+            >
+              Biography
+            </Link>
+            <Link
+              href="/upcoming-events"
+              className="bg-primary text-primary-foreground text-xs uppercase tracking-[0.18em] px-7 py-3 hover:bg-primary/90 transition-colors duration-300"
+            >
+              Upcoming Events
+            </Link>
+          </div>
         </div>
+      </div>
     </main>
-)
+  );
 }
