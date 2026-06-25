@@ -17,7 +17,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="relative w-full h-screen overflow-hidden">
+    <main className="relative w-full h-[calc(100vh-5rem)] mt-20 overflow-hidden">
       {/* Desktop portrait */}
       <Image
         src={homepic}
