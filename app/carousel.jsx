@@ -46,8 +46,8 @@ export default function EmblaCarousel(props) {
   ];
 
   return (
-    <div className="relative w-full bg-foreground pt-20">
-      <div className="relative h-[60vh] md:h-[80vh] overflow-hidden" ref={emblaRef}>
+    <div className="relative w-full bg-foreground mt-20">
+      <div className="relative h-[60vh] md:h-[78vh] overflow-hidden" ref={emblaRef}>
         <div className="flex h-full">
           {images.map((slide, index) => (
             <div className="relative flex-none w-full h-full" key={index}>
