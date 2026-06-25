@@ -28,7 +28,7 @@ function Reveal({ children, delay = 0 }) {
     <p
       ref={ref}
       style={{ transitionDelay: `${delay}ms` }}
-      className={`transition-all duration-[900ms] ease-out ${
+      className={`transition-all duration-[1600ms] ease-out ${
         visible ? "opacity-100 translate-y-0 blur-0" : "opacity-0 translate-y-8 blur-[2px]"
       }`}
     >
@@ -39,7 +39,13 @@ function Reveal({ children, delay = 0 }) {
 
 export default function About() {
   const [scrolled, setScrolled] = useState(false);
+  const [revealed, setRevealed] = useState(false);
   const bodyRef = useRef(null);
+
+  useEffect(() => {
+    const id = requestAnimationFrame(() => setRevealed(true));
+    return () => cancelAnimationFrame(id);
+  }, []);
 
   useEffect(() => {
     const check = () => {
@@ -60,14 +66,16 @@ export default function About() {
       <div className="grid grid-cols-1 md:grid-cols-2">
         {/* Portrait — fixed on desktop */}
         <div className="relative h-72 md:h-auto">
-          <div className="relative h-72 md:fixed md:top-20 md:left-0 md:h-[calc(100vh-5rem)] md:w-1/2">
+          <div className="relative h-72 overflow-hidden md:fixed md:top-20 md:left-0 md:h-[calc(100vh-5rem)] md:w-1/2">
             <Image
               src={VoH}
               alt="Becca Kasdan performing"
               fill
               quality={85}
               priority
-              className="object-cover object-top"
+              className={`object-cover object-top transition-all duration-[1600ms] ease-out ${
+                revealed ? "opacity-100 scale-100 blur-0" : "opacity-0 scale-105 blur-[2px]"
+              }`}
             />
           </div>
         </div>
