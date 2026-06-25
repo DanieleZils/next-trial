@@ -50,23 +50,23 @@ export default function Home() {
           <h1 className="font-serif text-5xl md:text-7xl font-medium text-white text-balance leading-[0.95]">
             Becca Kasdan
           </h1>
-          <p className="mt-5 text-sm md:text-base uppercase tracking-[0.22em] text-white/85">
+          <p className="mt-5 text-sm md:text-base font-medium uppercase tracking-[0.22em] text-white">
             Performer
-            <span className="mx-3 text-white/40">&middot;</span>
+            <span className="mx-3 text-white/50">&middot;</span>
             Teacher
-            <span className="mx-3 text-white/40">&middot;</span>
+            <span className="mx-3 text-white/50">&middot;</span>
             Community Leader &amp; Activist
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <Link
               href="/about"
-              className="border border-white/70 text-white text-xs uppercase tracking-[0.18em] px-7 py-3 hover:bg-white hover:text-foreground transition-colors duration-300"
+              className="border-2 border-white text-white text-xs uppercase tracking-[0.18em] font-medium px-8 py-4 hover:bg-white hover:text-foreground transition-colors duration-300"
             >
               Biography
             </Link>
             <Link
               href="/upcoming-events"
-              className="bg-primary text-primary-foreground text-xs uppercase tracking-[0.18em] px-7 py-3 hover:bg-primary/90 transition-colors duration-300"
+              className="bg-primary text-primary-foreground text-xs uppercase tracking-[0.18em] font-semibold px-8 py-4 hover:bg-primary/85 transition-colors duration-300 shadow-lg"
             >
               Upcoming Events
             </Link>
