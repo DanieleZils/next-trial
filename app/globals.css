@@ -64,3 +64,32 @@
 .link-underline:hover::after {
   transform: scaleX(1);
 }
+
+/* Hero entrance animations */
+@keyframes heroZoom {
+  from {
+    transform: scale(1.08);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-\[heroZoom_2000ms_ease-out_forwards\],
+  .animate-\[fadeUp_900ms_ease-out_200ms_both\],
+  .animate-\[fadeUp_1000ms_ease-out_400ms_both\] {
+    animation: none !important;
+  }
+}

@@ -1,18 +1,42 @@
 'use client';
 import YouTube from 'react-youtube';
 import Image from 'next/image';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
-export default function VohCabaretConcert() {
-  const contentRef = useRef(null);
+function Reveal({ children, className = '', delay = 0 }) {
+  const ref = useRef(null);
+  const [shown, setShown] = useState(false);
 
   useEffect(() => {
-    const contentEl = contentRef.current;
-    if (contentEl) {
-      contentEl.classList.remove('opacity-0');
-    }
+    const el = ref.current;
+    if (!el) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setShown(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.15, rootMargin: '0px 0px -10% 0px' }
+    );
+    observer.observe(el);
+    return () => observer.disconnect();
   }, []);
 
+  return (
+    <div
+      ref={ref}
+      style={{ transitionDelay: `${delay}ms` }}
+      className={`transition-all duration-[900ms] ease-out will-change-transform ${
+        shown ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
+      } ${className}`}
+    >
+      {children}
+    </div>
+  );
+}
+
+export default function VohCabaretConcert() {
   const videoOptions = {
     height: '100%',
     width: '100%',
@@ -23,12 +47,9 @@ export default function VohCabaretConcert() {
   const videoId = 'Wiv3d5C9Ng4';
 
   return (
-    <main
-      ref={contentRef}
-      className="relative bg-background min-h-screen transition-opacity duration-[1500ms] opacity-0"
-    >
+    <main className="relative bg-background min-h-screen">
       {/* Hero */}
-      <section className="relative h-[60vh] md:h-[85vh] w-full">
+      <section className="relative h-[60vh] md:h-[85vh] w-full overflow-hidden">
         <Image
           src="/vohprincipal.jpg"
           alt="Violins of Hope"
@@ -36,12 +57,14 @@ export default function VohCabaretConcert() {
           quality={90}
           sizes="100vw"
           priority
-          className="object-cover object-center"
+          className="object-cover object-center animate-[heroZoom_2000ms_ease-out_forwards]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/15 to-black/30" />
         <div className="absolute inset-x-0 bottom-0 px-6 pb-12 md:px-16 md:pb-20 max-w-4xl">
-          <p className="text-[11px] uppercase tracking-[0.32em] text-white/70 mb-4">Violins of Hope</p>
-          <h1 className="font-serif text-4xl md:text-6xl font-medium text-white text-balance leading-tight">
+          <p className="text-[11px] uppercase tracking-[0.32em] text-white/70 mb-4 animate-[fadeUp_900ms_ease-out_200ms_both]">
+            Violins of Hope
+          </p>
+          <h1 className="font-serif text-4xl md:text-6xl font-medium text-white text-balance leading-tight animate-[fadeUp_1000ms_ease-out_400ms_both]">
             Becca Kasdan&apos;s Cabaret Concert
           </h1>
         </div>
@@ -49,13 +72,13 @@ export default function VohCabaretConcert() {
 
       {/* Recital + flipbook */}
       <section className="max-w-6xl mx-auto px-6 md:px-12 py-16 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12">
-        <div className="flex flex-col">
+        <Reveal className="flex flex-col">
           <p className="text-[11px] uppercase tracking-[0.2em] text-primary mb-4">Doctoral Recital</p>
           <div className="aspect-video w-full overflow-hidden border border-border bg-muted">
             <YouTube videoId={videoId} opts={videoOptions} className="w-full h-full" iframeClassName="w-full h-full" />
           </div>
-        </div>
-        <div className="flex flex-col">
+        </Reveal>
+        <Reveal className="flex flex-col" delay={120}>
           <p className="text-[11px] uppercase tracking-[0.2em] text-primary mb-4">Program Booklet</p>
           <iframe
             src="https://heyzine.com/flip-book/9b76a89d4b.html"
@@ -67,20 +90,22 @@ export default function VohCabaretConcert() {
               View Full Screen
             </button>
           </a>
-        </div>
+        </Reveal>
       </section>
 
       <div className="mx-auto w-24 border-t border-border" />
 
       {/* Concept */}
       <section className="max-w-5xl mx-auto px-6 md:px-12 py-16 md:py-24">
-        <h2 className="font-serif text-3xl md:text-5xl font-medium text-balance leading-tight mb-12">
-          Imagining New Possibilities for Classical Music Performance in the 21st-Century: Drawing Inspiration
-          from the Berlin Cabarets of the Weimar Republic
-        </h2>
+        <Reveal>
+          <h2 className="font-serif text-3xl md:text-5xl font-medium text-balance leading-tight mb-12">
+            Imagining New Possibilities for Classical Music Performance in the 21st-Century: Drawing Inspiration
+            from the Berlin Cabarets of the Weimar Republic
+          </h2>
+        </Reveal>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14">
-          <div className="space-y-8">
+          <Reveal className="space-y-8">
             <div className="relative aspect-[4/3] w-full overflow-hidden border border-border">
               <Image src="/ensemble.jpg" alt="The ensemble" fill quality={85} sizes="(max-width:768px) 100vw, 50vw" className="object-cover object-center" />
             </div>
@@ -94,9 +119,9 @@ export default function VohCabaretConcert() {
               also featured two world premieres: John Carmichael&apos;s &ldquo;Puppet Show&rdquo; for violin and
               piano and a special arrangement of two Theresienstadt cabaret songs by Ronen Nissan.
             </p>
-          </div>
+          </Reveal>
 
-          <div className="space-y-8">
+          <Reveal className="space-y-8" delay={120}>
             <p className="text-sm md:text-base leading-relaxed text-muted-foreground">
               On April 23, 2023 I presented a Violins of Hope Cabaret Concert, the culmination of my Doctoral
               performance and research. I performed this recital at the Spurlock Museum of World Cultures in
@@ -117,50 +142,54 @@ export default function VohCabaretConcert() {
                 Violins of Hope
               </button>
             </a>
-          </div>
+          </Reveal>
         </div>
       </section>
 
       {/* Full-bleed image */}
-      <section className="relative w-full h-72 md:h-[80vh]">
+      <section className="relative w-full h-72 md:h-[80vh] overflow-hidden">
         <Image src="/ballet.jpg" alt="Violins of Hope ballet" fill quality={90} sizes="100vw" className="object-cover object-center" />
       </section>
 
       {/* Testimonials */}
       <section className="max-w-5xl mx-auto px-6 md:px-12 py-16 md:py-24">
-        <div className="text-center mb-14">
+        <Reveal className="text-center mb-14">
           <p className="text-[11px] uppercase tracking-[0.3em] text-primary mb-4">In Their Words</p>
           <h2 className="font-serif text-4xl md:text-6xl font-medium">Testimonials</h2>
-        </div>
+        </Reveal>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 items-start">
-          <figure className="space-y-6">
-            <div className="relative aspect-[4/3] w-full overflow-hidden border border-border">
-              <Image src="/vohsmile.jpg" alt="Violins of Hope" fill quality={80} sizes="(max-width:768px) 100vw, 50vw" className="object-cover object-center" />
-            </div>
-            <blockquote className="font-serif text-xl md:text-2xl leading-snug text-foreground text-balance">
-              &ldquo;This has been the most extraordinary lecture/recital I have ever had the privilege to experience.
-              The presentation and performance of your work has truly changed what I know about and how I absorb
-              cabaret music.&rdquo;
-            </blockquote>
-          </figure>
+          <Reveal>
+            <figure className="space-y-6">
+              <div className="relative aspect-[4/3] w-full overflow-hidden border border-border">
+                <Image src="/vohsmile.jpg" alt="Violins of Hope" fill quality={80} sizes="(max-width:768px) 100vw, 50vw" className="object-cover object-center" />
+              </div>
+              <blockquote className="font-serif text-xl md:text-2xl leading-snug text-foreground text-balance">
+                &ldquo;This has been the most extraordinary lecture/recital I have ever had the privilege to experience.
+                The presentation and performance of your work has truly changed what I know about and how I absorb
+                cabaret music.&rdquo;
+              </blockquote>
+            </figure>
+          </Reveal>
 
-          <figure className="space-y-6">
-            <blockquote className="font-serif text-xl md:text-2xl leading-snug text-foreground text-balance">
-              &ldquo;This performance was the most impressive community-facing performance I have seen. It was the
-              best of community engagement. Her integration of other art forms (dance, puppetry, and visual art) with
-              musical performance reflected deep understanding of all these art forms. Her educational talks about
-              Weimar and cabaret help us all understand what can happen when people at the margins flourish as well
-              as what happens when their rights, and existence, are threatened. What better education to accompany
-              these Violins of Hope?&rdquo;
-              <footer className="block mt-4 text-sm not-italic uppercase tracking-[0.16em] text-muted-foreground">
-                &mdash; University of Illinois Former Dean
-              </footer>
-            </blockquote>
-            <div className="relative aspect-[4/3] w-full overflow-hidden border border-border">
-              <Image src="/end.jpg" alt="Violins of Hope" fill quality={80} sizes="(max-width:768px) 100vw, 50vw" className="object-cover object-center" />
-            </div>
-          </figure>
+          <Reveal delay={120}>
+            <figure className="space-y-6">
+              <blockquote className="font-serif text-xl md:text-2xl leading-snug text-foreground text-balance">
+                &ldquo;This performance was the most impressive community-facing performance I have seen. It was the
+                best of community engagement. Her integration of other art forms (dance, puppetry, and visual art) with
+                musical performance reflected deep understanding of all these art forms. Her educational talks about
+                Weimar and cabaret help us all understand what can happen when people at the margins flourish as well
+                as what happens when their rights, and existence, are threatened. What better education to accompany
+                these Violins of Hope?&rdquo;
+                <footer className="block mt-4 text-sm not-italic uppercase tracking-[0.16em] text-muted-foreground">
+                  &mdash; University of Illinois Former Dean
+                </footer>
+              </blockquote>
+              <div className="relative aspect-[4/3] w-full overflow-hidden border border-border">
+                <Image src="/end.jpg" alt="Violins of Hope" fill quality={80} sizes="(max-width:768px) 100vw, 50vw" className="object-cover object-center" />
+              </div>
+            </figure>
+          </Reveal>
         </div>
       </section>
     </main>
