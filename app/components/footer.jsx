@@ -6,7 +6,7 @@ export default function Footer({ hideOnMobile }) {
       className={`${footerClass} w-full flex-col sm:flex-row items-center justify-between gap-1 px-6 md:px-12 py-5 bg-transparent`}
     >
       <p className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
-        &copy; 2024 Becca Kasdan &middot; All Rights Reserved
+        &copy; 2026 Becca Kasdan &middot; All Rights Reserved
       </p>
       <p className="text-[11px] uppercase tracking-[0.18em] text-muted-foreground">
         Developed by Crescendo Studios
