@@ -30,9 +30,9 @@ export default function Contact() {
 
   return (
     <main className="relative w-full min-h-screen bg-background pt-20">
-      <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[calc(100vh-5rem)]">
-        {/* Image side */}
-        <div className="relative h-64 lg:h-auto order-1 lg:order-none overflow-hidden">
+      <div className="lg:grid lg:grid-cols-2 min-h-[calc(100vh-5rem)]">
+        {/* Image side - fixed on desktop */}
+        <div className="relative h-64 overflow-hidden lg:h-auto lg:fixed lg:top-20 lg:left-0 lg:w-1/2 lg:bottom-0">
           <Image
             src="/piano1.jpg"
             alt="Piano"
@@ -44,7 +44,7 @@ export default function Contact() {
         </div>
 
         {/* Form side */}
-        <div className="flex items-center justify-center px-6 py-14 md:px-14 lg:px-20">
+        <div className="flex items-center justify-center px-6 py-14 md:px-14 lg:px-20 lg:col-start-2">
           <Reveal className="w-full max-w-md">
             <p className="text-[11px] uppercase tracking-[0.3em] text-primary mb-4">Contact</p>
             <h1 className="font-serif text-4xl md:text-5xl font-medium mb-3">Let&apos;s Connect</h1>
