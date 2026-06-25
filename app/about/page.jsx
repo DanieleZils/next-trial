@@ -4,40 +4,9 @@ import Image from "next/image";
 import VoH from "/public/VoH.jpg";
 import { useEffect, useRef, useState } from "react";
 
-function Reveal({ children, className = "" }) {
-  const ref = useRef(null);
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setVisible(true);
-          observer.unobserve(el);
-        }
-      },
-      { threshold: 0.15, rootMargin: "0px 0px -10% 0px" }
-    );
-    observer.observe(el);
-    return () => observer.disconnect();
-  }, []);
-
-  return (
-    <div
-      ref={ref}
-      className={`transition-all duration-1000 ease-out ${
-        visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-      } ${className}`}
-    >
-      {children}
-    </div>
-  );
-}
-
 export default function About() {
   const [scrolled, setScrolled] = useState(false);
+  const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -77,17 +46,19 @@ export default function About() {
 
         {/* Biography text */}
         <div className="px-6 py-14 md:px-14 lg:px-20 md:py-24">
-          <Reveal>
-            <p className="text-[11px] uppercase tracking-[0.3em] text-primary mb-4">
-              Biography
-            </p>
-            <h1 className="font-serif text-4xl md:text-5xl font-medium leading-tight text-balance mb-10">
-              A life devoted to the violin, teaching, and community.
-            </h1>
-          </Reveal>
+          <p className="text-[11px] uppercase tracking-[0.3em] text-primary mb-4">
+            Biography
+          </p>
+          <h1 className="font-serif text-4xl md:text-5xl font-medium leading-tight text-balance mb-10">
+            A life devoted to the violin, teaching, and community.
+          </h1>
 
-          <div className="max-w-2xl space-y-6 text-sm md:text-base leading-relaxed text-muted-foreground">
-            <Reveal>
+          <div className="relative">
+            <div
+              className={`relative max-w-2xl space-y-6 text-sm md:text-base leading-relaxed text-muted-foreground overflow-hidden transition-[max-height] duration-1000 ease-in-out ${
+                expanded ? "max-h-[6000px]" : "max-h-[20rem]"
+              }`}
+            >
               <p>
                 Becca Kasdan is currently a Teaching Associate at Brown University and holds a Violin Faculty
                 position at New England Conservatory Preparatory/Expanded Education. Dr. Kasdan teaches
@@ -98,8 +69,6 @@ export default function About() {
                 the summers, Becca is a faculty member at the Easton Chamber Music Festival and the Rhode
                 Island Philharmonic Summer Chamber Music Workshop.
               </p>
-            </Reveal>
-            <Reveal>
               <p>
                 Becca received her Doctor of Musical Arts in Violin Performance at the University of Illinois at
                 Urbana-Champaign where she studied with Meg Freivogel of the Jupiter String Quartet and
@@ -107,8 +76,6 @@ export default function About() {
                 Schulich School of Music at McGill University and the Peabody Institute of Johns Hopkins
                 University where she received her MM and BM in Violin Performance.
               </p>
-            </Reveal>
-            <Reveal>
               <p>
                 Deeply passionate about chamber music, Becca has worked closely with members of the
                 Juilliard, Jupiter, Emerson, Chiara, Orion, Ying, Brentano, and Borromeo String Quartets among
@@ -121,8 +88,6 @@ export default function About() {
                 Dr. Kasdan frequently performs U.S. and world premieres of contemporary works and enjoys
                 collaborating with composers.
               </p>
-            </Reveal>
-            <Reveal>
               <p>
                 A passionate and dedicated teacher, Becca has presented masterclasses at the Paul Rolland
                 String Pedagogy Workshop, American String Teacher Association&apos;s National Conference,
@@ -135,8 +100,6 @@ export default function About() {
                 Becca was also a violin faculty member at Luzerne Summer Music Festival&apos;s Senior Session in
                 New York.
               </p>
-            </Reveal>
-            <Reveal>
               <p>
                 In 2023, Becca collaborated with the international exhibit Violins of Hope to present her
                 Doctoral Lecture Recital, Imagining New Possibilities for 21st-Century Classical Music
@@ -149,8 +112,6 @@ export default function About() {
                 performs exclusively at community venues. Becca has also been on a discussion panel with
                 Midori discussing community engagement and outreach in the 21st century.
               </p>
-            </Reveal>
-            <Reveal>
               <p>
                 Currently, Becca is on the Board of Trustees for the Volunteer Musicians for the Arts in Boston,
                 MA where she received a Community Leadership Award in 2021. Becca Kasdan is the 2018
@@ -159,7 +120,24 @@ export default function About() {
                 University of Illinois Urbana-Champaign, and is a member of the Pi Kappa Lambda and Phi
                 Kappa Phi&apos;s prestigious music guilds.
               </p>
-            </Reveal>
+
+              {/* Bottom shade — only while collapsed */}
+              <div
+                className={`pointer-events-none absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-background via-background/80 to-transparent transition-opacity duration-700 ${
+                  expanded ? "opacity-0" : "opacity-100"
+                }`}
+              />
+            </div>
+
+            {!expanded && (
+              <button
+                onClick={() => setExpanded(true)}
+                className="mt-8 inline-flex items-center gap-2 border border-primary text-primary text-xs uppercase tracking-[0.18em] font-medium px-7 py-3 hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
+              >
+                Continue Reading
+                <span aria-hidden className="animate-bounce">&#8595;</span>
+              </button>
+            )}
           </div>
         </div>
       </div>
