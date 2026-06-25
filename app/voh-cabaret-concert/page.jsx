@@ -78,7 +78,7 @@ export default function VohCabaretConcert() {
   return (
     <main className="relative bg-background min-h-screen">
       {/* Hero */}
-      <section className="relative h-[60vh] md:h-[85vh] w-full overflow-hidden">
+      <section className="relative mt-20 h-[calc(60vh-5rem)] md:h-[calc(85vh-5rem)] w-full overflow-hidden">
         <Image
           src="/vohprincipal.jpg"
           alt="Violins of Hope"
