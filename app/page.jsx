@@ -50,11 +50,11 @@ export default function Home() {
           <h1 className="font-serif text-5xl md:text-7xl font-medium text-white text-balance leading-[0.95]">
             Becca Kasdan
           </h1>
-          <p className="mt-5 text-sm md:text-base font-medium uppercase tracking-[0.22em] text-white">
+          <p className="mt-5 text-[9px] sm:text-xs md:text-base font-medium uppercase tracking-[0.04em] sm:tracking-[0.12em] md:tracking-[0.2em] text-white whitespace-nowrap">
             Performer
-            <span className="mx-3 text-white/50">&middot;</span>
+            <span className="mx-1.5 md:mx-3 text-white/50">&middot;</span>
             Teacher
-            <span className="mx-3 text-white/50">&middot;</span>
+            <span className="mx-1.5 md:mx-3 text-white/50">&middot;</span>
             Community Leader &amp; Activist
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
