@@ -1,20 +1,13 @@
 "use client";
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
+import { Reveal } from "../components/reveal";
 
 export default function Contact() {
   const form = useRef();
   const [success, setSuccess] = useState(false);
-  const contentRef = useRef(null);
   const [showMessage, setShowMessage] = useState(false);
-
-  useEffect(() => {
-    const contentEl = contentRef.current;
-    if (contentEl) {
-      contentEl.classList.remove("opacity-0");
-    }
-  }, []);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -36,26 +29,23 @@ export default function Contact() {
   };
 
   return (
-    <main
-      ref={contentRef}
-      className="relative w-full min-h-screen bg-background pt-20 transition-opacity duration-[1500ms] opacity-0"
-    >
+    <main className="relative w-full min-h-screen bg-background pt-20">
       <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[calc(100vh-5rem)]">
         {/* Image side */}
-        <div className="relative h-64 lg:h-auto order-1 lg:order-none">
+        <div className="relative h-64 lg:h-auto order-1 lg:order-none overflow-hidden">
           <Image
             src="/piano1.jpg"
             alt="Piano"
             fill
             quality={90}
             priority
-            className="object-cover object-center"
+            className="object-cover object-center animate-[heroZoom_2000ms_ease-out_forwards]"
           />
         </div>
 
         {/* Form side */}
         <div className="flex items-center justify-center px-6 py-14 md:px-14 lg:px-20">
-          <div className="w-full max-w-md">
+          <Reveal className="w-full max-w-md">
             <p className="text-[11px] uppercase tracking-[0.3em] text-primary mb-4">Contact</p>
             <h1 className="font-serif text-4xl md:text-5xl font-medium mb-3">Let&apos;s Connect</h1>
             <p className="text-sm text-muted-foreground leading-relaxed mb-10">
@@ -111,7 +101,7 @@ export default function Contact() {
                 </div>
               )}
             </form>
-          </div>
+          </Reveal>
         </div>
       </div>
     </main>

@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import { useEffect, useRef } from 'react';
+import { Reveal } from '../components/reveal';
 
 const eventGroups = [
   {
@@ -276,47 +276,40 @@ const eventGroups = [
 
 function EventCard({ event }) {
   return (
-    <article className="group border-l border-border pl-6 md:pl-8 pb-10 relative">
-      <span className="absolute left-0 top-1.5 -translate-x-1/2 h-2 w-2 rounded-full bg-primary" />
-      <p className="text-[11px] uppercase tracking-[0.18em] text-primary mb-2">{event.date}</p>
-      <h3 className="font-serif text-xl md:text-2xl leading-snug mb-3 text-foreground">{event.title}</h3>
-      {event.lines.length > 0 && (
-        <div className="space-y-1">
-          {event.lines.map((line, i) => (
-            <p key={i} className="text-sm text-muted-foreground leading-relaxed">
-              {line}
-            </p>
-          ))}
-        </div>
-      )}
-      {event.link && (
-        <a
-          href={event.link.href}
-          target="_blank"
-          rel="noreferrer"
-          className="link-underline inline-block mt-3 text-sm uppercase tracking-[0.14em] text-primary"
-        >
-          {event.link.label}
-        </a>
-      )}
-    </article>
+    <Reveal>
+      <article className="group border-l border-border pl-6 md:pl-8 pb-10 relative">
+        <span className="absolute left-0 top-1.5 -translate-x-1/2 h-2 w-2 rounded-full bg-primary" />
+        <p className="text-[11px] uppercase tracking-[0.18em] text-primary mb-2">{event.date}</p>
+        <h3 className="font-serif text-xl md:text-2xl leading-snug mb-3 text-foreground">{event.title}</h3>
+        {event.lines.length > 0 && (
+          <div className="space-y-1">
+            {event.lines.map((line, i) => (
+              <p key={i} className="text-sm text-muted-foreground leading-relaxed">
+                {line}
+              </p>
+            ))}
+          </div>
+        )}
+        {event.link && (
+          <a
+            href={event.link.href}
+            target="_blank"
+            rel="noreferrer"
+            className="link-underline inline-block mt-3 text-sm uppercase tracking-[0.14em] text-primary"
+          >
+            {event.link.label}
+          </a>
+        )}
+      </article>
+    </Reveal>
   );
 }
 
 export default function UpcomingEvents() {
-  const contentRef = useRef(null);
-
-  useEffect(() => {
-    const contentEl = contentRef.current;
-    if (contentEl) {
-      contentEl.classList.remove('opacity-0');
-    }
-  }, []);
-
   return (
     <main className="relative w-full min-h-screen bg-background">
       {/* Banner */}
-      <section className="relative h-[50vh] md:h-[65vh] w-full">
+      <section className="relative mt-20 h-[calc(50vh-5rem)] md:h-[calc(65vh-5rem)] w-full overflow-hidden">
         <Image
           src="/eventtwo.jpg"
           alt="Becca Kasdan in concert"
@@ -324,22 +317,21 @@ export default function UpcomingEvents() {
           quality={90}
           sizes="100vw"
           priority
-          className="object-cover object-top"
+          className="object-cover object-top animate-[heroZoom_2000ms_ease-out_forwards]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/15 to-black/25" />
         <div className="absolute inset-x-0 bottom-0 px-6 pb-10 md:px-16 md:pb-16">
-          <p className="text-[11px] uppercase tracking-[0.32em] text-white/70 mb-3">Calendar</p>
-          <h1 className="font-serif text-5xl md:text-7xl font-medium text-white leading-none">Events</h1>
+          <p className="text-[11px] uppercase tracking-[0.32em] text-white/70 mb-3 animate-[fadeUp_900ms_ease-out_200ms_both]">Calendar</p>
+          <h1 className="font-serif text-5xl md:text-7xl font-medium text-white leading-none animate-[fadeUp_1000ms_ease-out_400ms_both]">Events</h1>
         </div>
       </section>
 
-      <div
-        ref={contentRef}
-        className="max-w-3xl mx-auto px-6 md:px-12 py-16 md:py-24 transition-opacity duration-[1500ms] opacity-0"
-      >
+      <div className="max-w-3xl mx-auto px-6 md:px-12 py-16 md:py-24">
         {eventGroups.map((group, gi) => (
           <section key={gi} className={gi > 0 ? 'mt-16' : ''}>
-            <h2 className="font-serif text-3xl md:text-4xl font-medium mb-10">{group.heading}</h2>
+            <Reveal>
+              <h2 className="font-serif text-3xl md:text-4xl font-medium mb-10">{group.heading}</h2>
+            </Reveal>
             <div>
               {group.events.map((event, ei) => (
                 <EventCard key={ei} event={event} />
