@@ -3,31 +3,92 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 250, 250, 250;
-  --background-end-rgb: 246, 224, 189;
+  /* Warm editorial palette */
+  --background: 43 33% 95%;        /* ivory / cream */
+  --foreground: 28 18% 12%;        /* deep ink */
+
+  --card: 43 38% 97%;
+  --card-foreground: 28 18% 12%;
+
+  --primary: 351 64% 26%;          /* refined wine / burgundy */
+  --primary-foreground: 43 33% 96%;
+
+  --muted: 40 24% 90%;             /* warm sand */
+  --muted-foreground: 32 10% 38%;  /* warm stone */
+
+  --accent: 351 64% 26%;
+  --accent-foreground: 43 33% 96%;
+
+  --border: 38 20% 84%;            /* soft warm border */
+  --ring: 351 64% 26%;
+
+  --radius: 0.25rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 80, 80, 80;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-   
-   
+@layer base {
+  body {
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+  }
+
+  ::selection {
+    background-color: hsl(var(--primary));
+    color: hsl(var(--primary-foreground));
   }
 }
+
 .grid-rows-layout {
   grid-template-rows: auto 1fr auto;
 }
 
 .row-content {
-  overflow-y: auto; /* This allows scrolling if content exceeds viewport */
+  overflow-y: auto;
 }
 
-.navbar{
-
-  background-color: whitesmoke;
+/* Refined animated underline used across navigation links */
+.link-underline {
+  position: relative;
+}
+.link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  height: 1px;
+  width: 100%;
+  background-color: hsl(var(--primary));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.link-underline:hover::after {
+  transform: scaleX(1);
 }
 
+/* Hero entrance animations */
+@keyframes heroZoom {
+  from {
+    transform: scale(1.08);
+  }
+  to {
+    transform: scale(1);
+  }
+}
 
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [class*="animate-[heroZoom"],
+  [class*="animate-[fadeUp"] {
+    animation: none !important;
+  }
+}

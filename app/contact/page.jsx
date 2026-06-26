@@ -1,70 +1,109 @@
 "use client";
-import React, {useRef, useState, useEffect} from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import Image from 'next/image';
+import Image from "next/image";
+import { Reveal } from "../components/reveal";
 
 export default function Contact() {
-    const form = useRef();
-    const [success, setSuccess] = useState(false);
-    const contentRef = useRef(null);
-    const [showMessage, setShowMessage] = useState(false); 
+  const form = useRef();
+  const [success, setSuccess] = useState(false);
+  const [showMessage, setShowMessage] = useState(false);
 
-    useEffect(() => {
-        const contentEl = contentRef.current;
-        if(contentEl){
-            contentEl.classList.remove("opacity-0");
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_wy4624e", "template_1aqwmd8", form.current, process.env.NEXT_PUBLIC_EMAILJS_USERID)
+      .then(
+        (result) => {
+          console.log("email sent", result.text);
+          setSuccess(true);
+          setShowMessage(true);
+          setTimeout(() => setShowMessage(false), 5000);
+          form.current.reset();
+        },
+        (error) => {
+          console.log("error sending", error.text);
         }
-    },[]);
+      );
+  };
 
-    const sendEmail = (e) => {
-        e.preventDefault();
-
-
-    emailjs.sendForm('service_wy4624e', 'template_1aqwmd8', form.current, process.env.NEXT_PUBLIC_EMAILJS_USERID )
-          .then((result) => {
-            console.log("email sent", result.text);
-            setSuccess(true);
-            setShowMessage(true);  // Show the message
-
-            setTimeout(() => {
-                setShowMessage(false);  // Hide the message after 5 seconds
-            }, 5000);
-
-
-            form.current.reset();
-          }, (error) => {
-            console.log("error sending", error.text);
-          });
-    };
-
-    return (
-        <div ref={contentRef} className="flex items-center min-h-screen justify-center bg-white transition-opacity opacity-0 duration-[2s]">
-            <div className="relative bg-white rounded-lg lg:w-[70%] w-full flex flex-col sm:flex-row border-4 border-gray-300 shadow-2xl p-2 mt-20">
-                <div className="w-full xl:w-1/2 flex items-center justify-center ">
-                    <Image src="/piano1.jpg" alt="piano" priority={true} quality={90} width={700} height={400} className="max-w-full h-full object-cover object-top"/>
-                </div>
-                <form ref={form} onSubmit={sendEmail} className="w-full xl:w-1/2 xl:p-10 lg:p-3 md:p-3 sm:p-2 flex flex-col justify-center">
-                    <h1 className="md:text-3xl text-2xl pb-6 py-8 md:py-8">Let's Connect!</h1>
-                    <div className="mb-4">
-                        <label htmlFor="Name" className="block font-medium">Name </label>
-                        <input type="text" name="user_name" className="border-2 border-gray-300 p-2 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-maroon"/>
-                    </div>
-                    <div className="mb-4">
-                        <label htmlFor="Email" className="block font-medium">Email </label>
-                        <input type="email" name="user_email" className="border-2 border-gray-300 p-2 rounded-md w-full focus:outline-none focus:ring-2 focus:ring-maroon"/>
-                    </div>
-                    <div className="mb-4">
-                        <label htmlFor="Message" className="block font-medium"> Message </label>
-                        <textarea name="message" className="border-2 border-gray-300 p-2 rounded-md w-full h-32 resize-none focus:outline-none focus:ring-2 focus:ring-maroon" />
-                    </div>
-                    <input type="submit" value="Send" className="bg-maroon hover:bg-red-700 text-white font-medium py-2 px-4 rounded-md cursor-pointer" />
-                    {success && showMessage &&(
-                    <div className="bg-maroon text-white px-4 py-2 rounded-md absolute left-0 right-0 top-full mt-2 text-center">
-                        Your message has been sent!
-                    </div>
-                )}
-                </form>
-            </div>
+  return (
+    <main className="relative w-full min-h-screen bg-background pt-20">
+      <div className="lg:grid lg:grid-cols-2 min-h-[calc(100vh-5rem)]">
+        {/* Image side - fixed on desktop */}
+        <div className="relative h-[58vh] overflow-hidden lg:h-auto lg:fixed lg:top-20 lg:left-0 lg:w-1/2 lg:bottom-0">
+          <Image
+            src="/piano1.jpg"
+            alt="Piano"
+            fill
+            quality={90}
+            priority
+            className="object-cover object-[center_18%] lg:object-center animate-[heroZoom_2000ms_ease-out_forwards]"
+          />
         </div>
-    )
-}    
+
+        {/* Form side */}
+        <div className="flex items-center justify-center px-6 py-14 md:px-14 lg:px-20 lg:col-start-2">
+          <Reveal className="w-full max-w-md">
+            <p className="text-[11px] uppercase tracking-[0.3em] text-primary mb-4">Contact</p>
+            <h1 className="font-serif text-4xl md:text-5xl font-medium mb-3">Let&apos;s Connect</h1>
+            <p className="text-sm text-muted-foreground leading-relaxed mb-10">
+              For lessons, performances, collaborations, or community engagement inquiries, send a note below.
+            </p>
+
+            <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-6 relative">
+              <div className="flex flex-col gap-2">
+                <label htmlFor="user_name" className="text-xs uppercase tracking-[0.16em] text-foreground/80">
+                  Name
+                </label>
+                <input
+                  id="user_name"
+                  type="text"
+                  name="user_name"
+                  className="bg-transparent border-b border-border py-2.5 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors duration-300"
+                />
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <label htmlFor="user_email" className="text-xs uppercase tracking-[0.16em] text-foreground/80">
+                  Email
+                </label>
+                <input
+                  id="user_email"
+                  type="email"
+                  name="user_email"
+                  className="bg-transparent border-b border-border py-2.5 text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors duration-300"
+                />
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <label htmlFor="message" className="text-xs uppercase tracking-[0.16em] text-foreground/80">
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  className="bg-transparent border-b border-border py-2.5 h-28 resize-none text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary transition-colors duration-300"
+                />
+              </div>
+
+              <button
+                type="submit"
+                className="mt-2 self-start bg-primary text-primary-foreground text-xs uppercase tracking-[0.18em] px-9 py-3.5 hover:bg-primary/90 transition-colors duration-300"
+              >
+                Send Message
+              </button>
+
+              {success && showMessage && (
+                <div className="bg-foreground text-background px-4 py-3 text-sm text-center mt-2">
+                  Your message has been sent. Thank you!
+                </div>
+              )}
+            </form>
+          </Reveal>
+        </div>
+      </div>
+    </main>
+  );
+}
