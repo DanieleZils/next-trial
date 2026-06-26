@@ -103,7 +103,7 @@ export default function Media() {
   return (
     <main className="relative w-full min-h-screen bg-background">
       {/* Banner */}
-      <section className="relative mt-20 h-[calc(55vh-5rem)] md:h-[calc(70vh-5rem)] w-full overflow-hidden">
+      <section className="relative mt-20 h-[calc(72vh-5rem)] md:h-[calc(70vh-5rem)] w-full overflow-hidden">
         <Image
           src="/anothermedia.png"
           alt="Becca Kasdan"
@@ -111,7 +111,7 @@ export default function Media() {
           quality={90}
           sizes="100vw"
           priority
-          className="object-cover object-top animate-[heroZoom_2000ms_ease-out_forwards]"
+          className="object-cover object-[68%_20%] md:object-top animate-[heroZoom_2000ms_ease-out_forwards]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/15 to-black/25" />
         <div className="absolute inset-x-0 bottom-0 px-6 pb-10 md:px-16 md:pb-16">

@@ -6,7 +6,7 @@ export default function CommunityEngagement() {
   const slides = Array.from({ length: 5 }, (_, index) => index);
 
   return (
-    <div className="relative w-full min-h-screen flex flex-col bg-background">
+    <div className="relative w-full min-h-screen bg-background">
       <EmblaCarousel slides={slides} />
 
       {/* Intro */}

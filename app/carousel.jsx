@@ -46,8 +46,8 @@ export default function EmblaCarousel(props) {
   ];
 
   return (
-    <div className="relative w-full bg-foreground mt-20">
-      <div className="relative h-[60vh] md:h-[78vh] overflow-hidden" ref={emblaRef}>
+    <div className="relative w-full bg-foreground pt-20">
+      <div className="relative aspect-[3/2] md:aspect-auto md:h-[78vh] overflow-hidden" ref={emblaRef}>
         <div className="flex h-full">
           {images.map((slide, index) => (
             <div className="relative flex-none w-full h-full" key={index}>
@@ -59,7 +59,7 @@ export default function EmblaCarousel(props) {
                   priority
                   quality={90}
                   sizes="100vw"
-                  className="object-contain md:object-cover md:object-center"
+                  className="object-cover object-center"
                 />
               ) : (
                 <Youtube

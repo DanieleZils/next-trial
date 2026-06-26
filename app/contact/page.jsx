@@ -32,14 +32,14 @@ export default function Contact() {
     <main className="relative w-full min-h-screen bg-background pt-20">
       <div className="lg:grid lg:grid-cols-2 min-h-[calc(100vh-5rem)]">
         {/* Image side - fixed on desktop */}
-        <div className="relative h-64 overflow-hidden lg:h-auto lg:fixed lg:top-20 lg:left-0 lg:w-1/2 lg:bottom-0">
+        <div className="relative h-[58vh] overflow-hidden lg:h-auto lg:fixed lg:top-20 lg:left-0 lg:w-1/2 lg:bottom-0">
           <Image
             src="/piano1.jpg"
             alt="Piano"
             fill
             quality={90}
             priority
-            className="object-cover object-center animate-[heroZoom_2000ms_ease-out_forwards]"
+            className="object-cover object-[center_18%] lg:object-center animate-[heroZoom_2000ms_ease-out_forwards]"
           />
         </div>
 
