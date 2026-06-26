@@ -63,7 +63,7 @@ export default function EmblaCarousel(props) {
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
     >
-      <div className="relative aspect-[3/2] md:aspect-auto md:h-[78vh] overflow-hidden" ref={emblaRef}>
+      <div className="relative aspect-[3/2] md:aspect-auto md:h-[78vh] overflow-hidden animate-[heroZoom_2400ms_ease-out_forwards]" ref={emblaRef}>
         <div className="flex h-full">
           {images.map((slide, index) => (
             <div className="relative flex-none w-full h-full" key={index}>
