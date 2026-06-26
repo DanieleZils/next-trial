@@ -330,7 +330,7 @@ export default function UpcomingEvents() {
   return (
     <main className="relative w-full min-h-screen bg-background">
       {/* Banner */}
-      <section className="relative mt-20 h-[calc(66vh-5rem)] md:h-[calc(65vh-5rem)] w-full overflow-hidden">
+      <section className="relative mt-20 h-[52vh] md:h-[56vh] w-full overflow-hidden">
         <Image
           src="/eventtwo.jpg"
           alt="Becca Kasdan in concert"
@@ -338,7 +338,7 @@ export default function UpcomingEvents() {
           quality={90}
           sizes="100vw"
           priority
-          className="object-cover object-[center_25%] md:object-top animate-[heroZoom_2000ms_ease-out_forwards]"
+          className="object-cover object-[70%_30%] md:object-[center_30%] animate-[heroZoom_2000ms_ease-out_forwards]"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/15 to-black/25" />
         <div className="absolute inset-x-0 bottom-0 px-6 pb-10 md:px-16 md:pb-16">
