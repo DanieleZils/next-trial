@@ -87,9 +87,8 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .animate-\[heroZoom_2000ms_ease-out_forwards\],
-  .animate-\[fadeUp_900ms_ease-out_200ms_both\],
-  .animate-\[fadeUp_1000ms_ease-out_400ms_both\] {
+  [class*="animate-[heroZoom"],
+  [class*="animate-[fadeUp"] {
     animation: none !important;
   }
 }
