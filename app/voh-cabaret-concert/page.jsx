@@ -78,7 +78,7 @@ export default function VohCabaretConcert() {
   return (
     <main className="relative bg-background min-h-screen">
       {/* Hero */}
-      <section className="relative mt-20 h-[calc(72vh-5rem)] md:h-[calc(85vh-5rem)] w-full overflow-hidden">
+      <section className="relative mt-20 aspect-[3/2] md:aspect-auto md:h-[calc(85vh-5rem)] w-full overflow-hidden bg-foreground">
         <Image
           src="/vohprincipal.jpg"
           alt="Violins of Hope"
@@ -86,9 +86,9 @@ export default function VohCabaretConcert() {
           quality={90}
           sizes="100vw"
           priority
-          className="object-cover object-center animate-[heroZoom_2000ms_ease-out_forwards]"
+          className="object-contain object-center md:object-cover animate-[heroZoom_2000ms_ease-out_forwards]"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-black/30" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent md:via-black/40 md:to-black/30" />
         <div className="absolute inset-x-0 bottom-0 px-6 pb-12 md:px-16 md:pb-20 max-w-4xl">
           <p className="text-[11px] uppercase tracking-[0.32em] text-white/70 mb-4 animate-[fadeUp_900ms_ease-out_200ms_both]">
             Violins of Hope
