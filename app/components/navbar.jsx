@@ -33,8 +33,8 @@ export default function Navbar() {
     <header
       className={`fixed z-50 w-full flex justify-between items-center h-20 px-5 md:px-12 backdrop-blur-md transition-colors duration-500 ${
         scrolled
-          ? 'bg-background/90 border-b border-border'
-          : 'bg-background/65 border-b border-transparent'
+          ? 'bg-background/95 border-b border-border'
+          : 'bg-background/85 border-b border-transparent'
       }`}
     >
       <Link
@@ -49,7 +49,7 @@ export default function Navbar() {
           <Link
             key={link.href}
             href={link.href}
-            className="link-underline text-xs uppercase tracking-[0.18em] text-foreground/80 hover:text-foreground transition-colors duration-300"
+            className="link-underline text-xs font-semibold uppercase tracking-[0.18em] text-foreground hover:text-primary transition-colors duration-300"
           >
             {link.label}
           </Link>
@@ -88,7 +88,7 @@ export default function Navbar() {
               <Link
                 href={link.href}
                 onClick={handleClick}
-                className="block py-4 text-sm uppercase tracking-[0.16em] text-foreground/80 hover:text-primary transition-colors duration-300"
+                className="block py-4 text-sm font-semibold uppercase tracking-[0.16em] text-foreground hover:text-primary transition-colors duration-300"
               >
                 {link.label}
               </Link>

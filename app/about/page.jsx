@@ -101,13 +101,13 @@ export default function About() {
               <div className="max-w-2xl space-y-6 text-sm md:text-base leading-relaxed text-muted-foreground">
                 <Reveal>
                   Becca Kasdan is currently a Teaching Associate at Brown University and holds a Violin Faculty
-                  position at New England Conservatory Preparatory/Expanded Education. Dr. Kasdan teaches
-                  applied violin lessons and coaches chamber music for undergraduate and graduate students at
-                  Brown University and pre-college lessons to violin students at NEC. Becca Kasdan is also an
-                  active freelancer in Rhode Island and Boston performing with groups such as the Rhode Island
-                  Philharmonic, the Rhode Island Civic Chorale, The Orchestra on the Hill, among others. During
-                  the summers, Becca is a faculty member at the Easton Chamber Music Festival and the Rhode
-                  Island Philharmonic Summer Chamber Music Workshop.
+                  position at New England Conservatory Preparatory/Expanded Education and Project STEP in
+                  Boston. Dr. Kasdan teaches applied violin lessons and coaches chamber music for undergraduate
+                  and graduate students at Brown University and pre-college lessons to violin students at NEC and
+                  Project STEP. Becca Kasdan is also an active freelancer in Rhode Island and Boston performing
+                  with groups such as the Rhode Island Philharmonic, the Rhode Island Civic Chorale, The
+                  Orchestra on the Hill, among others. During the summers, Becca is a faculty member at the
+                  Easton Chamber Music Festival.
                 </Reveal>
                 <Reveal>
                   Becca received her Doctor of Musical Arts in Violin Performance at the University of Illinois at

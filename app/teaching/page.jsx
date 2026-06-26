@@ -90,7 +90,7 @@ export default function Teaching() {
             Experience
           </p>
           <h2 className="font-serif text-4xl md:text-6xl font-medium text-balance">
-            Upcoming &amp; Previous Teaching
+            Current and Previous Teaching
           </h2>
         </Reveal>
 
@@ -114,12 +114,14 @@ export default function Teaching() {
               <h3 className="font-serif text-xl md:text-2xl">String Faculty &mdash; New England Conservatory Preparatory / Expanded Education</h3>
               <a href="https://necmusic.edu/expanded-education/nec-prep/" target="_blank" rel="noreferrer" className="link-underline text-sm uppercase tracking-[0.14em] text-primary">Learn More</a>
             </Reveal>
+            <Reveal>
+              <h3 className="font-serif text-xl md:text-2xl">Violin Faculty &mdash; Project STEP</h3>
+              <a href="https://www.projectstep.org/" target="_blank" rel="noreferrer" className="link-underline text-sm uppercase tracking-[0.14em] text-primary">Learn More</a>
+            </Reveal>
 
             <Reveal className="border-t border-border pt-8">
               <h3 className="font-serif text-xl md:text-2xl mb-3">Summer Teaching</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">Faculty &mdash; Rhode Island Philharmonic Summer Chamber Music Workshop</p>
-              <a href="https://www.riphil.org/music-school/summer-2023-workshops" target="_blank" rel="noreferrer" className="link-underline text-sm text-primary">riphil.org</a>
-              <p className="text-sm text-muted-foreground leading-relaxed mt-3">Faculty &mdash; Easton Chamber Music Festival in Massachusetts</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">Faculty &mdash; Easton Chamber Music Festival in Massachusetts</p>
               <a href="http://eastonchambermusicfestival.org/index.html" target="_blank" rel="noreferrer" className="link-underline text-sm text-primary">eastonchambermusicfestival.org</a>
             </Reveal>
 
@@ -138,6 +140,10 @@ export default function Teaching() {
 
             <Reveal className="border-t border-border pt-8 space-y-6">
               <h3 className="font-serif text-xl md:text-2xl">Previous Teaching</h3>
+              <div>
+                <h4 className="font-semibold text-base">Faculty &mdash; Rhode Island Philharmonic Summer Chamber Music Workshop</h4>
+                <a href="https://www.riphil.org/music-school/summer-2023-workshops" target="_blank" rel="noreferrer" className="link-underline text-sm uppercase tracking-[0.14em] text-primary">riphil.org</a>
+              </div>
               <div>
                 <h4 className="font-semibold text-base">Community MusicWorks, Resident Musician &mdash; Providence, RI</h4>
                 <a href="https://communitymusicworks.org/" target="_blank" rel="noreferrer" className="link-underline text-sm uppercase tracking-[0.14em] text-primary">Learn More</a>

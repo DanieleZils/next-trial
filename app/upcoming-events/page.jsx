@@ -4,29 +4,8 @@ import { Reveal } from '../components/reveal';
 
 const eventGroups = [
   {
-    heading: 'Upcoming 2025 – 2026 Events',
+    heading: 'Upcoming Events',
     events: [
-      {
-        title: 'New England Conservatory Expanded Education Faculty Recital',
-        date: 'Thursday, February 19, 2026 · 8 PM',
-        lines: [
-          'With Victor Cayres, piano, and Eugene Kim, cello',
-          'Program: Works by Elgar, Amy Beach, Turina, Adrienne Albert, and Ilan Rechtman',
-          'Williams Hall, 290 Huntington Ave, Boston, MA 02115',
-        ],
-      },
-      {
-        title: 'Rhode Island Philharmonic',
-        date: 'Friday, March 13, 2026 · 6:30 PM',
-        lines: ['Works by Missy Mazzoli, Beethoven, Tchaikovsky', 'The VETS, 1 Ave of the Arts, Providence RI 02903'],
-        link: { href: 'https://riphil.org', label: 'Tickets & Information' },
-      },
-      {
-        title: 'Rhode Island Philharmonic',
-        date: 'Saturday, March 14, 2026 · 7:30 PM',
-        lines: ['Works by Missy Mazzoli, Beethoven, Tchaikovsky', 'The VETS, 1 Ave of the Arts, Providence RI 02903'],
-        link: { href: 'https://riphil.org', label: 'Tickets & Information' },
-      },
       {
         title: 'Easton Chamber Music Festival Faculty Concert',
         date: 'Friday, June 26, 2026 · 7:30 PM',
@@ -36,6 +15,48 @@ const eventGroups = [
         title: 'Easton Chamber Music Festival Faculty Concert',
         date: 'Saturday, June 27, 2026 · 7:30 PM',
         lines: ['Samuel Barber, Dover Beach, Op. 3 for voice and string quartet', 'Paul Juon, Piano Sextet, Op. 22'],
+      },
+      {
+        title: 'Chamber Music Concert, First Church Recital Series',
+        date: 'Saturday, April 24, 2027 · 3 PM',
+        lines: [
+          'Brahms Piano Quintet with Andrei Baumann, Jesse Holstein, Gillian Gallagher, and Adrienne Taylor',
+          '6 Eliot St, Boston, MA 02130',
+        ],
+      },
+      {
+        title: 'Arts in the Village Concert Series',
+        date: 'Sunday, November 7, 2027 · 2:30 PM',
+        lines: [
+          'Piano Trio recital program with Victor Cayres and Eugene Kim',
+          'Goff Memorial Hall, 124 Bay State Road, Rehoboth, MA',
+        ],
+      },
+    ],
+  },
+  {
+    heading: 'Past 2026 Events',
+    events: [
+      {
+        title: 'Rhode Island Philharmonic',
+        date: 'Saturday, March 14, 2026 · 7:30 PM',
+        lines: ['Works by Missy Mazzoli, Beethoven, Tchaikovsky', 'The VETS, 1 Ave of the Arts, Providence RI 02903'],
+        link: { href: 'https://riphil.org', label: 'Tickets & Information' },
+      },
+      {
+        title: 'Rhode Island Philharmonic',
+        date: 'Friday, March 13, 2026 · 6:30 PM',
+        lines: ['Works by Missy Mazzoli, Beethoven, Tchaikovsky', 'The VETS, 1 Ave of the Arts, Providence RI 02903'],
+        link: { href: 'https://riphil.org', label: 'Tickets & Information' },
+      },
+      {
+        title: 'New England Conservatory Expanded Education Faculty Recital',
+        date: 'Thursday, February 19, 2026 · 8 PM',
+        lines: [
+          'With Victor Cayres, piano, and Eugene Kim, cello',
+          'Program: Works by Elgar, Amy Beach, Turina, Adrienne Albert, and Ilan Rechtman',
+          'Williams Hall, 290 Huntington Ave, Boston, MA 02115',
+        ],
       },
     ],
   },
@@ -274,12 +295,12 @@ const eventGroups = [
   },
 ];
 
-function EventCard({ event }) {
+function EventCard({ event, past = false }) {
   return (
     <Reveal>
-      <article className="group border-l border-border pl-6 md:pl-8 pb-10 relative">
-        <span className="absolute left-0 top-1.5 -translate-x-1/2 h-2 w-2 rounded-full bg-primary" />
-        <p className="text-[11px] uppercase tracking-[0.18em] text-primary mb-2">{event.date}</p>
+      <article className={`group border-l border-border pl-6 md:pl-8 pb-10 relative ${past ? 'opacity-60' : ''}`}>
+        <span className={`absolute left-0 top-1.5 -translate-x-1/2 h-2 w-2 rounded-full ${past ? 'bg-muted-foreground/50' : 'bg-primary'}`} />
+        <p className={`text-[11px] uppercase tracking-[0.18em] mb-2 ${past ? 'text-muted-foreground' : 'text-primary'}`}>{event.date}</p>
         <h3 className="font-serif text-xl md:text-2xl leading-snug mb-3 text-foreground">{event.title}</h3>
         {event.lines.length > 0 && (
           <div className="space-y-1">
@@ -334,7 +355,7 @@ export default function UpcomingEvents() {
             </Reveal>
             <div>
               {group.events.map((event, ei) => (
-                <EventCard key={ei} event={event} />
+                <EventCard key={ei} event={event} past={gi > 0} />
               ))}
             </div>
           </section>
